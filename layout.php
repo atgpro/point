@@ -17,8 +17,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-	<!-- LESS -->
-    <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
+	   <!-- LESS -->
+     <link rel="stylesheet/less" type="text/css" href="less/style.less" /> 
+     <!-- LESS Compiler -->
+     <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
+     <!-- CSS -->
+     <!-- <link href="css/style.css" rel="stylesheet"> -->
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -27,5 +31,8 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+    <!-- JS-->
+    <script src="js/script.js"></script>  
   </body>
 </html>
