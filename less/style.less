@@ -1,3 +1,9 @@
+.wrapper {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .slider-container {
 	.back-bar .pointer {
 	    height: 25px;
@@ -215,7 +221,7 @@ h1 {
 
 .check-group {
 	cursor: pointer;
-	
+
 	span {
 	    font-size: 14px;
 	    color: #b9c3c8;
@@ -224,4 +230,154 @@ h1 {
         vertical-align: middle;
 	    margin-left: 10px;
 	}
+}
+
+.destination-box {
+	background: url(../img/destination-bg.png);
+    background-position-x: center;
+    background-position-y: -25px;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+
+    .destination-country-header {
+	    font-size: 34.35px;
+	    color: #fff;
+	    margin-top: 0px;
+	    margin-left: 210px;
+	    letter-spacing: 1px;
+    }
+
+    .destination-country-select {
+    	.selected {
+		    background: #fff;
+    	}
+
+    	.select-items {
+		    background: #fff;
+
+		    &:after {
+	    	    border-bottom: 9px solid #ffffff;
+		    }
+    	}
+    }
+
+    .container {
+	    position: relative;
+    }
+
+    .filter-select-wrapper {
+    	margin-top: 0px;
+	    position: absolute;
+	    top: 3px;
+	    right: 124px;
+    }
+}
+
+.point-b {
+    top: -6px;
+    position: absolute;
+    left: 182px;
+}
+
+.hide-detailed-version {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background: rgba(50, 131, 211, 0.87);
+    border: 0px;
+    color: #fff;
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 16px;
+    margin-top: 48px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    padding-left: 0px;
+    padding-right: 9px;
+    border-radius: 100000px;
+    letter-spacing: 0.2px;
+	position: relative;
+	outline: none;
+
+    &:after {
+	    content: ' ';
+	    display: block;
+	    position: absolute;
+	    background: #fff;
+	    width: 12px;
+	    height: 2px;
+	    right: 17px;
+	    top: 15px;
+    }
+
+    &:hover {
+    	background: rgba(50, 131, 211, 1);
+    }
+}
+
+.states-panel {
+    background: rgba(37, 47, 67, 0.63);
+    border-radius: 10px;
+    padding-top: 15px;
+    color: #fff;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 18px;
+
+    .weather {
+    	.title {
+		    font-size: 18px;
+    	}
+
+    	.day {
+    		font-size: 14px;
+		    margin-left: 15px;
+    	}
+
+    	.temp {
+		    font-size: 14px;
+		    margin-left: 15px;
+    	}
+
+    	.mounth {
+		    font-size: 14px;
+		    margin-left: 30px;
+    	}
+
+    	.mounth-temp {
+		    font-size: 14px;
+		    margin-left: 7px;
+    	}
+    }
+
+    .chars {
+    	font-size: 14px;
+	    text-align: right;
+	    margin-top: 3px;
+    }
+
+    .map-markers {
+	    margin-right: 30px;
+	    
+    	img {
+		    margin-right: 11px;
+    	}
+    }
+
+    .fly-time {
+	    margin-right: 30px;
+
+    	img {
+		    margin-right: 13px;
+    	}
+    }
+
+    .clocks {
+    	img {
+    		margin-right: 10px;
+    	}
+    }
 }
