@@ -1,0 +1,227 @@
+.slider-container {
+	.back-bar .pointer {
+	    height: 25px;
+	    width: 25px;
+	    box-sizing: border-box;
+	    border-radius: 1000px;
+	    background: rgb(236, 239, 240);
+	    border: 1px solid rgb(206, 217, 224);
+	    top: -9px;
+	}
+
+	.back-bar {
+		height: 7px;
+	    background: #cfd7db;
+	}
+
+	.clickable-dummy {
+		background: #cfd7db;
+	}
+
+	.back-bar .pointer-label {
+	    z-index: 4;
+	    background: transparent;
+	    font-size: 14px;
+	    font-weight: 100;
+	    color: #657d95;
+	    top: -4px;
+	    text-align: center;
+	}
+}
+
+body {
+	background: #e6e8ec;
+	font-family: 'RobotoCondensed-Light';
+}
+
+.container {
+	width: 1000px;
+}
+
+.header-bar {
+	height: 18px;
+	background: #3283d3;
+}
+
+h1 {
+	font-family: 'RobotoCondensed-Light';
+	font-size: 34.95px;
+	color: #2e3039;
+    margin-top: 53px;
+    margin-left: 39px;
+
+	.bold {
+		font-family: "FiraSans-Bold";
+		color: #428bd2;
+		font-size: 45.93px;
+		display: block;
+	}
+
+	.thin {
+		display: block;
+        margin-left: 96px;
+	    line-height: 27px;
+	    letter-spacing: 1px;
+	}
+}
+
+/* Selects */
+.filter-label {
+    font-size: 16px;
+    color: #7d7d7d;
+    display: block;
+    margin-bottom: 3px;
+
+}
+
+.filter-select-wrapper {
+	display: inline-block;
+    margin-left: 19px;
+    margin-top: -11px;
+    vertical-align: middle;
+
+    .filter-param {
+	    color: #ababab;
+	    padding-left: 30px;
+	    display: inline-block;
+	    vertical-align: middle;
+	    min-height: 40px;
+	    text-decoration: none;
+    }
+
+    .filter-select {
+	    position: relative;
+	    width: 150px;
+
+        &:hover {
+	    	.select-items-wrapper {
+	    		display: block;
+	    	}
+	    }
+    }
+
+    .selected {
+	    width: 150px;
+	    background: #7d7d7d;
+	    text-overflow: clip;
+	    color: #ffffff;
+	    padding-left: 13px;
+	    padding-right: 32px;
+	    border-radius: 5px;
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    position: relative;
+	    cursor: pointer;
+	    font-size: 16px;
+        background: #eceff0;
+	    color: #428bd2;
+	    font-size: 14px;
+	    font-family: 'RobotoCondensed-Regular';
+	    width: 212px;
+	    border-radius: 11111px;
+        padding-left: 20px;
+
+    	&:after {
+		    content: ' ';
+		    display: block;
+		    position: absolute;
+	        border: 4px solid transparent;
+		    border-top: 5px solid #428bd2;
+		    right: 15px;
+		    top: 50%;
+		    margin-top: -3px;
+    	}
+    }
+
+    .select-items-wrapper {
+    	padding-top: 10px;
+    	display: none;
+    	position: absolute;
+	    top: 28px;
+	    z-index: 3;
+    }
+
+    .select-items {
+    	position: relative;
+	    background: #ababab;
+	    width: 150px;
+	    border-radius: 5px;
+	    color: #ffffff;
+	    font-size: 16px;
+	    padding-left: 3px;
+	    padding-right: 3px;
+	    padding-bottom: 3px;
+	    padding-top: 3px;
+        width: 212px;
+	    background: #eceff0;
+	    color: #000;
+	    font-size: 14px;
+
+	    &:after {
+		    content: ' ';
+		    display: block;
+		    position: absolute;
+		    border: 9px solid transparent;
+		    border-bottom: 9px solid #eceff0;
+		    right: 10px;
+		    top: -12px;
+		    margin-top: -3px;
+    	}
+
+	    div {
+	    	padding-left: 13px;
+		    padding-right: 13px;
+	        padding-top: 5px;
+		    padding-bottom: 5px;
+
+		    &:hover {
+		    	background: #e2e5e6;
+		    	cursor: pointer;
+		    	border-radius: 5px; 
+		    }
+	    }
+    }
+}
+
+.from-city {
+	background: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 34px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px #cccdd0;
+    margin-top: 40px;
+    max-width: 455px;
+    position: relative;
+    padding-bottom: 10px;
+
+    .point-a {
+    	position: absolute;
+	    top: 17px;
+	    left: 20px;
+    }
+
+    .filter-label {
+	    display: inline-block;
+	    color: #2e3039;
+	    font-size: 20px;
+	    font-weight: normal;
+	    vertical-align: middle;
+        padding-left: 36px;
+	    margin-bottom: 10px;
+    }
+}
+
+.check-group {
+	cursor: pointer;
+	
+	span {
+	    font-size: 14px;
+	    color: #b9c3c8;
+	    font-weight: normal;
+	    font-family: 'RobotoCondensed-Regular';
+        vertical-align: middle;
+	    margin-left: 10px;
+	}
+}
