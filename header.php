@@ -13,24 +13,16 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	   <!-- LESS -->
+     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+     <link href="css/icheck.css" rel="stylesheet">
+  
+     <!-- LESS -->
      <link rel="stylesheet/less" type="text/css" href="less/style.less" /> 
      <!-- LESS Compiler -->
      <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
      <!-- CSS -->
      <!-- <link href="css/style.css" rel="stylesheet"> -->
+
   </head>
   <body>
-    <h1>Autocomplete</h1>
     
-    <div class="autocomplete-control">
-      <input type="text" placeholder="Введите или выберите из списка" class="autocomplete-input">
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  
-    <!-- JS-->
-    <script src="js/script.js"></script>  
-  </body>
-</html>
