@@ -729,6 +729,7 @@ h1 {
 	    font-size: 14px;
 	    width: 266px;
 	    cursor: pointer;
+	    outline: none;
 
 	    &::-webkit-input-placeholder {color:#657d95;}
 		&::-moz-placeholder          {color:#657d95;}
@@ -742,3 +743,66 @@ h1 {
 	    padding-left: 0px;
 	}
 }
+
+.show-choosen-vars {
+	margin-bottom: 0px;
+    letter-spacing: 0.2px;
+    display: block;
+}
+
+.scrollable-table-wrapper {
+	height: 130px;
+    overflow-y: auto;
+}
+
+.scrollable-table {
+	margin-top: 9px;
+	color: #b9c3c8;
+    font-size: 14.22px;
+
+	.check-group {
+	    margin-bottom: 0px;
+	    border-bottom: 0px;
+	    padding-left: 27px;
+
+		.icheckbox_futurico {
+		    float: none;
+		    margin-top: 0px;
+		    margin-left: -27px;
+		}
+
+		span {
+		    color: #b9c3c8;
+		    font-size: 14.22px;
+		    text-transform: uppercase;
+		    font-family: 'RobotoCondensed-Regular';
+	        display: inline-block;
+		    line-height: 16px;
+		}
+	}
+
+	td {
+	    padding-bottom: 6px;
+		border-bottom: 1px solid #ebf3f7;
+		padding-top: 6px;
+	}
+
+	td:nth-child(1) {
+        width: 218px;
+	}
+
+	td:nth-child(2) {
+	    width: 118px;
+	    text-align: center;
+	}
+
+	td:nth-child(3) {
+        width: 82px;
+	    text-align: center;
+	}
+	
+	td:nth-child(4) {
+		width: 128px;
+	    text-align: center;
+	}
+}	
