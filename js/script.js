@@ -17,4 +17,13 @@ $(function (e) {
 			"1", "2", "3", "4", "5"	    	
 	    ]
 	});
+
+	$("#classSlider").ionRangeSlider({
+	    grid: true,
+	    from: 1,
+	    hide_min_max: true,
+	    values: [
+			"0", "2", "3.5", "4", "4.5"	    	
+	    ]
+	});
 });

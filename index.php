@@ -137,20 +137,42 @@
                   <input type="text" id="raitingSlider">
                 </div>
               </div>
-              <div class="col-xs-4">
+              <div class="col-xs-3 class-slider-wrapper">
                 <div class="slider-header">
                   <span>Класс отеля, от</span>
                   <i class="indicator">?</i>
                 </div>
+                <div class="slider-wrapper">
+                  <input type="text" id="classSlider">
+                </div>
               </div>  
-              <div class="col-xs-4">
+              <div class="col-xs-5">
                 <div class="slider-header">
                   <span>Тип отеля</span>
                   <i class="indicator">?</i>
                 </div>
+                <div class="filter-select-wrapper">
+                  <div class="filter-select">
+                    <div class="selected">Выбрано 2 варианта</div>
+                    <div class="select-items-wrapper">
+                      <div class="select-items">
+                        <div>Челябинск</div>
+                        <div>Ульяновск</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
+            
+            <table class="table-header">
+              <tr>
+                <th>Название отеля</th>
+                <th>Класс</th>
+                <th>Курорт</th>
+                <th>Рейтинг</th>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
