@@ -5,8 +5,8 @@ $(function (e) {
 	});
 
 	$('.icheck-input').iCheck({
-	    checkboxClass: 'icheckbox_square-blue',
-	    radioClass: 'iradio_square-blue'
+	    checkboxClass: 'icheckbox_futurico',
+	    radioClass: 'iradio_futurico'
 	});
 
 	$('.slider-input').jRange({
