@@ -301,7 +301,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    background: rgba(50, 131, 211, 0.87);
+    background: lighten(@main-color, 3%);
     border: 0px;
     color: #fff;
     font-family: 'RobotoCondensed-Regular';
@@ -329,7 +329,7 @@ h1 {
     }
 
     &:hover {
-    	background: rgba(50, 131, 211, 1);
+    	background: @main-color;
     }
 }
 
@@ -653,6 +653,7 @@ h1 {
 }
 
 .choice-block {
+	margin-bottom: 20px;
 	.filter-select-wrapper {
 		position: relative;
 	    top: 0px;
@@ -753,6 +754,55 @@ h1 {
 .scrollable-table-wrapper {
 	height: 130px;
     overflow-y: auto;
+    position: relative;
+
+}
+
+.scrollable-table-box {
+	position: relative;
+}
+
+.button-open-table {
+	position: absolute;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background: lighten(@main-color, 3%);
+    border: 0px;
+    color: #fff;
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 16px;
+    margin-top: 48px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    padding-left: 0px;
+    padding-right: 9px;
+    border-radius: 100000px;
+    letter-spacing: 0.2px;
+    margin: 0px;
+    position: absolute;
+    width: 190px;
+    left: 50%;
+    margin-left: -95px;
+    bottom: -30px;
+	outline: none;
+
+    &:after {
+        content: ' ';
+	    display: block;
+	    position: absolute;
+	    border: 4px solid transparent;
+	    border-top: 5px solid #ffffff;
+	    top: 15px;
+	    right: 15px;
+    }
+
+    &:hover {
+    	background: @main-color;
+    }
 }
 
 .scrollable-table {

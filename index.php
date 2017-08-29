@@ -187,65 +187,68 @@
                <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">7</span></a>
               </div>
             </div>
-
-            <div class="scrollable-table-wrapper scroll1">
-              <table class="scrollable-table">
-                <tr>
-                  <td>
-                    <label class="check-group">
-                      <input class="icheck-input" type="checkbox" name="iCheck">
-                      <span>ABSOLUTE BLISS IMEROVIGLI SUITES 4*</span>
-                    </label>
-                  </td>
-                  <td>5</td>
-                  <td>Афины</td>
-                  <td>4.3</td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="check-group">
-                      <input class="icheck-input" type="checkbox" name="iCheck">
-                      <span>12 MONTHS LUXURY RESORT 5*</span>
-                    </label>
-                  </td>
-                  <td>5</td>
-                  <td>Афины</td>
-                  <td>4.3</td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="check-group">
-                      <input class="icheck-input" type="checkbox" name="iCheck">
-                      <span>12 MONTHS LUXURY RESORT 5*</span>
-                    </label>
-                  </td>
-                  <td>5</td>
-                  <td>Афины</td>
-                  <td>4.3</td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="check-group">
-                      <input class="icheck-input" type="checkbox" name="iCheck">
-                      <span>12 MONTHS LUXURY RESORT 5*</span>
-                    </label>
-                  </td>
-                  <td>5</td>
-                  <td>Афины</td>
-                  <td>4.3</td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="check-group">
-                      <input class="icheck-input" type="checkbox" name="iCheck">
-                      <span>12 MONTHS LUXURY RESORT 5*</span>
-                    </label>
-                  </td>
-                  <td>5</td>
-                  <td>Афины</td>
-                  <td>4.3</td>
-                </tr>
-              </table>
+            
+            <div class="scrollable-table-box">
+              <div class="scrollable-table-wrapper scroll1">
+                <table class="scrollable-table">
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>ABSOLUTE BLISS IMEROVIGLI SUITES 4*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="button-open-table">Развернуть таблицу</button>
             </div>
 
 
