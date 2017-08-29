@@ -681,6 +681,8 @@ h1 {
     background: #252f43;
     color: #cdd3dd;
     border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(37, 47, 67, 0.55);
+    margin-bottom: 19px;
 
     th {
 	    font-weight: normal;
@@ -707,4 +709,36 @@ h1 {
 		    padding-right: 56px;
 	    }
     }
+}
+
+.table-wrapper {
+	.search-box {
+		background: #f7f8f8;
+	    border: 1px solid #f4f5f6;
+	    border-radius: 1000px;
+	    max-width: 330px;
+	    padding-top: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 14px;
+	}
+
+	input[type="text"] {
+		font-family: 'RobotoCondensed-Regular';
+	    border: 0px;
+	    background: transparent;
+	    font-size: 14px;
+	    width: 266px;
+	    cursor: pointer;
+
+	    &::-webkit-input-placeholder {color:#657d95;}
+		&::-moz-placeholder          {color:#657d95;}
+		&:-moz-placeholder           {color:#657d95;}
+		&:-ms-input-placeholder      {color:#657d95;}
+	}
+
+	button {
+	    border: 0px;
+	    background: transparent;
+	    padding-left: 0px;
+	}
 }

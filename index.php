@@ -173,6 +173,22 @@
                 <th>Рейтинг</th>
               </tr>
             </table>
+            
+            <div class="row">
+              <div class="col-xs-7">
+                <div class="table-wrapper">
+                  <div class="search-box">
+                    <input type="text" placeholder="Быстрый поиск по отелям">
+                    <button><img src="img/search-icon.png" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-5">
+               <a href="#" class="dashed-link show-choosen"><span>Показать выбранные</span> <span class="indicator">7</span></a>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
