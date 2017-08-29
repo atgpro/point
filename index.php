@@ -121,7 +121,38 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-8"></div>
+        <div class="col-xs-8">
+          
+          <div class="choice-block">
+            <div class="title">
+              Отели (3322)
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="slider-header">
+                  <span>Рейтинг отеля, от</span>
+                  <i class="indicator">?</i>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="text" id="raitingSlider">
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="slider-header">
+                  <span>Класс отеля, от</span>
+                  <i class="indicator">?</i>
+                </div>
+              </div>  
+              <div class="col-xs-4">
+                <div class="slider-header">
+                  <span>Тип отеля</span>
+                  <i class="indicator">?</i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 

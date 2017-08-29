@@ -16,7 +16,9 @@
      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
      <link href="css/icheck.css" rel="stylesheet">
      <link href="css/fonts.css" rel="stylesheet">
-     <link rel="stylesheet" href="css/jquery.range.css">
+     
+     <link rel="stylesheet" href="css/ion.rangeSlider.css">
+     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
   
      <!-- LESS -->
      <link rel="stylesheet/less" type="text/css" href="less/style.less" /> 

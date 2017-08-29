@@ -9,14 +9,12 @@ $(function (e) {
 	    radioClass: 'iradio_futurico'
 	});
 
-	$('.slider-input').jRange({
+	$("#raitingSlider").ionRangeSlider({
+	    grid: true,
 	    from: 1,
-	    to: 5,
-	    step: 1,
-	    scale: [1, 2, 3, 4, 5],
-	    format: '%s',
-	    width: 125,
-	    showLabels: true,
-	    snap: true
+	    hide_min_max: true,
+	    values: [
+			"1", "2", "3", "4", "5"	    	
+	    ]
 	});
 });
