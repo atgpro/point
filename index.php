@@ -86,36 +86,38 @@
             </div>
             <a href="#" class="dashed-link show-choosen"><span>Показать выбранные курорты</span> <span class="indicator">3</span></a>
             
-            <div class="scrollable-lists scroll scroll1">
-              <div class="list-header">Популярные курорты</div>
-              <ul>
-                <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
-                <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                <li><label class="check-group">Закинф <input class="icheck-input" type="checkbox"></label></li>
-                <li>
-                  <ul class="collapse-list">
-                    <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
-                    <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
-                    <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
-                    <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
-                  </ul>
-                </li>
-              </ul>
+            <div class="scrollable-lists-wrapper">
+              <div class="scrollable-lists scroll scroll1">
+                <div class="list-header">Популярные курорты</div>
+                <ul>
+                  <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Закинф <input class="icheck-input" type="checkbox"></label></li>
+                  <li>
+                    <ul class="collapse-list">
+                      <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                    </ul>
+                  </li>
+                </ul>
 
-              <div class="list-header">Остальные курорты</div>
-              <ul>
-                <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
-                <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                <li><label class="check-group">Закинф <input class="icheck-input" type="checkbox"></label></li>
-                <li>
-                  <ul class="collapse-list">
-                    <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
-                    <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
-                    <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
-                    <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
-                  </ul>
-                </li>
-              </ul>
+                <div class="list-header">Остальные курорты</div>
+                <ul>
+                  <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Закинф <input class="icheck-input" type="checkbox"></label></li>
+                  <li>
+                    <ul class="collapse-list">
+                      <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
