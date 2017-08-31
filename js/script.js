@@ -26,4 +26,23 @@ $(function (e) {
 			"0", "2", "3.5", "4", "4.5"	    	
 	    ]
 	});
+
+	$("#adultSlider").ionRangeSlider({
+	    grid: true,
+	    from: 1,
+	    hide_min_max: true,
+	    values: [
+			"1", "2", "3", "4"
+	    ]
+	});
+
+	$("#childrenSlider").ionRangeSlider({
+	    grid: true,
+	    from: 1,
+	    hide_min_max: true,
+	    values: [
+			"0", "1", "2", "3"
+	    ]
+	});
+	
 });

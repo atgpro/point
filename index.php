@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row first-choise-row">
         <div class="col-xs-4">
           <div class="choice-block">
             <div class="title">
@@ -257,8 +257,106 @@
       </div>
     </div>
 
+      <div class="row second-choice-row">
+        <div class="col-xs-3">
+          <div class="choice-block">
+            <div class="title">
+              <img src="img/calendar-icon.png" class="title-icon">
+              <span>Дата вылета?</span>
+            </div>
 
+            <div class="calendar-buttons">
+              <div class="labels">
+                <label>C</label>
+                <label>По</label>
+              </div>
+              <div class="buttons">
+                <button class="from">25.08.2017</button>
+                <button class="to">18.08.2017</button>
+              </div>
+            </div>
+          </div>
+          <div class="choice-block">
+            <div class="title">
+              <img src="img/moon-icon.png" class="title-icon">
+              <span>На сколько ночей?</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="choice-block">
+            <div class="title">
+              <img src="img/fly-icon.png" class="title-icon">
+              <span>Туристы</span>
+            </div>
+
+            <div class="adult-childrens-sliders-wrapper">
+              <div class="adult-slider-wrapper">
+                <div class="icon-wrapper">
+                  <img src="img/adult-icon.png" class="icon" alt="">
+                  <div>
+                    <label for="">Взрослые</label>
+                    (от 12 лет)
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="text" id="adultSlider">
+                </div>
+              </div>
+
+              <div class="children-slider-wrapper">
+                <div class="icon-wrapper">
+                  <img src="img/chlidren-icon.png" class="icon" alt="">
+                  <div>
+                    <label for="">Дети</label>
+                    (0 - 11 лет)
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="text" id="childrenSlider">
+                </div>
+              </div>
+            </div>
+
+            <div class="title">
+              <img src="img/food-icon.png" class="title-icon">
+              <span>Тип питания</span>
+            </div>
+            
+            <div class="filter-select-wrapper food-type-filter">
+              <div class="filter-select">
+                <div class="selected">Выбрано 2 варианта</div>
+                <div class="select-items-wrapper">
+                  <div class="select-items">
+                    <div>Челябинск</div>
+                    <div>Ульяновск</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="choice-block">
+            <div class="title">
+              <img src="img/money-icon.png" class="title-icon">
+              <span>Стоимость тура</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="choice-block">
+            <div class="title">
+              <img src="img/ship-icon.png" class="title-icon">
+              <span>Туроператоры</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
   </div>
 </div>
+
 
 <?php include('footer.php'); ?>
