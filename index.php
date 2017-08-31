@@ -80,7 +80,7 @@
 
       <div class="row first-choise-row">
         <div class="col-xs-4">
-          <div class="choice-block">
+          <div class="choice-block resort-block">
             <div class="title">
               Курорты (регионы)
             </div>
@@ -123,7 +123,7 @@
         </div>
         <div class="col-xs-8">
           
-          <div class="choice-block">
+          <div class="choice-block hotels-block">
             <div class="title">
               Отели (3322)
             </div>
@@ -259,7 +259,7 @@
 
       <div class="row second-choice-row">
         <div class="col-xs-3">
-          <div class="choice-block">
+          <div class="choice-block date-block">
             <div class="title">
               <img src="img/calendar-icon.png" class="title-icon">
               <span>Дата вылета?</span>
@@ -276,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="choice-block">
+          <div class="choice-block nights-block">
             <div class="title">
               <img src="img/moon-icon.png" class="title-icon">
               <span>На сколько ночей?</span>
@@ -297,7 +297,7 @@
           </div>
         </div>
         <div class="col-xs-3">
-          <div class="choice-block">
+          <div class="choice-block tourists-block">
             <div class="title">
               <img src="img/fly-icon.png" class="title-icon">
               <span>Туристы</span>
@@ -351,7 +351,7 @@
           </div>
         </div>
         <div class="col-xs-3">
-          <div class="choice-block">
+          <div class="choice-block cost-block">
             <div class="title">
               <img src="img/money-icon.png" class="title-icon">
               <span>Стоимость тура</span>
@@ -390,7 +390,7 @@
           </div>
         </div>
         <div class="col-xs-3">
-          <div class="choice-block">
+          <div class="choice-block operators-block">
             <div class="title">
               <img src="img/ship-icon.png" class="title-icon">
               <span>Туроператоры</span>
