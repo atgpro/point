@@ -45,4 +45,21 @@ $(function (e) {
 	    ]
 	});
 	
+	$('#pricesSlider').ionRangeSlider({
+	    type: "double",
+	    min: 0,
+	    max: 500000,
+	    from: 30000,
+	    to: 400000,
+	});
+
+	$('#nightsSlider').ionRangeSlider({
+	    type: "double",
+	    min: 1,
+	    max: 20,
+	    from: 2,
+	    to: 16,
+	});
+
+	
 });

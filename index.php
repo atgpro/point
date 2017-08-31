@@ -281,6 +281,19 @@
               <img src="img/moon-icon.png" class="title-icon">
               <span>На сколько ночей?</span>
             </div>
+            <div class="nights-wrapper">
+              <div class="top-labels">
+                <div class="from">2 ночи </div>
+                <div class="to">16 ночей</div>
+              </div>
+              <div class="range-slider-wrapper">
+                <input type="text" id="nightsSlider">
+              </div>
+              <div class="bottom-labels">
+                <div class="min-label">3 дня</div>
+                <div class="max-label">17 дней</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-xs-3">
@@ -343,6 +356,37 @@
               <img src="img/money-icon.png" class="title-icon">
               <span>Стоимость тура</span>
             </div>
+            <div class="currencies-wrapper">
+              <span class="main-label">Валюта</span>
+              <label class="check-group">
+                <input class="icheck-input" type="radio" name="iCheck">
+                <span class="rub-currency"></span>
+              </label>
+              <label class="check-group">
+                <input class="icheck-input" type="radio" name="iCheck">
+                <span class="dollar-currency"></span>
+              </label>
+              <label class="check-group">
+                <input class="icheck-input" type="radio" name="iCheck">
+                <span class="euro-currency"></span>
+              </label>
+            </div>
+
+            <div class="range-slider-wrapper">
+              <div class="top-labels">
+                <div class="from">От</div>
+                <div class="to">До</div>
+              </div>
+
+              <div class="left-label">30 000</div>
+              <div class="right-label">40 0000</div>
+              <input type="text" id="pricesSlider">
+
+              <div class="bottom-labels">
+                <div class="min-label">0</div>
+                <div class="max-label">50 0000</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-xs-3">
@@ -350,6 +394,19 @@
             <div class="title">
               <img src="img/ship-icon.png" class="title-icon">
               <span>Туроператоры</span>
+            </div>
+            <a href="#" class="dashed-link show-choosen"><span>Показать выбранные</span> <span class="indicator">3</span></a>
+            
+            <div class="scrollable-lists-wrapper tur-operators">
+              <div class="scrollable-lists scroll scroll1">
+                <ul>
+                  <li><label class="check-group">Acti Tour <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Adonis <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Ambotis Holidays <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Anex Tour <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Art Tour <input class="icheck-input" type="checkbox"></label></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
