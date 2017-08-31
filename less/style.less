@@ -503,6 +503,18 @@ h1 {
 					position: relative;
 					box-shadow: 0px 5px 12px lighten(@main-color, 10%);
 					border-bottom-color: lighten(@main-color, 2%);
+					
+					.icheckbox_futurico {
+					    border-color: #fff;
+					    background-image: url(../img/futurico-checked.png);
+					    background-position-x: -1px;
+					}
+
+					.iradio_futurico {
+						border-color: #fff;
+					    background-image: url(../img/futurico-radio-checked.png);
+					    background-position-x: -1px;
+					}
     		    }
 
     		    .icheckbox_square-blue {
@@ -516,11 +528,24 @@ h1 {
 		margin-left: -15px;
 		margin-right: -15px;
 	    padding-right: 13px;
+		position: relative;
+
+	    &:after {
+			content: ' ';
+			display: block;
+		    position: absolute;
+		    width: 100%;
+		    height: 35px;
+		    background: #000;
+		    bottom: 0px;
+		    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0.22));
+		}
     }
 
     .scrollable-lists {
 	    height: 250px;
 	    overflow-y: auto;
+	    padding-bottom: 20px;
     }
 
     .check-group {
@@ -537,6 +562,8 @@ h1 {
 	    float: right;
 	    vertical-align: middle;
 	    margin-top: 2px;
+        border: 1px solid #b9c3c8;
+        border-radius: 2px;
     }
 
     .collapse-list {
@@ -544,10 +571,9 @@ h1 {
     }
 
     .open-collapse-list {
-    	border-bottom: 0px;
     	position: relative;
 
-    	&:after {
+    	.border {
 		    content: ' ';
 		    display: block;
 		    position: absolute;
@@ -556,8 +582,18 @@ h1 {
 		    top: 33px;
     	}
 
+    	&:not(.open) {
+    		.border {
+    			display: none;
+    		}
+    	}
+
+    	&.open {
+	    	border-bottom-color: transparent;
+    	}
+
     	&:hover {
-    		&:after {
+    		.border {
     			display: none;
     		}
     	}
@@ -761,12 +797,44 @@ h1 {
     letter-spacing: 0.2px;
     display: block;
 }
-
-.scrollable-table-wrapper {
-	height: 130px;
-    overflow-y: auto;
+.scrollable-table-box {
     position: relative;
 
+	&:after {
+		content: ' ';
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    height: 35px;
+	    background: #000;
+	    bottom: 0px;
+	    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0.22));
+	}
+
+	&.open {
+		&:after {
+			display: none;
+		}
+	}
+    
+	.scrollable-table-wrapper {
+		height: 130px;
+		padding-bottom: 20px;
+	    overflow-y: auto;
+	    position: relative;
+		-webkit-transition: all .5s linear;
+	    -moz-transition: all .5s linear;
+	    -o-transition: all .5s linear;
+	    transition: all .5s linear;
+		
+		&.open {
+			height: fit-content;
+			-webkit-transition: all .5s linear;
+		    -moz-transition: all .5s linear;
+		    -o-transition: all .5s linear;
+		    transition: all .5s linear;
+		}
+	}
 }
 
 .scrollable-table-box {
@@ -798,11 +866,10 @@ h1 {
     width: 190px;
     left: 50%;
     margin-left: -95px;
-    bottom: -30px;
+    bottom: -25px;
 	outline: none;
-
-	bottom: -19px;
     box-shadow: 0px 1px 5px rgba(78, 147, 213, 0.48);
+    z-index: 2;
 
     &:after {
         content: ' ';
@@ -823,6 +890,8 @@ h1 {
 	margin-top: 9px;
 	color: #b9c3c8;
     font-size: 14.22px;
+	position: relative;
+
 
 	.check-group {
 	    margin-bottom: 0px;
@@ -849,6 +918,17 @@ h1 {
 	    padding-bottom: 6px;
 		border-bottom: 1px solid #ebf3f7;
 		padding-top: 6px;
+	}
+
+	tr:hover,
+	tr.checked {
+		td {
+			color: #657d95;
+
+			.check-group span {
+				color: #657d95;				
+			}
+		}
 	}
 
 	td:nth-child(1) {
@@ -992,7 +1072,7 @@ h1 {
 }
 
 .currencies-wrapper {
-    margin-top: 21px;
+    margin-top: 25px;
 
 	.main-label {
 	    margin-right: 8px;
@@ -1198,10 +1278,6 @@ h1 {
     }
 }
 
-.resort-block,
-.hotels-block {
-    height: 360px;
-}
 
 .second-choice-row {
     margin-top: 25px;
@@ -1229,4 +1305,43 @@ h1 {
 .operators-block {
     padding-top: 8px;
     height: 240px;
+}
+
+.check-group {
+	.icheckbox_futurico.checked,
+	.iradio_futurico.checked {
+		background-color: @main-color;
+		border-color: @main-color;
+	}
+	
+	.iradio_futurico.checked {
+        background: url(http://127.0.0.1/edsa-point/img/futurico-radio-checked.png);
+	    background-color: @main-color;
+	    background-position-x: -1px;
+	}
+
+	&.checked {
+		color: @main-color;
+	}
+
+	.iradio_futurico {
+		border: 1px solid #b9c3c8;
+	    border-radius: 1000px;
+	}
+}
+
+
+.collapse-list {
+	display: none;
+}
+
+.search-box-wrapper {
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+.hotels-block {
+	.slider-wrapper {
+		max-width: 125px;
+	}
 }
