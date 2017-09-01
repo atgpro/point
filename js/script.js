@@ -48,7 +48,7 @@ $(function (e) {
 
 	hideSliderActiveLabel($("#classSlider").val(), $("#classSlider").parents('.slider-wrapper').find('.irs').find('.irs-grid-text'));
 
-	$("#adultSlider").ionRangeSlider({
+	$("#adultSlider, #adultShortSlider").ionRangeSlider({
 	    grid: true,
 	    from: 1,
 	    hide_min_max: true,
@@ -65,7 +65,7 @@ $(function (e) {
 
 	hideSliderActiveLabel($("#adultSlider").val(), $("#adultSlider").parents('.slider-wrapper').find('.irs').find('.irs-grid-text'));
 
-	$("#childrenSlider").ionRangeSlider({
+	$("#childrenSlider, #childrenShortSlider").ionRangeSlider({
 	    grid: true,
 	    from: 1,
 	    hide_min_max: true,
@@ -107,6 +107,19 @@ $(function (e) {
 	    }
 	});
 
+	$('#nightsShortSlider').ionRangeSlider({
+	    type: "double",
+	    min: 1,
+	    max: 20,
+	    from: 1,
+	    to: 20,
+	    onChange: function (data, e) {
+	    	console.log($(data.slider).parents('.range-slider-wrapper'));
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span').html(data.to);
+	    }
+	});
+
 	/* Checkboxes and radio btns */
 	$.each($('.icheck-input'), function(i, elem) {
 		if ($(elem).attr('checked')) {
@@ -124,6 +137,17 @@ $(function (e) {
 	    radioClass: 'iradio_futurico'
 	});
 
+	$('.radio-select-wrapper .check-group').on('click', function() {
+		var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
+
+		$.each(radios, function(i, elem) {
+			// $(elem).parents('.check-group').removeClass('checked');
+			if ($(elem).attr('checked')) {
+				$(elem).parents('.check-group').addClass('checked');
+			}
+		});
+	});
+
 	/* Open Tables */
 	$('.button-open-table').on('click', function() {
 		$(this).parents('.scrollable-table-box').toggleClass('open').find('.scrollable-table-wrapper').toggleClass('open');
@@ -134,4 +158,82 @@ $(function (e) {
 		$(this).toggleClass('open');
 	});
 
+	/* Hide/Show Detailed version */
+
+	function switchDetailedState()
+	{
+		$('.hide-detailed-version').addClass('open-btn');
+		$('.first-choise-row').fadeIn();
+		$('.states-panel').fadeIn();
+		$('.hide-detailed-version').html('Свернуть расширенную версию');
+		$('.hide-detailed-version').addClass('open-btn');
+		$('.destination-box').css('background-image', 'url(img/destination-bg.png)');
+		$('.for-short-version').fadeOut();
+		$('.for-detailed-version').fadeIn();
+		$('body').removeClass('short-version');		
+	}
+
+	function switchShortState()
+	{
+		$('.first-choise-row').fadeOut();
+		$('.states-panel').fadeOut();
+		$('.hide-detailed-version').html('Открыть расширенную версию');
+		$('.hide-detailed-version').removeClass('open-btn');
+		$('.destination-box').css('background-image', 'url(img/destination-short-bg.png)');
+		$('.for-short-version').fadeIn();
+		$('.for-detailed-version').fadeOut();
+		$('body').addClass('short-version');		
+	}
+
+	// switchDetailedState();
+	switchShortState();
+
+	$('.hide-detailed-version').on('click', function() {
+		if ($(this).hasClass('open-btn')) {
+			switchShortState();		
+		} else {
+			switchDetailedState();		
+		}
+	});
+
+	/* Calendar */
+	$('.calendar-buttons .buttons').daterangepicker(
+	{
+		"locale": {
+	        "format": "MM/DD/YYYY",
+	        "separator": " - ",
+	        "applyLabel": "Применить",
+	        "cancelLabel": "Отмена",
+	        "fromLabel": "От",
+	        "toLabel": "До",
+	        "customRangeLabel": "",
+	        "daysOfWeek": [
+	            "Пн",
+	            "Вт",
+	            "Ср",
+	            "Чт",
+	            "Пт",
+	            "Сб",
+	            "Вс"
+	        ],
+	        "monthNames": [
+	            "Январь",
+	            "Февраль",
+	            "Март",
+	            "Апрель",
+	            "Май",
+	            "Июнь",
+	            "Июль",
+	            "Август",
+	            "Сентябрь",
+	            "Октябрь",
+	            "Ноябрь",
+	            "Декабрь"
+	        ],
+	        "firstDay": 1
+	    }
+	}, 
+	function(start, end, label) {
+	    alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+	});
 });

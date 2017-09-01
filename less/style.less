@@ -41,6 +41,8 @@
 
 body {
 	background: #e6e8ec;
+	background-image: url(../img/body-main-bg.jpg);
+	background-position-x: center; 
 	font-family: 'RobotoCondensed-Light';
 }
 
@@ -106,6 +108,13 @@ h1 {
         &:hover {
 	    	.select-items-wrapper {
 	    		display: block;
+	    	}
+
+	    	.selected {
+	    		border-bottom-left-radius: 0px;
+			    border-bottom-right-radius: 0px;
+			    border-top-left-radius: 15px;
+			    border-top-right-radius: 15px;
 	    	}
 	    }
     }
@@ -255,6 +264,11 @@ h1 {
     background-repeat: no-repeat;
     padding-top: 70px;
 
+// -webkit-transition: background-image .2s linear;
+//    -moz-transition: background-image .2s linear;
+//    -o-transition: background-image .2s linear;
+//    transition: background-image .2s linear;
+
     .destination-country-header {
 	    font-size: 34.35px;
 	    color: #fff;
@@ -274,6 +288,18 @@ h1 {
 		    &:after {
 	    	    border-bottom: 9px solid #ffffff;
 		    }
+    	}
+
+    	.select-items-wrapper {
+    		border-top-left-radius: 0px;
+		    border-top-right-radius: 0px;
+		    background: #f9fafa;
+		    top: 30px;
+		    width: 212px;
+    	}
+
+    	&:hover {
+
     	}
     }
 
@@ -306,27 +332,56 @@ h1 {
     color: #fff;
     font-family: 'RobotoCondensed-Regular';
     font-size: 16px;
-    margin-top: 48px;
+    margin-top: 28px;
     padding-top: 5px;
     padding-bottom: 6px;
-    margin-bottom: 18px;
     padding-left: 0px;
     padding-right: 9px;
     border-radius: 100000px;
     letter-spacing: 0.2px;
 	position: relative;
 	outline: none;
+	margin-bottom: 0px;
 
-    &:after {
-	    content: ' ';
-	    display: block;
-	    position: absolute;
-	    background: #fff;
-	    width: 12px;
-	    height: 2px;
-	    right: 17px;
-	    top: 15px;
-    }
+	&.open-btn {
+	    margin-bottom: 38px;
+
+	    &:after {
+		    content: ' ';
+		    display: block;
+		    position: absolute;
+		    background: #fff;
+		    width: 12px;
+		    height: 2px;
+		    right: 17px;
+		    top: 15px;
+	    }
+	}
+
+	&:not(.open-btn) {
+		&:after {
+		    content: ' ';
+		    display: block;
+		    position: absolute;
+		    background: #fff;
+		    width: 12px;
+		    height: 2px;
+		    right: 17px;
+		    top: 15px;
+	    }
+
+	    &:before {
+	        content: ' ';
+		    display: block;
+		    position: absolute;
+		    background: #fff;
+		    height: 12px;
+		    width: 2px;
+		    right: 17px;
+		    top: 10px;
+		    right: 22px;
+	    }
+	}
 
     &:hover {
     	background: @main-color;
@@ -433,7 +488,8 @@ h1 {
     font-style: normal;
 }
 
-.choice-block {
+.choice-block,
+.select-items-wrapper {
     background: #fff;
     border-radius: 10px;
     padding: 15px;
@@ -566,6 +622,13 @@ h1 {
         border-radius: 2px;
     }
 
+    .iradio_futurico {
+    	position: relative;
+	    float: right;
+	    vertical-align: middle;
+	    margin-top: 2px;
+    }
+
     .collapse-list {
     	padding-left: 10px;
     }
@@ -623,6 +686,10 @@ h1 {
 			}
 		}
     }
+}
+
+.select-items-wrapper {
+
 }
 
 .scroll1::-webkit-scrollbar {
@@ -1239,6 +1306,11 @@ h1 {
 }
 
 .nights-wrapper {
+	.range-slider-wrapper {
+		text-align: left;
+
+	}
+
 	.top-labels {
 	    height: 0px;
 	    margin-top: 6px;
@@ -1348,5 +1420,89 @@ h1 {
 .hotels-block {
 	.slider-wrapper {
 		max-width: 125px;
+	}
+}
+
+.choice-block.for-short-version {
+    height: 125px;
+}
+
+.pick-up-btn {
+    width: 220px;
+    height: 107px;
+    box-sizing: border-box;
+    border: 0px;
+    background: #000;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 70px;
+    background: lighten(@main-color, 5%);
+    outline: none;
+
+    &:hover {
+		background: lighten(@main-color, 10%);    	
+    }
+
+    &.for-short-version {
+	    height: 125px;
+    }
+}
+
+
+body.short-version {
+	.choice-block {
+		height: 125px;
+	}
+
+	.date-block {
+		.calendar-buttons {
+		    margin-top: 5px;
+		}
+	}
+}
+
+.from-city {
+	.filter-select-wrapper .filter-select:hover .select-items-wrapper {
+	    width: 212px;
+	    margin-top: 3px;
+	    border-top-left-radius: 0px;
+	    border-top-right-radius: 0px;
+	    background: #fff;
+	}
+}
+
+.daterangepicker {
+	th {
+	    font-weight: normal;
+	    font-family: 'RobotoCondensed-Regular';
+	}
+
+	.input-mini.active {
+		border-color: @main-color;
+	}
+
+	.form-control:focus {
+		box-shadow: none !important;
+	}
+
+	td.active,
+	td.active:hover {
+	    background-color: @main-color;
+	}
+
+	td.in-range {
+		background-color: lighten(@main-color, 40%);
+	}
+
+	.btn-success,
+	.btn-success:hover,
+	.btn-success:active,
+	.btn-success:focus {
+		border-color: @main-color;
+		background-color: @main-color;
 	}
 }

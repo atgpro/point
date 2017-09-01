@@ -18,10 +18,31 @@
           <div class="filter-select">
             <div class="selected">Москва</div>
             <div class="select-items-wrapper">
-              <div class="select-items">
+              <!-- <div class="select-items">
                 <div>Челябинск</div>
                 <div>Ульяновск</div>
+              </div> -->
+              <div class="scrollable-lists-wrapper">
+              <div class="scrollable-lists scroll scroll1">
+                <div class="list-header">Популярные направления</div>
+                <ul>
+                  <li><label class="check-group">Россия <input value="Россия" class="icheck-input" checked="" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Тунис <input value="Тунис" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Греция <input value="Греция" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                </ul>
+                <div class="list-header">Все направления</div>
+                <ul>
+                  <li><label class="check-group">Россия <input value="Россия" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Тунис <input value="Тунис" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Греция <input value="Греция" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                </ul>
               </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -42,19 +63,39 @@
     <h2 class="destination-country-header">В какую страну летим?</h2>
     <img src="img/point-b.png" class="point-b" alt="">
 
-    <div class="filter-select-wrapper destination-country-select">
+    <div class="filter-select-wrapper destination-country-select radio-select-wrapper">
       <div class="filter-select">
-        <div class="selected">Москва</div>
+        <div class="selected">Россия</div>
         <div class="select-items-wrapper">
-          <div class="select-items">
+          <!-- <div class="select-items">
             <div>Челябинск</div>
             <div>Ульяновск</div>
+          </div> -->
+          <div class="scrollable-lists-wrapper">
+            <div class="scrollable-lists scroll scroll1">
+              <div class="list-header">Популярные направления</div>
+              <ul>
+                <li><label class="check-group">Россия <input value="Россия" class="icheck-input" checked="" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Тунис <input value="Тунис" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Греция <input value="Греция" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+              </ul>
+              <div class="list-header">Все направления</div>
+              <ul>
+                <li><label class="check-group">Россия <input value="Россия" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Тунис <input value="Тунис" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Греция <input value="Греция" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <button class="hide-detailed-version">Свернуть расширенную версию</button>
+    <button class="hide-detailed-version open-btn">Свернуть расширенную версию</button>
     
     <div class="wrapper">
       <div class="states-panel">
@@ -276,7 +317,7 @@
               </div>
             </div>
           </div>
-          <div class="choice-block nights-block">
+          <div class="choice-block nights-block for-detailed-version">
             <div class="title">
               <img src="img/moon-icon.png" class="title-icon">
               <span>На сколько ночей?</span>
@@ -297,7 +338,27 @@
           </div>
         </div>
         <div class="col-xs-3">
-          <div class="choice-block tourists-block">
+          <div class="choice-block nights-block for-short-version">
+            <div class="title">
+              <img src="img/moon-icon.png" class="title-icon">
+              <span>На сколько ночей?</span>
+            </div>
+            <div class="nights-wrapper">
+              <div class="top-labels">
+                <div class="from"><span>2</span> ночи </div>
+                <div class="to"><span>16</span> ночей</div>
+              </div>
+              <div class="range-slider-wrapper">
+                <input type="text" id="nightsShortSlider">
+              </div>
+              <div class="bottom-labels">
+                <div class="min-label">3 дня</div>
+                <div class="max-label">17 дней</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="choice-block tourists-block for-detailed-version">
             <div class="title">
               <img src="img/fly-icon.png" class="title-icon">
               <span>Туристы</span>
@@ -349,9 +410,47 @@
             </div>
 
           </div>
+
         </div>
         <div class="col-xs-3">
-          <div class="choice-block cost-block">
+          <div class="choice-block tourists-block for-short-version">
+            <div class="title">
+              <img src="img/fly-icon.png" class="title-icon">
+              <span>Туристы</span>
+            </div>
+
+            <div class="adult-childrens-sliders-wrapper">
+              <div class="adult-slider-wrapper">
+                <div class="icon-wrapper">
+                  <img src="img/adult-icon.png" class="icon" alt="">
+                  <div>
+                    <label for="">Взрослые</label>
+                    (от 12 лет)
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="text" id="adultShortSlider">
+                </div>
+              </div>
+
+              <div class="children-slider-wrapper">
+                <div class="icon-wrapper">
+                  <img src="img/chlidren-icon.png" class="icon" alt="">
+                  <div>
+                    <label for="">Дети</label>
+                    (0 - 11 лет)
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <input type="text" id="childrenShortSlider">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="choice-block cost-block for-detailed-version">
             <div class="title">
               <img src="img/money-icon.png" class="title-icon">
               <span>Стоимость тура</span>
@@ -390,7 +489,10 @@
           </div>
         </div>
         <div class="col-xs-3">
-          <div class="choice-block operators-block">
+          <button class="pick-up-btn for-short-version">
+            Подобрать
+          </button>
+          <div class="choice-block operators-block for-detailed-version">
             <div class="title">
               <img src="img/ship-icon.png" class="title-icon">
               <span>Туроператоры</span>
@@ -411,6 +513,10 @@
           </div>
         </div>
       </div>
+
+      <button class="pick-up-btn for-detailed-version">
+        Подобрать
+      </button>
     
   </div>
 </div>
