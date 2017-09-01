@@ -88,15 +88,23 @@ $(function (e) {
 	    max: 500000,
 	    from: 30000,
 	    to: 400000,
+	    onChange: function (data, e) {
+	        $(data.slider).parents('.range-slider-wrapper').find('.left-label').html(data.from);
+	        $(data.slider).parents('.range-slider-wrapper').find('.right-label').html(data.to);
+	    }
 	});
 
 	$('#nightsSlider').ionRangeSlider({
 	    type: "double",
 	    min: 1,
-	    max: 20
-	    ,
-	    from: 2,
-	    to: 16,
+	    max: 20,
+	    from: 1,
+	    to: 20,
+	    onChange: function (data, e) {
+	    	console.log($(data.slider).parents('.range-slider-wrapper'));
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span').html(data.to);
+	    }
 	});
 
 	/* Checkboxes and radio btns */

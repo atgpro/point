@@ -283,8 +283,8 @@
             </div>
             <div class="nights-wrapper">
               <div class="top-labels">
-                <div class="from">2 ночи </div>
-                <div class="to">16 ночей</div>
+                <div class="from"><span>2</span> ночи </div>
+                <div class="to"><span>16</span> ночей</div>
               </div>
               <div class="range-slider-wrapper">
                 <input type="text" id="nightsSlider">
