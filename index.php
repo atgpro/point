@@ -2,13 +2,13 @@
 <div class="container">
   <div class="header-bar"></div>
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-md-6">
       <h1>
         <span class="bold">Подберите тур</span>
         <span class="thin">по своим желаниям</span>
       </h1>
     </div>
-    <div class="col-xs-6">
+    <div class="col-md-6">
       <div class="from-city">
         <img src="img/point-a.png" class="point-a" alt="">
         <label class="filter-label">
@@ -100,7 +100,7 @@
     <div class="wrapper">
       <div class="states-panel">
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-md-6">
             <div class="weather">
               <span class="title">Погода:</span>
               <span class="day">сегодня</span>
@@ -109,7 +109,7 @@
               <span class="mounth-temp">+15...+20 С</span>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-md-6">
             <div class="chars">
               <span class="map-markers"><img src="img/markers-icon.png" alt="">1332 км</span>
               <span class="fly-time"><img src="img/fly-time.png" alt="">1 ч. 40 мин</span>
@@ -120,7 +120,7 @@
       </div>
 
       <div class="row first-choise-row">
-        <div class="col-xs-4">
+        <div class="col-md-4">
           <div class="choice-block resort-block">
             <div class="title">
               Курорты (регионы)
@@ -162,14 +162,14 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-8">
+        <div class="col-md-8">
           
           <div class="choice-block hotels-block">
             <div class="title">
               Отели (3322)
             </div>
             <div class="row">
-              <div class="col-xs-4">
+              <div class="col-sm-4">
                 <div class="slider-header">
                   <span>Рейтинг отеля, от</span>
                   <i class="indicator">?</i>
@@ -178,7 +178,7 @@
                   <input type="text" id="raitingSlider">
                 </div>
               </div>
-              <div class="col-xs-3 class-slider-wrapper">
+              <div class="col-sm-3 class-slider-wrapper">
                 <div class="slider-header">
                   <span>Класс отеля, от</span>
                   <i class="indicator">?</i>
@@ -187,12 +187,12 @@
                   <input type="text" id="classSlider">
                 </div>
               </div>  
-              <div class="col-xs-5">
+              <div class="col-sm-5">
                 <div class="slider-header">
                   <span>Тип отеля</span>
                   <i class="indicator">?</i>
                 </div>
-                <div class="filter-select-wrapper">
+                <div class="filter-select-wrapper hotel-type-wrapper">
                   <div class="filter-select">
                     <div class="selected">Выбрано 2 варианта</div>
                     <div class="select-items-wrapper">
@@ -206,6 +206,10 @@
               </div>
             </div>
             
+            <div class="hotel-horisontal-table">
+
+            <div class="hotel-horisontal-table-content">
+
             <table class="table-header">
               <tr>
                 <th>Название отеля</th>
@@ -216,7 +220,7 @@
             </table>
             
             <div class="row search-box-wrapper">
-              <div class="col-xs-7">
+              <div class="col-md-7">
                 <div class="table-wrapper">
                   <div class="search-box">
                     <input type="text" placeholder="Быстрый поиск по отелям">
@@ -224,7 +228,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xs-5">
+              <div class="col-md-5">
                <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">7</span></a>
               </div>
             </div>
@@ -291,6 +295,9 @@
               </div>
               <button class="button-open-table">Развернуть таблицу</button>
             </div>
+            
+            </div>
+            </div>
 
 
           </div>
@@ -299,7 +306,7 @@
     </div>
 
       <div class="row second-choice-row">
-        <div class="col-xs-3">
+        <div class="col-sm-4 col-md-3">
           <div class="choice-block date-block">
             <div class="title">
               <img src="img/calendar-icon.png" class="title-icon">
@@ -337,7 +344,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-sm-4 col-md-3">
           <div class="choice-block nights-block for-short-version">
             <div class="title">
               <img src="img/moon-icon.png" class="title-icon">
@@ -412,7 +419,7 @@
           </div>
 
         </div>
-        <div class="col-xs-3">
+        <div class="col-sm-4 col-md-3">
           <div class="choice-block tourists-block for-short-version">
             <div class="title">
               <img src="img/fly-icon.png" class="title-icon">
@@ -488,7 +495,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-sm-12 col-md-3">
           <button class="pick-up-btn for-short-version">
             Подобрать
           </button>

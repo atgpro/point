@@ -50,6 +50,16 @@ body {
 	width: 1000px;
 }
 
+@media screen and (max-width: 1000px) {
+	.container {
+		width: 100%;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+}
+
 .header-bar {
 	height: 18px;
 	background: #3283d3;
@@ -1504,5 +1514,186 @@ body.short-version {
 	.btn-success:focus {
 		border-color: @main-color;
 		background-color: @main-color;
+	}
+}
+
+.second-choice-row {
+	.choice-block {
+		width: 212px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.hotels-block {
+	max-width: 590px;
+}
+
+.resort-block {
+	max-width: 280px;
+}
+
+@media screen and (max-width: 998px) {
+	.from-city {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.states-panel .chars {
+	    margin-top: 15px;
+	}
+
+	.destination-box .destination-country-header {
+	    margin-left: auto;
+	    margin-right: auto;
+	    text-align: center;
+	}
+
+	.destination-box .filter-select-wrapper {
+	    position: relative;
+	    left: 0px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    right: auto;
+	    top: auto;
+	    margin-top: 20px;
+	    display: block;
+	    margin-left: -40px;
+	}
+
+	.filter-select-wrapper .filter-select {
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.destination-box {
+	    padding-top: 40px;
+	}
+
+	.hotels-block,
+	.resort-block {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.choice-block .filter-select-wrapper .selected {
+		width: 100%;
+	}
+
+	.choice-block .hotel-type-wrapper {
+	    margin-left: 0px;
+	    margin-bottom: 20px;
+	}
+
+	.destination-box .filter-select-wrapper {
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.choice-block .class-slider-wrapper{
+	    padding-left: 15px;
+	}
+
+	.destination-box .wrapper {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.hide-detailed-version {
+		max-width: 100%;
+	}
+	
+	.table-wrapper .search-box {
+	    margin-bottom: 15px;
+	}
+
+	.hotel-horisontal-table {
+		overflow-x: auto;
+	    overflow-y: hidden;
+		width: 100%;
+
+		.hotel-horisontal-table-content {
+			min-width: 560px;
+		}
+	}
+
+	h1 {
+	    margin-left: 0px;
+	    margin-top: 30px;
+	    font-size: 30px;
+	}
+
+	h1 .bold {
+		font-size: 40px;
+	}
+
+	h1 .thin {
+	    margin-left: 0px;
+	}
+
+	.states-panel .weather .title {
+	    display: block;
+	    margin-bottom: 5px;
+	}
+
+	.states-panel .weather .day {
+	    margin-left: 0px;
+	    display: block;
+	}
+
+	.states-panel .weather .temp {
+	    margin-left: 0px;
+	    /* margin-left: 0px; */
+	    display: block;
+	    margin-bottom: 10px;
+	}
+
+	.states-panel .weather .mounth {
+	    margin-left: 0px;
+	    /* display: block; */
+	    display: block;
+	}
+
+	.states-panel .weather .mounth-temp {
+	    display: block;
+	    margin-left: 0px;
+	}
+
+	.states-panel .chars {
+	    text-align: left;
+	}
+
+	.states-panel .map-markers {
+	    display: block;
+	    margin-left: 0px;
+	    margin-right: auto;
+	    margin-bottom: 10px;
+	}
+
+	.states-panel .fly-time {
+	    display: block;
+	    margin-left: 0px;
+	    margin-right: auto;
+	    margin-bottom: 10px;
+	}
+
+	.states-panel .clocks {
+	    display: block;
+	    margin-left: 0px;
+	    margin-right: auto;
+	}
+
+	.from-city {
+		.filter-select {
+		    margin-left: 0px;
+		}
+
+		.filter-select-wrapper {
+		    display: block;
+		    margin-left: 0px;
+		    margin-top: 0px;
+		    margin-bottom: 10px;
+		}
 	}
 }
