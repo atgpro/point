@@ -21,6 +21,7 @@
      <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
      <link rel="stylesheet" href="css/daterangepicker.css">
      <link rel="stylesheet" href="css/slick.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
   
      <!-- LESS -->
      <link rel="stylesheet/less" type="text/css" href="less/style.less" /> 

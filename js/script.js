@@ -185,8 +185,8 @@ $(function (e) {
 		$('body').addClass('short-version');		
 	}
 
-	// switchDetailedState();
-	switchShortState();
+	switchDetailedState();
+	// switchShortState();
 
 	$('.hide-detailed-version').on('click', function() {
 		if ($(this).hasClass('open-btn')) {
@@ -247,5 +247,12 @@ $(function (e) {
 	$('.result-item .toggle-hidden-menu').on('click', function() {
 		$(this).parents('.result-item').find('.hidden-menu').fadeToggle();
 		$(this).toggleClass('menu-open');
+	});
+
+	$('.result-item .slider a').magnificPopup({
+	 	type:'image',
+	 	gallery:{
+			enabled:true
+		}
 	});
 });
