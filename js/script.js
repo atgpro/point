@@ -243,4 +243,9 @@ $(function (e) {
 	  speed: 300,
 	  slidesToShow: 1,
 	});
+
+	$('.result-item .toggle-hidden-menu').on('click', function() {
+		$(this).parents('.result-item').find('.hidden-menu').fadeToggle();
+		$(this).toggleClass('menu-open');
+	});
 });
