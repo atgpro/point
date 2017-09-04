@@ -236,4 +236,11 @@ $(function (e) {
 	function(start, end, label) {
 	    alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 	});
+
+	$('.result-type-card .slider').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	});
 });

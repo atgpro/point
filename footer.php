@@ -6,7 +6,7 @@
 	<script src="js/moment.min.js"></script>
 	<script src="js/daterangepicker.js"></script>
     
-    
+    <script src="js/slick.min.js"></script>
     <!-- JS-->
     <script src="js/script.js"></script>  
   </body>
