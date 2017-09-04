@@ -1846,6 +1846,7 @@ body.short-version {
 
     .results-content {
 	    position: relative;
+	    margin-bottom: 20px;
     }
 
     .progress-wrapper {
@@ -1941,6 +1942,112 @@ body.short-version {
 	}
 }
 
+.results-banners {
+    padding-left: 15px;
+    padding-right: 15px;
+
+	.found-amount {
+		width: 225px;
+		color: #fff;
+		text-align: center;
+		background-color: @dark-main-color;
+        display: inline-block;
+	    padding-top: 15px;
+	    font-size: 16px;
+	    border-radius: 10px;
+	    line-height: 21px;
+	    padding-bottom: 17px;
+        vertical-align: top;
+
+		b {
+			color: @main-color;
+		    font-family: 'RobotoCondensed-Bold';
+		}
+	}
+
+	.chocolate {
+		background: @pink-color;
+		color: #fff;
+		border-radius: 10px;
+	    display: inline-block;
+	    width: 690px;
+	    vertical-align: middle;
+	    margin-left: 20px;
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	    padding-left: 50px;
+	    padding-right: 50px;
+        vertical-align: top;
+	    padding-top: 16px;
+	    padding-bottom: 16px;
+
+	    .icon {
+	    	display: inline-block;
+		    vertical-align: middle;
+		    margin-right: 14px;
+	    }
+
+	    .text {
+    	    display: inline-block;
+		    vertical-align: middle;
+		    line-height: 21px;
+		    font-size: 16px;
+
+		    b {
+	    	    color: @dark-main-color;
+			    font-family: 'RobotoCondensed-Bold';
+		    }
+	    }
+
+	    .show-btn {
+    	    display: inline-block;
+		    vertical-align: middle;
+		    background: @dark-main-color;
+		    color: #ffffff;
+	        border: 0px;
+		    margin-left: 47px;
+		    padding-left: 40px;
+		    font-size: 16px;
+		    padding-right: 36px;
+		    padding-top: 9px;
+		    padding-bottom: 9px;
+		    border-radius: 10000px;
+	        box-shadow: 1px 3px 10px @dark-main-color;
+			
+			&:hover {
+				opacity: .9;
+		    }
+	    }
+
+	    .dismiss-btn {
+	    	display: inline-block;
+		    vertical-align: middle;
+		    background: #ffffff;
+		    color: #657d95;
+	        border: 2px solid #ced9e0;
+		    margin-left: 47px;
+		    padding-left: 40px;
+		    font-size: 16px;
+		    padding-right: 36px;
+		    padding-top: 9px;
+		    padding-bottom: 9px;
+		    border-radius: 10000px;
+	        box-shadow: 1px 3px 10px @dark-main-color;
+            box-sizing: border-box;
+	        padding-left: 16px;
+		    padding-right: 16px;
+		    margin-left: 15px;
+		    font-size: 14px;
+		    padding-top: 7px;
+		    padding-bottom: 7px;
+
+		    &:hover {
+				opacity: .9;
+		    }
+	    }
+	}
+}
+
 /* Map markers */
 .pin {
   width: 25px;
@@ -2021,3 +2128,35 @@ body.short-version {
     transform: translateY(0) rotate(-45deg);
   }
 }
+
+.results-filters-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .results-filters {
+	    background: #fff;
+	    padding-left: 50px;
+	    padding-right: 50px;
+	    font-size: 16px;
+	    padding-top: 19px;
+	    padding-bottom: 18px;
+	    border-radius: 10px;
+    }
+
+    .filter-select-wrapper {
+    	margin-top: 0px;
+    }
+
+    .result-views {
+	    margin-top: 2px;
+	    display: flex;
+	    justify-content: space-between;
+
+	    a {
+	    	display: block;
+	    }
+    }
+}
+

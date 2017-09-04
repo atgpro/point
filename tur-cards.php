@@ -38,61 +38,108 @@
   </div>
 </div>
 
-    <div class="results-block">
-      <div class="container">
-        <h2 class="results-title">Результаты подбора:</h2>
-        <div class="results-content">
-            <div class="white-info">
-              <div class="points">
-                  
-                <div class="marker-point point-a">
-                  <div class='pin'><span>A</span></div> <span class="country">Москва</span>
-                </div>
-                <div class="marker-point">
-                  <div class='pin'><span>B</span></div> <span class="country">Греция</span>
-                </div>
+<div class="results-block">
+  <div class="container">
+    <h2 class="results-title">Результаты подбора:</h2>
+    <div class="results-content">
+        <div class="white-info">
+          <div class="points">
+              
+            <div class="marker-point point-a">
+              <div class='pin'><span>A</span></div> <span class="country">Москва</span>
+            </div>
+            <div class="marker-point">
+              <div class='pin'><span>B</span></div> <span class="country">Греция</span>
+            </div>
+          </div>
+          <div class="weather">
+            <span class="title">Погода:</span>
+            <span class="values">
+              <span class="period">сегодня</span> +18...+25 С 
+              <span class="second-value">
+                <span class="period">сентябрь</span> +15...+20 С
+              </span>
+            </span>
+          </div>
+          <div class="chars">
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="img/markers-colored-icon.png" alt="">
               </div>
-              <div class="weather">
-                <span class="title">Погода:</span>
-                <span class="values">
-                  <span class="period">сегодня</span> +18...+25 С 
-                  <span class="second-value">
-                    <span class="period">сентябрь</span> +15...+20 С
-                  </span>
-                </span>
+              <span>1332 км</span>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="img/fly-time-colored-icon.png" alt="">
               </div>
-              <div class="chars">
-                <div class="item">
-                  <div class="img-wrapper">
-                    <img src="img/markers-colored-icon.png" alt="">
+              <span>1 ч. 40 мин</span>
+            </div>
+            <div class="item">
+              <div class="img-wrapper">
+                <img src="img/clocks-colored-icon.png" alt="">
+              </div>
+              <span>0 ч. 0 мин</span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-wrapper">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+              100% Выполнено
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="results-banners">
+      <div class="found-amount">
+        Найдено <b>60</b> туров <br>
+        Цена от <b>27 311 Р</b>  
+      </div>
+      <div class="chocolate">
+        <div class="icon">
+          <img src="img/search-icon-white.png" alt="" class="seatch-icon">
+        </div>
+        <div class="text">
+          Система поиска туров "Шоколад"<br>
+          нашла еще <b>893</b> тура для <b>51</b> отеля
+        </div>
+        <button class="show-btn">Показать</button>
+        <button class="dismiss-btn">Спасибо, не надо</button>
+      </div>
+    </div>
+
+    <div class="results-filters-wrapper">
+
+      <div class="results-filters">
+        <div class="row">
+          <div class="col-md-9">
+            Сортировать:
+            <div class="filter-select-wrapper">
+              <div class="filter-select">
+                <div class="selected">От дешевых к дорогим</div>
+                <div class="select-items-wrapper">
+                  <div class="select-items">
+                    <div>Челябинск</div>
+                    <div>Ульяновск</div>
                   </div>
-                  <span>1332 км</span>
-                </div>
-                <div class="item">
-                  <div class="img-wrapper">
-                    <img src="img/fly-time-colored-icon.png" alt="">
-                  </div>
-                  <span>1 ч. 40 мин</span>
-                </div>
-                <div class="item">
-                  <div class="img-wrapper">
-                    <img src="img/clocks-colored-icon.png" alt="">
-                  </div>
-                  <span>0 ч. 0 мин</span>
                 </div>
               </div>
             </div>
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped active" role="progressbar"
-                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                  100% Выполнено
-                </div>
-              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="result-views">
+              <a href="#" class=""><img src="img/res-view-1.png" alt=""></a>
+              <a href="#" class=""><img src="img/res-view-2.png" alt=""></a>
+              <a href="#" class=""><img src="img/res-view-3.png" alt=""></a>
             </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 
 
