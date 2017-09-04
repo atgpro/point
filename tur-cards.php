@@ -678,6 +678,10 @@
           </div>
         </div>
       </div>
+
+      <a href="#" class="show-more-results">
+        Показать еще
+      </a>
     </div>
 
   </div>
