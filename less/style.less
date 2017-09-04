@@ -2012,7 +2012,7 @@ body.short-version {
 		    padding-top: 9px;
 		    padding-bottom: 9px;
 		    border-radius: 10000px;
-	        box-shadow: 1px 3px 10px @dark-main-color;
+	        box-shadow: 1px 3px 10px fade(@dark-main-color, 50%);
 			
 			&:hover {
 				opacity: .9;
@@ -2032,7 +2032,7 @@ body.short-version {
 		    padding-top: 9px;
 		    padding-bottom: 9px;
 		    border-radius: 10000px;
-	        box-shadow: 1px 3px 10px @dark-main-color;
+	        box-shadow: 1px 3px 10px fade(@dark-main-color, 50%);
             box-sizing: border-box;
 	        padding-left: 16px;
 		    padding-right: 16px;
@@ -2160,3 +2160,115 @@ body.short-version {
     }
 }
 
+.results-grid-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.result-item {
+    background: #fcfdfd;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 90px;
+
+    .raiting {
+    	background: linear-gradient(to bottom, @dark-main-color, lighten(@dark-main-color, 10%));
+	    color: #fff;
+	    font-size: 16px;
+	    text-align: center;
+	    width: 82px;
+	    height: 54px;
+	    border-bottom-left-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	    position: absolute;
+	    top: 0px;
+	    left: 25px;
+	    line-height: 20px;
+	    padding-top: 7px;
+        box-shadow: 0px 6px 15px rgba(179, 174, 174, 0.36);
+    }
+
+	.stars {
+		padding-left: 0px;
+		padding-right: 0px;
+		list-style: none;
+	    left: 130px;
+	    top: 16px;
+	    position: absolute;
+
+		li {
+		    margin-right: 1px;
+			background: #cfd7db;
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			margin-right: 5px;
+			-webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+			clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+			
+			&.active {
+				background: @main-color;
+			}
+		}
+	}
+
+	.toggle-hidden-menu {
+		background: url(../img/bars-icon.png);
+	    position: absolute;
+	    border: 0px;
+	    background-color: @main-color;
+	    width: 34px;
+	    height: 34px;
+	    cursor: pointer;
+	    border-radius: 10000px;
+	    border: 5px solid lighten(@main-color, 30%);
+	    top: 14px;
+	    right: 10px;
+	    background-repeat: no-repeat;
+	    background-position-y: center;
+	    background-position-x: center;
+	    box-shadow: 1px 5px 20px fade(@main-color, 40%);
+	    background-position-y: 7px;
+	    outline: none;
+
+	    &:hover {
+	    	background-color: lighten(@main-color, 10%);
+	    }
+	}
+
+	.title {
+	    font-size: 20px;
+	    color: #2e3039;
+	    position: absolute;
+	    top: 31px;
+	    left: 130px;
+	    max-width: 105px;
+
+	}
+
+	.params {
+		padding-left: 25px;
+	    padding-right: 25px;
+	    height: 35px;
+
+	    .left {
+    	    float: left;
+
+    	    span {
+    	    	margin-left: 7px;
+			    font-size: 16px;
+			    color: @main-color;
+    	    }
+	    }
+
+	    .right {
+	    	float: right;
+
+	    	span {
+    		    margin-left: 7px;
+			    font-size: 16px;
+			    color: @main-color;
+	    	}
+	    }
+	}
+}

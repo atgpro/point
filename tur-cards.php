@@ -138,6 +138,56 @@
         </div>
       </div>
     </div>
+
+
+    <div class="results-grid-wrapper">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="result-item result-type-card">
+            <div class="header">
+              <div class="raiting">
+                Рейтинг<br>2,8
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="slider">
+                <img src="img/result-item-1.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="result-card">
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="result-card">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
