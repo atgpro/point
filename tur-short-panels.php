@@ -292,6 +292,45 @@
                       <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
                     </div>
                   </div>
+                  
+                  <div class="table-content">
+                    <div class="tr">
+                      <div class="td"><span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a></div>
+                      <div class="td"><span class="important">DBL-standart</span></div>
+                      <div class="td"><span class="important">BB (Завтрак)</span></div>
+                      <div class="td"><div class="icon" style="background-image:url(img/check-icon.png)" alt=""></div><a href="#">Подробнее</a></div>
+                      <div class="td"><span class="important">17 872 Р</span> <span class="muted">
+                      Цена без<br>доплат</span></div>
+                      <div class="td"><span class="important">9 439Р</span><a href="#">Документы</a><span class="muted">до 22.07.2017</span></div>
+                      <div class="td"><span class="important"><b>27 311</b> Р</span><span class="muted">В кредит:</span><a href="#">от 4 786 Р/мес</a></div>
+                      <div class="td last-column"><span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span></div>
+                      <a href="#" class="add-to-basket"></a>
+                    </div>
+                    <div class="tr">
+                      <div class="td"><span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a></div>
+                      <div class="td"><span class="important">DBL-standart</span></div>
+                      <div class="td"><span class="important">BB (Завтрак)</span></div>
+                      <div class="td"><div class="icon" style="background-image:url(img/check-icon.png)" alt=""></div><a href="#">Подробнее</a></div>
+                      <div class="td"><span class="important">17 872 Р</span> <span class="muted">
+                      Цена без<br>доплат</span></div>
+                      <div class="td"><span class="important">9 439Р</span><a href="#">Документы</a><span class="muted">до 22.07.2017</span></div>
+                      <div class="td"><span class="important"><b>27 311</b> Р</span><span class="muted">В кредит:</span><a href="#">от 4 786 Р/мес</a></div>
+                      <div class="td last-column"><span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span></div>
+                      <a href="#" class="add-to-basket"></a>
+                    </div>
+                    <div class="tr">
+                      <div class="td"><span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a></div>
+                      <div class="td"><span class="important">DBL-standart</span></div>
+                      <div class="td"><span class="important">BB (Завтрак)</span></div>
+                      <div class="td"><div class="icon" style="background-image:url(img/check-icon.png)" alt=""></div><a href="#">Подробнее</a></div>
+                      <div class="td"><span class="important">17 872 Р</span> <span class="muted">
+                      Цена без<br>доплат</span></div>
+                      <div class="td"><span class="important">9 439Р</span><a href="#">Документы</a><span class="muted">до 22.07.2017</span></div>
+                      <div class="td"><span class="important"><b>27 311</b> Р</span><span class="muted">В кредит:</span><a href="#">от 4 786 Р/мес</a></div>
+                      <div class="td last-column"><span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span></div>
+                      <a href="#" class="add-to-basket"></a>
+                    </div>
+                  </div>
                 </div>
             </div>
           </div>
