@@ -130,9 +130,9 @@
           </div>
           <div class="col-md-3">
             <div class="result-views">
-              <a href="#" class=""><img src="img/res-view-1.png" alt=""></a>
-              <a href="#" class=""><img src="img/res-view-2.png" alt=""></a>
-              <a href="#" class=""><img src="img/res-view-3.png" alt=""></a>
+              <a href="tur-panels.php"><img src="img/res-view-1.png" alt=""></a>
+              <a href="tur-cards.php" class="active"><img src="img/res-view-2.png" alt=""></a>
+              <a href="tur-short-panels.php"><img src="img/res-view-3.png" alt=""></a>
             </div>
           </div>
         </div>

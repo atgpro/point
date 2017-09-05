@@ -2156,6 +2156,17 @@ body.short-version {
 
 	    a {
 	    	display: block;
+
+	    	img {
+	    		background-color: #657d95; 
+	    	}
+
+	    	&:hover,
+	    	&.active {
+	    		img {
+		    		background-color: @main-color; 
+	    		}
+	    	} 
 	    }
     }
 }
@@ -2576,6 +2587,7 @@ body.short-version {
 .result-type-panel {
     padding-top: 71px;
     padding-bottom: 7px;
+    margin-bottom: 20px;
 
 	.raiting {
 	    left: 50px;
@@ -2756,6 +2768,25 @@ body.short-version {
 	.footer .price-description .param-1,
 	.footer .price-description .param-2 {
 		color: @main-color;
+	}
+
+	&.short-panel {
+		.content {
+			display: none;
+		}
+
+		.footer .socials {
+			display: none;
+		}
+
+		.footer .price strong {
+			font-family: inherit;
+		}
+
+		.footer .price-description .param-1,
+		.footer .price-description .param-2 {
+			color: inherit;
+		}
 	}
 }
 
