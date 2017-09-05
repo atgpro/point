@@ -278,5 +278,6 @@ $(function (e) {
 
 	$('.hide-last-column').on('click', function() {
 		$(this).parents('.tours-table').find('.last-column').fadeOut();
+		$(this).parents('.tours-table').addClass('no-last-column')
 	});
 });

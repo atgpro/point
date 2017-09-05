@@ -285,7 +285,7 @@
                     <div class="filter">
                       <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
                     </div>
-                    <div class="filter">
+                    <div class="filter last-column">
                       <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
                     </div>
                   </div>
