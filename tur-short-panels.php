@@ -304,7 +304,7 @@
                       <div class="td"><span class="important">9 439Р</span><a href="#">Документы</a><span class="muted">до 22.07.2017</span></div>
                       <div class="td"><span class="important"><b>27 311</b> Р</span><span class="muted">В кредит:</span><a href="#">от 4 786 Р/мес</a></div>
                       <div class="td last-column"><span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span></div>
-                      <a href="#" class="add-to-basket"></a>
+                      <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                     </div>
                     <div class="tr">
                       <div class="td"><span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a></div>
@@ -316,7 +316,7 @@
                       <div class="td"><span class="important">9 439Р</span><a href="#">Документы</a><span class="muted">до 22.07.2017</span></div>
                       <div class="td"><span class="important"><b>27 311</b> Р</span><span class="muted">В кредит:</span><a href="#">от 4 786 Р/мес</a></div>
                       <div class="td last-column"><span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span></div>
-                      <a href="#" class="add-to-basket"></a>
+                      <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                     </div>
                     <div class="tr">
                       <div class="td"><span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a></div>
@@ -328,7 +328,7 @@
                       <div class="td"><span class="important">9 439Р</span><a href="#">Документы</a><span class="muted">до 22.07.2017</span></div>
                       <div class="td"><span class="important"><b>27 311</b> Р</span><span class="muted">В кредит:</span><a href="#">от 4 786 Р/мес</a></div>
                       <div class="td last-column"><span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span></div>
-                      <a href="#" class="add-to-basket"></a>
+                      <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                     </div>
                   </div>
                 </div>

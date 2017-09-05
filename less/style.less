@@ -3228,6 +3228,50 @@ body.short-version {
 	}
 
 	.table-content {
+
+		.tr {
+			position: relative;
+
+			.add-to-basket {
+				position: absolute;
+			    background: @main-color;
+			    color: #fff;
+			    text-decoration: none !important;
+			    right: -32px;
+			    width: 46px;
+			    height: 79px;
+			    top: 0px;
+			    border-radius: 10px;
+			    box-shadow: 0px 0px 10px lighten(@main-color, 10%);
+		        padding-left: 10px;
+			    padding-right: 10px;
+
+			    span {
+			    	display: none;
+			    	vertical-align: middle;
+				    position: absolute;
+				    top: 27px;
+			    }
+
+			    img {
+		    	    display: inline-block;
+		    	    vertical-align: middle;
+	    	        display: block;
+				    position: absolute;
+				    top: 25px;
+				    right: 10px;
+			    }
+
+			    &:hover {
+		    	    width: 132px;
+
+			    	span {
+			    		display: inline-block;
+			    	}
+			    }
+			}
+		}
+
 		.tr:nth-child(even) {
 			.td {
 				background: #c4dffc; 
