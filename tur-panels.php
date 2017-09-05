@@ -331,6 +331,7 @@
                 </div>
             </div>
           </div>
+          </div>
         </div>
         <div class="col-sm-12">
           <div class="result-item result-type-panel">
