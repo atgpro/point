@@ -226,8 +226,13 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="group-by">
-                      Без группировки
-                      Группировка по ТО
+                      <div class="no-group-by">
+                        Без группировки
+                      </div>
+                      <button class="control"></button>
+                      <div class="group-by-type">
+                        Группировка по ТО
+                      </div>
                     </div>
                   </div>
                 </div>

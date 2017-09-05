@@ -255,4 +255,8 @@ $(function (e) {
 			enabled:true
 		}
 	});
+
+	$('.group-by .control').on('click', function() {
+		$(this).toggleClass('active');
+	});
 });
