@@ -262,7 +262,21 @@ $(function (e) {
 
 	$('.btn-show-tours').on('click', function() {
 		$($(this).data('t-box')).fadeToggle();
+		
+		if ($($(this).data('t-box')).hasClass('for-cards-view')) {
+			$('.tours-table-overlay').fadeToggle();
+		}
 
-		$(this).toggleClass('open')
+		$(this).toggleClass('open');
+	});
+
+	$('.tours-table-overlay').on('click', function() {
+		$('.tours-box').fadeToggle();
+		$('.tours-table-overlay').fadeToggle();
+		$('.btn-show-tours').removeClass('open');
+	});
+
+	$('.hide-last-column').on('click', function() {
+		$(this).parents('.tours-table').find('.last-column').fadeOut();
 	});
 });
