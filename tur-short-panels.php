@@ -265,6 +265,33 @@
                       <button class="hide-last-column">Свернуть</button>
                     </div>
                   </div>
+
+                  <div class="tr">
+                    <div class="filter">
+                      <a href="#"><span>По алфавиту</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По алфавиту</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По алфавиту</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По алфавиту</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                    <div class="filter">
+                      <a href="#"><span>По порядку</span><div class="bars"><i></i><i></i><i></i></div></a>
+                    </div>
+                  </div>
                 </div>
             </div>
           </div>

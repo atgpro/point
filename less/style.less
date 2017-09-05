@@ -3042,15 +3042,105 @@ body.short-version {
 
 	}
 
+	.filter {
+		display: table-cell;
+	    width: 105px;
+	    text-align: center;
+	    padding-top: 8px;
+	    padding-bottom: 15px;
+
+		a {
+			font-size: 10px;
+			display: inline-block;
+
+			span {
+				border-bottom: 1px dotted #b9c3c8;
+				color: #b9c3c8;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			&:hover,
+			&.active {
+				span {
+					color: @main-color;
+					border-bottom-color: @main-color;
+				}
+
+				.bars { 
+					i:nth-child(1),
+					i:nth-child(2),
+					i:nth-child(3) {
+						background: @main-color;
+					}
+				}
+			}
+
+			.bars {
+				display: inline;
+				vertical-align: middle;
+				position: relative;
+				width: 12px;
+				height: 13px;
+				display: inline-block;
+			    vertical-align: middle;
+		        margin-top: 3px;
+			    margin-left: 8px;
+
+				i:nth-child(1) {
+					background: #798da2;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 8px;
+					height: 2px;
+				}
+
+				i:nth-child(2) {
+					background: #798da2;
+					position: absolute;
+					top: 3px;
+					left: 0px;
+					width: 10px;
+					height: 2px;
+				}
+
+				i:nth-child(3) {
+					background: #798da2;
+					position: absolute;
+					top: 6px;
+					left: 0px;
+					width: 12px;
+					height: 2px;
+				}
+			}
+		}
+	}
+
 	.th {
 		display: table-cell;
 		background: @main-color;
 		color: #fff;
 	    width: 105px;
 	    text-align: center;
-	    vertical-align: middle;
+	    display: table-cell;
         padding-top: 5px;
 	    padding-bottom: 5px;
+        vertical-align: middle;
+        position: relative;
+
+        &:not(.last-column) {
+			&:after {
+				content: ' ';
+				display: block;
+				position: absolute;
+	        	background: #286bad;
+        	    height: 62px;
+			    width: 1px;
+			    top: 11px;
+			    right: 0px;
+			}
+        }
 
 	    .icon {
 	    	display: block;
