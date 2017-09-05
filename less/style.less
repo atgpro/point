@@ -3158,6 +3158,22 @@ body.short-version {
 		}
 	}
 
+	&.no-last-column {
+		.th,
+		.td {
+		    width: 120px;
+
+		    &:nth-last-child(2) {
+		    	border-top-right-radius: 10px;
+		    	border-bottom-right-radius: 10px;
+		    	
+		    	&:after {
+		    		display: none !important;
+		    	}
+		    }
+		}
+	}
+
 	.th,
 	.td {
 		display: table-cell;
