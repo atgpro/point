@@ -2673,7 +2673,41 @@ body.short-version {
 		    a {
 		    	display: block;
 			    margin-bottom: 7px;
+
 		    }
+		}
+
+		a {
+			position: relative;
+			display: block;
+
+			&:before {
+	    	    position: absolute;
+			    content: ' ';
+			    background: url(http://127.0.0.1/edsa-point/img/zoom-icon.png);
+			    width: 26px;
+			    height: 26px;
+			    background-repeat: no-repeat;
+			    top: 50%;
+			    margin-top: -13px;
+			    left: 50%;
+			    margin-left: -13px;
+			    opacity: 0;
+			    -webkit-transition: all .3s linear;
+			     -moz-transition: all .3s linear;
+			     -o-transition: all .3s linear;
+			     transition: all .3s linear;
+	    	}
+
+			&:hover {
+				&:before {
+					opacity: 1;
+					-webkit-transition: all .3s linear;
+					-moz-transition: all .3s linear;
+					-o-transition: all .3s linear;
+					transition: all .3s linear;
+				}
+			}
 		}
 	}
 
@@ -2702,7 +2736,8 @@ body.short-version {
 		    margin-top: -58px;
 
 		    a {
-		    	margin-left: 7px;
+		    	display: inline-block;
+		    	margin-left: 4px;
 		    }
 		}
 	}
@@ -2710,8 +2745,17 @@ body.short-version {
 	.footer .btn-show-tours {
 	    left: auto;
 	    margin-left: 0px;
-        right: 65px;
+        right: 54px;
 	    bottom: -11px;
+	}
+
+	.footer .price strong {
+		font-family: 'RobotoCondensed-Bold';
+	}
+
+	.footer .price-description .param-1,
+	.footer .price-description .param-2 {
+		color: @main-color;
 	}
 }
 
