@@ -259,4 +259,10 @@ $(function (e) {
 	$('.group-by .control').on('click', function() {
 		$(this).toggleClass('active');
 	});
+
+	$('.btn-show-tours').on('click', function() {
+		$($(this).data('t-box')).fadeToggle();
+
+		$(this).toggleClass('open')
+	});
 });

@@ -2517,6 +2517,14 @@ body.short-version {
 			    right: 12px;
 		    }
 
+		    &.open {
+		    	&:after {
+			    	border-top: 0px;
+			    	border-bottom: 5px solid #ffffff;
+			    	top: 13px;
+		    	}
+		    }
+
 		    &:hover {
 		    	background: @main-color;
 		    }
@@ -2837,6 +2845,7 @@ body.short-version {
 }
 
 .tours-box {
+	display: none;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: -20px;

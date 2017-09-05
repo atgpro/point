@@ -209,12 +209,12 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
+              <button class="btn-show-tours" data-t-box="#toursBox1">Показать туры (3)</button>
             </div>
 
           </div>
 
-          <div class="tours-box">
+          <div class="tours-box" id="toursBox1">
             <div class="tours-box-content">
               <div class="header">
                 <div class="row">
