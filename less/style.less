@@ -2185,7 +2185,6 @@ body.short-version {
     padding-bottom: 42px;
 
     .raiting {
-    	background: linear-gradient(to bottom, @dark-main-color, lighten(@dark-main-color, 10%));
 	    color: #fff;
 	    font-size: 16px;
 	    text-align: center;
@@ -2199,6 +2198,18 @@ body.short-version {
 	    line-height: 20px;
 	    padding-top: 7px;
         box-shadow: 0px 6px 15px rgba(179, 174, 174, 0.36);
+
+        &.low {
+	    	background: linear-gradient(to bottom, @dark-main-color, lighten(@dark-main-color, 10%));
+        }
+
+        &.middle {
+	    	background: linear-gradient(to bottom, #6d8398, lighten(#6d8398, 10%));
+        }
+
+        &.high {
+			background: linear-gradient(to bottom, @main-color, lighten(@main-color, 10%));
+        }
     }
 
 	.stars {

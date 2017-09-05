@@ -145,7 +145,7 @@
         <div class="col-sm-4">
           <div class="result-item result-type-card">
             <div class="header">
-              <div class="raiting">
+              <div class="raiting low">
                 Рейтинг<br>2,8
               </div>
               <ul class="stars">
@@ -169,7 +169,7 @@
                 <div class="left">
                   Страна: <span>Греция</span>
                 </div>
-                <div class="right">
+                <div class="right high">
                   Курорт: <span>Афины</span>
                 </div>
               </div>
@@ -204,7 +204,7 @@
         <div class="col-sm-4">
           <div class="result-item result-type-card">
             <div class="header">
-              <div class="raiting">
+              <div class="raiting low">
                 Рейтинг<br>2,8
               </div>
               <ul class="stars">
@@ -228,7 +228,7 @@
                 <div class="left">
                   Страна: <span>Греция</span>
                 </div>
-                <div class="right">
+                <div class="right high">
                   Курорт: <span>Афины</span>
                 </div>
               </div>
@@ -263,7 +263,7 @@
         <div class="col-sm-4">
           <div class="result-item result-type-card">
             <div class="header">
-              <div class="raiting">
+              <div class="raiting low">
                 Рейтинг<br>2,8
               </div>
               <ul class="stars">
@@ -287,186 +287,7 @@
                 <div class="left">
                   Страна: <span>Греция</span>
                 </div>
-                <div class="right">
-                  Курорт: <span>Афины</span>
-                </div>
-              </div>
-              <div class="slider">
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-              </div>
-            </div>
-
-            <div class="footer">
-              <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
-              </div>
-              <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
-                <span class="param-2">2 детей</span>
-              </div>
-
-              <div class="socials">
-                <a href="#"><img src="img/vk.png" alt=""></a>
-                <a href="#"><img src="img/ok.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/g+.png" alt=""></a>
-                <a href="#"><img src="img/mailru.png" alt=""></a>
-              </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="result-item result-type-card">
-            <div class="header">
-              <div class="raiting">
-                Рейтинг<br>2,8
-              </div>
-              <ul class="stars">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="title">АЛЬПИНА 2*</div>
-              <button class="toggle-hidden-menu">
-              </button>
-              <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-            <div class="body">
-              <div class="params">
-                <div class="left">
-                  Страна: <span>Греция</span>
-                </div>
-                <div class="right">
-                  Курорт: <span>Афины</span>
-                </div>
-              </div>
-              <div class="slider">
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-              </div>
-            </div>
-
-            <div class="footer">
-              <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
-              </div>
-              <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
-                <span class="param-2">2 детей</span>
-              </div>
-
-              <div class="socials">
-                <a href="#"><img src="img/vk.png" alt=""></a>
-                <a href="#"><img src="img/ok.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/g+.png" alt=""></a>
-                <a href="#"><img src="img/mailru.png" alt=""></a>
-              </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="result-item result-type-card">
-            <div class="header">
-              <div class="raiting">
-                Рейтинг<br>2,8
-              </div>
-              <ul class="stars">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="title">АЛЬПИНА 2*</div>
-              <button class="toggle-hidden-menu">
-              </button>
-              <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-            <div class="body">
-              <div class="params">
-                <div class="left">
-                  Страна: <span>Греция</span>
-                </div>
-                <div class="right">
-                  Курорт: <span>Афины</span>
-                </div>
-              </div>
-              <div class="slider">
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-              </div>
-            </div>
-
-            <div class="footer">
-              <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
-              </div>
-              <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
-                <span class="param-2">2 детей</span>
-              </div>
-
-              <div class="socials">
-                <a href="#"><img src="img/vk.png" alt=""></a>
-                <a href="#"><img src="img/ok.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/g+.png" alt=""></a>
-                <a href="#"><img src="img/mailru.png" alt=""></a>
-              </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="result-item result-type-card">
-            <div class="header">
-              <div class="raiting">
-                Рейтинг<br>2,8
-              </div>
-              <ul class="stars">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="title">АЛЬПИНА 2*</div>
-              <button class="toggle-hidden-menu">
-              </button>
-              <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-            <div class="body">
-              <div class="params">
-                <div class="left">
-                  Страна: <span>Греция</span>
-                </div>
-                <div class="right">
+                <div class="right high">
                   Курорт: <span>Афины</span>
                 </div>
               </div>
@@ -503,8 +324,8 @@
         <div class="col-sm-4">
           <div class="result-item result-type-card">
             <div class="header">
-              <div class="raiting">
-                Рейтинг<br>2,8
+              <div class="raiting middle">
+                Рейтинг<br>3,1
               </div>
               <ul class="stars">
                 <li class="active"></li>
@@ -527,7 +348,7 @@
                 <div class="left">
                   Страна: <span>Греция</span>
                 </div>
-                <div class="right">
+                <div class="right high">
                   Курорт: <span>Афины</span>
                 </div>
               </div>
@@ -562,8 +383,8 @@
         <div class="col-sm-4">
           <div class="result-item result-type-card">
             <div class="header">
-              <div class="raiting">
-                Рейтинг<br>2,8
+              <div class="raiting middle">
+                Рейтинг<br>3,1
               </div>
               <ul class="stars">
                 <li class="active"></li>
@@ -586,7 +407,7 @@
                 <div class="left">
                   Страна: <span>Греция</span>
                 </div>
-                <div class="right">
+                <div class="right high">
                   Курорт: <span>Афины</span>
                 </div>
               </div>
@@ -621,8 +442,8 @@
         <div class="col-sm-4">
           <div class="result-item result-type-card">
             <div class="header">
-              <div class="raiting">
-                Рейтинг<br>2,8
+              <div class="raiting middle">
+                Рейтинг<br>3,1
               </div>
               <ul class="stars">
                 <li class="active"></li>
@@ -645,7 +466,186 @@
                 <div class="left">
                   Страна: <span>Греция</span>
                 </div>
-                <div class="right">
+                <div class="right high">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="slider">
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="price">
+                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+              </div>
+              <div class="price-description">
+                за номер для: <span class="param-1">2 взрослых</span>
+                <span class="param-2">2 детей</span>
+              </div>
+
+              <div class="socials">
+                <a href="#"><img src="img/vk.png" alt=""></a>
+                <a href="#"><img src="img/ok.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/g+.png" alt=""></a>
+                <a href="#"><img src="img/mailru.png" alt=""></a>
+              </div>
+              <button class="btn-show-tours">Показать туры (3)</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="result-item result-type-card">
+            <div class="header">
+              <div class="raiting high">
+                Рейтинг<br>4,1
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+              <div class="hidden-menu">
+                <a href="#">Об отеле</a>
+                <a href="#">На карте</a>
+                <a href="#">Отзывы</a>
+              </div>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right high">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="slider">
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="price">
+                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+              </div>
+              <div class="price-description">
+                за номер для: <span class="param-1">2 взрослых</span>
+                <span class="param-2">2 детей</span>
+              </div>
+
+              <div class="socials">
+                <a href="#"><img src="img/vk.png" alt=""></a>
+                <a href="#"><img src="img/ok.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/g+.png" alt=""></a>
+                <a href="#"><img src="img/mailru.png" alt=""></a>
+              </div>
+              <button class="btn-show-tours">Показать туры (3)</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="result-item result-type-card">
+            <div class="header">
+              <div class="raiting high">
+                Рейтинг<br>4,1
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+              <div class="hidden-menu">
+                <a href="#">Об отеле</a>
+                <a href="#">На карте</a>
+                <a href="#">Отзывы</a>
+              </div>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right high">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="slider">
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="price">
+                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+              </div>
+              <div class="price-description">
+                за номер для: <span class="param-1">2 взрослых</span>
+                <span class="param-2">2 детей</span>
+              </div>
+
+              <div class="socials">
+                <a href="#"><img src="img/vk.png" alt=""></a>
+                <a href="#"><img src="img/ok.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/g+.png" alt=""></a>
+                <a href="#"><img src="img/mailru.png" alt=""></a>
+              </div>
+              <button class="btn-show-tours">Показать туры (3)</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="result-item result-type-card">
+            <div class="header">
+              <div class="raiting high">
+                Рейтинг<br>4,1
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+              <div class="hidden-menu">
+                <a href="#">Об отеле</a>
+                <a href="#">На карте</a>
+                <a href="#">Отзывы</a>
+              </div>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right high">
                   Курорт: <span>Афины</span>
                 </div>
               </div>
