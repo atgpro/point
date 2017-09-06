@@ -37,6 +37,26 @@
               <button class="edit-btn"></button>
               <div class="title">Курорт:</div>
               Афины, Василикос, и <a href="#">еще 6</a>
+              <div class="select-items-wrapper">
+                <div class="scrollable-lists-wrapper">
+                  <div class="scrollable-lists scroll scroll1">
+                    <div class="list-header">Популярные курорты</div>
+                    <ul>
+                      <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group open-collapse-list open" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
+                      <li>
+                        <ul class="collapse-list" id="list1">
+                          <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             
             <div class="item">
@@ -45,7 +65,7 @@
               SPA-услуги <br>
               (оздоровительный отдых)
             </div>
-            
+
             <div class="item">
               <button class="edit-btn"></button>
               <div class="title">Рейтинг отеля:</div>

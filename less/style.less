@@ -559,8 +559,12 @@ h1 {
 	    		padding-left: 15px;
 	    		padding-right: 15px;
     		    width: 100%;
-    		    padding-top: 5px;
-			    padding-bottom: 5px;
+    		    // padding-top: 5px;
+			    // padding-bottom: 5px;
+
+		        padding-top: 3px;
+			    padding-bottom: 4px;
+			    margin-bottom: 0px;
 
     		    &:hover {
     		    	background: lighten(@main-color, 2%);
@@ -646,14 +650,14 @@ h1 {
     .open-collapse-list {
     	position: relative;
 
-    	.border {
-		    content: ' ';
-		    display: block;
-		    position: absolute;
-		    width: 88%;
-		    border-bottom: 1px dashed #cbd2d6;
-		    top: 33px;
-    	}
+    	// .border {
+		   //  content: ' ';
+		   //  display: block;
+		   //  position: absolute;
+		   //  width: 88%;
+		   //  border-bottom: 1px dashed #cbd2d6;
+		   //  top: 33px;
+    	// }
 
     	&:not(.open) {
     		.border {
@@ -661,9 +665,7 @@ h1 {
     		}
     	}
 
-    	&.open {
-	    	border-bottom-color: transparent;
-    	}
+
 
     	&:hover {
     		.border {
@@ -686,6 +688,17 @@ h1 {
 			    margin-top: -3px;
 			}
 		}
+
+		&.open {
+	    	border-bottom-color: transparent;
+
+	    	.custom-caret {
+	    		&:after {
+			    	border-top: 0px;
+			    	border-bottom: 5px solid #b9c3c8;
+	    		}
+	    	}
+    	}
 
 		&.active {
 			.custom-caret {
@@ -960,6 +973,14 @@ h1 {
 
     &:hover {
     	background: @main-color;
+    }
+
+    &.open {
+    	&:after {
+	    	border-top: 0px;
+	    	border-bottom: 5px solid #ffffff;
+	    	top: 13px;
+    	}
     }
 }
 
@@ -3587,6 +3608,45 @@ body.short-version {
 .row-filters-panel {
 	.filter-additional-params {
 		position: relative;
+
+		.select-items-wrapper {
+			display: none;
+		    position: absolute;
+		    right: 138%;
+		    min-width: 200px;
+		    top: 0px;
+
+		    &:before {
+	    	    content: ' ';
+			    display: block;
+			    border: 15px solid transparent;
+			    border-left: 14px solid white;
+			    position: absolute;
+			    left: 100%;
+			    top: 12px;
+		    }
+
+		    .scrollable-lists {
+		    	height: 125px;
+
+		    }
+
+		    .scrollable-lists-wrapper {
+		    	&:after {
+		    		display: none;
+		    	}
+		    }
+
+		    .list-header {
+	    	    margin-bottom: 5px;
+		    }
+
+		    ul li .check-group {
+		        padding-top: 3px;
+			    padding-bottom: 4px;
+			    margin-bottom: 0px;
+		    }
+		}
 	}
 
 	.hidden-menu {
@@ -3629,8 +3689,9 @@ body.short-version {
 		        position: absolute;
 			    left: -42px;
 
-			    &:hover {
-			    	background-color: lighten(@main-color, 2%);
+			    &:hover,
+			    &.open {
+			    	background-color: lighten(@main-color, 5%);
 			    }
 		    }
 

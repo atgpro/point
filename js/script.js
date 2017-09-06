@@ -151,11 +151,18 @@ $(function (e) {
 	/* Open Tables */
 	$('.button-open-table').on('click', function() {
 		$(this).parents('.scrollable-table-box').toggleClass('open').find('.scrollable-table-wrapper').toggleClass('open');
+		$(this).toggleClass('open');
 	});
 
 	$('.open-collapse-list').on('click', function() {
 		$($(this).data('list')).slideToggle();
 		$(this).toggleClass('open');
+	});
+
+	$.each($('.open-collapse-list'), function(i, elem) {
+		if ($(elem).hasClass('open')) {
+			$($(this).data('list')).slideToggle();
+		}
 	});
 
 	/* Hide/Show Detailed version */
@@ -283,6 +290,17 @@ $(function (e) {
 
 	$('.filter-additional-params .open-additional-params').on('click', function() {
 		$(this).parents('.filter-additional-params').find('.hidden-menu').fadeToggle();
+		$(this).toggleClass('open');
+
+		if ($(this).hasClass('open')) {
+			$(this).html('Свернуть');
+		} else {
+			$(this).html('Развернуть');
+		}
+	});
+
+	$('.filter-additional-params .edit-btn').on('click', function() {
+		$(this).parents('.item').find('.select-items-wrapper').fadeToggle();
 		$(this).toggleClass('open');
 	});
 });
