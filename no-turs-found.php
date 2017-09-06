@@ -101,52 +101,36 @@
       По вашему запросу туров не найдено. Но наша система поиска нашла для вас альтернативные варианты по следующим параметрам <span>(синим обозначены измененные):</span>
     </p>
 
-    <table class="another-variants">
-      <tr>
-        <th>Город вылета</th>
-        <td>Москва</td>
-      </tr>
-      <tr>
-        <th>Страна прилета</th>
-        <td>Греция</td>
-      </tr>
-      <tr>
-        <th>Курорт</th>
-        <td>Любой</td>
-      </tr>
-      <tr>
-        <th>Туристы</th>
-        <td>1 взрослых</td>
-      </tr>
-      <tr>
-        <th>Даты вылета</th>
-        <td>17.08.2017 - 29.08.2017</td>
-      </tr>
-      <tr>
-        <th>Количество ночей</th>
-        <td>3-11</td>
-      </tr>
-      <tr>
-        <th>Питание</th>
-        <td>Любое</td>
-      </tr>
-      <tr>
-        <th>Класс отелей</th>
-        <td>0т 1 <i class="star"></i></td>
-      </tr>
-      <tr>
-        <th>Рейтинг</th>
-        <td>Любой</td>
-      </tr>
-      <tr>
-        <th>Туроператоры</th>
-        <td>Любой</td>
-      </tr>
-    </table>
+    <div class="another-variants">
+      <div class="left">
+        <div class="th">Город вылета</div>
+        <div class="th">Страна прилета</div>
+        <div class="th">Курорт</div>
+        <div class="th">Туристы</div>
+        <div class="th">Даты вылета</div>
+        <div class="th">Количество ночей</div>
+        <div class="th">Питание</div>
+        <div class="th">Класс отелей</div>
+        <div class="th">Рейтинг</div>
+        <div class="th">Туроператоры</div>
+      </div>
+      <div class="right">
+        <div class="td">Москва</div>
+        <div class="td">Греция</div>
+        <div class="td"><span>Любой</span></div>
+        <div class="td"><span>1 взрослых</span></div>
+        <div class="td"><span>17.08.2017 - 29.08.2017</span></div>
+        <div class="td">3-11</div>
+        <div class="td"><span>Любое</span></div>
+        <div class="td"><span>0т 1 ★</span></div>
+        <div class="td">Любой</div>
+        <div class="td"><span>Любой</span></div>
+      </div>
+    </div>
     
     <div class="no-turs-controls">
       <a href="#" class="primary-btn">Показать</a>
-      <a href="#" class="default-btn">Не надо</a>
+      <a href="#" class="default-btn">Спасибо, не надо</a>
     </div>
   </div>
 </div>

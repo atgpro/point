@@ -3429,7 +3429,7 @@ body.short-version {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     img {
 	    border: 0px;
@@ -3451,9 +3451,128 @@ body.short-version {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
 
     span {
     	color: @main-color;
 	    font-family: 'RobotoCondensed-Regular';
     }
 }
+
+.another-variants {
+	text-align: center;
+	margin-bottom: 18px;
+
+	.left,
+	.right {
+		width: 193px;
+		display: inline-block;
+	}
+
+	.left {
+	    border-radius: 8px;
+		background: #242f44;
+		color: #fff;
+	    padding-top: 8px;
+	    padding-bottom: 8px;
+	}
+
+	.right {
+		color: #657d95;
+		background: #f8f8fa;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+
+	.th {
+		border-bottom: 2px dotted #2d3a57;
+	    padding-top: 9px;
+	    padding-bottom: 9px;
+        font-family: 'RobotoCondensed-Regular';
+
+        &:nth-last-child(1) {
+        	border-bottom-color: transparent;
+        }
+	}
+
+	.td {
+		border-bottom: 1px solid #e6eef2;
+		padding-top: 9px;
+	    padding-bottom: 9px;
+        font-family: 'RobotoCondensed-Regular';
+
+        &:nth-last-child(1) {
+        	border-bottom-color: transparent;
+        }
+
+	    span {
+	    	color: @main-color;
+	    }    
+	}
+}
+
+.no-turs-controls {
+	text-align: center;
+	margin-bottom: 35px;
+
+	.primary-btn {
+		margin-right: 30px;
+	}
+}
+
+.primary-btn {
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 1000px;
+    text-decoration: none;
+    background: @main-color;
+    text-decoration: none !important;
+	min-width: 135px;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+    	color: #ffffff;
+    }
+
+    &:hover {
+    	background: lighten(@main-color, 10%);
+    }
+}
+
+.default-btn {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 1000px;
+    text-decoration: none;
+    background: #fcfcfc;
+    border: 2px solid #ced9e0;
+    color: #657d95;
+    text-decoration: none !important;
+    font-family: 'RobotoCondensed-Regular';
+    min-width: 135px;
+    box-shadow: 0px 1px 10px rgba(187, 192, 195, 0.44);
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+    	color: #657d95;
+    }
+
+    &:hover {
+    	background: lighten(#fcfcfc, 10%);
+    	border-color: lighten(#ced9e0, 2%);
+    }
+}
+
