@@ -3612,6 +3612,27 @@ body.short-version {
     		padding-top: 10px;
 		    padding-bottom: 10px;
 		    line-height: 17px;
+		    position: relative;
+		    
+		    .edit-btn {
+		    	outline: none;
+				background-image: url(../img/pencil-white.png);
+			    width: 33px;
+			    height: 33px;
+			    box-sizing: border-box;
+			    padding: 0px;
+			    background-repeat: no-repeat;
+			    background-position: center;
+			    border-radius: 1000px;
+			    border: 5px solid rgba(0, 0, 0, 0.56);
+			    background-color: @main-color;
+		        position: absolute;
+			    left: -42px;
+
+			    &:hover {
+			    	background-color: lighten(@main-color, 2%);
+			    }
+		    }
 
 	    	.title {
 	    		color: #fff;

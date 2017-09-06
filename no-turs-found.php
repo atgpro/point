@@ -34,42 +34,50 @@
           <button class="open-additional-params">Развернуть</button>
           <div class="hidden-menu">
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Курорт:</div>
               Афины, Василикос, и <a href="#">еще 6</a>
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Тип отеля:</div>
               SPA-услуги <br>
               (оздоровительный отдых)
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Рейтинг отеля:</div>
               Не важен
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Класс отеля:</div>
               1 <span class="star">★</span>, 2 <span class="star">★</span>
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Тип питанияля:</div>
               BB (только завтраки) 
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Отель:</div>
               Любой 
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Стоимость:</div>
               30 000 - 70 000 р.
             </div>
             
             <div class="item">
+              <button class="edit-btn"></button>
               <div class="title">Туроператор:</div>
               Анекс Тур<br>
               Пегас Туристик и <a href="#">еще 5</a>

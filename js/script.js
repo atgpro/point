@@ -282,7 +282,7 @@ $(function (e) {
 	});
 
 	$('.filter-additional-params .open-additional-params').on('click', function() {
-		$(this).parents('.filter-additional-params').find('.hidden-menu').slideToggle();
+		$(this).parents('.filter-additional-params').find('.hidden-menu').fadeToggle();
 		$(this).toggleClass('open');
 	});
 });
