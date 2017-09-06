@@ -280,4 +280,9 @@ $(function (e) {
 		$(this).parents('.tours-table').find('.last-column').fadeOut();
 		$(this).parents('.tours-table').addClass('no-last-column')
 	});
+
+	$('.filter-additional-params .open-additional-params').on('click', function() {
+		$(this).parents('.filter-additional-params').find('.hidden-menu').slideToggle();
+		$(this).toggleClass('open');
+	});
 });
