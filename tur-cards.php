@@ -118,7 +118,7 @@
       <div class="results-filters">
         <div class="row">
           <div class="col-sm-9">
-            Сортировать:
+            <span>Сортировать:</span>
             <div class="filter-select-wrapper">
               <div class="filter-select">
                 <div class="selected">От дешевых к дорогим</div>

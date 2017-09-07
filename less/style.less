@@ -3734,11 +3734,99 @@ body.short-version {
 		margin-left: 0px;
 	    width: 100%;
 	}
+
+	.results-block .white-info .chars {
+	    display: none;
+	}
+
+	.results-block .white-info {
+	    padding-bottom: 30px;
+	    padding-top: 30px;
+	}
+
+	.results-block .white-info {
+	    background: transparent;
+	    width: 100%;
+	    padding-left: 40px;
+	    padding-right: 40px;
+	}
+
+	.marker-point.point-a {
+	    display: none;
+	}
+
+	.marker-point .country {
+		color: #fff;
+	}
+
+	.pin {
+	    box-shadow: none;
+	}
+
+	.results-block .results-content {
+		background-position-y: center;
+	}
+
+	.results-block .white-info {
+		height: 139px;
+	    padding-left: 32px;
+	}
+
+	.results-block .white-info .weather {
+	    background: rgba(0, 0, 0, 0.54);
+	    color: #fff;
+	    margin: 0px;
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    padding-top: 10px;
+	    max-width: 300px;
+	    position: absolute;
+	    top: 0px;
+	    right: 30px;
+	    padding-bottom: 15px;
+	}
+
+	.results-block .white-info .weather .title {
+	    color: #fff;
+	}
+
+	.results-block .white-info .weather .values .period {
+	    color: #fff;
+	    min-width: 51px;
+	    display: inline-block;
+	}
+
+	.results-block .white-info .weather .second-value {
+	    margin-top: 4px;
+	}
+
+	.results-block .white-info .weather .values .period {
+	    color: #fff;
+	    min-width: 51px;
+	}
+
+	.results-block .progress-wrapper {
+		position: relative;
+	    margin: 0px;
+	    width: 100%;
+	    left: 0px;
+	    bottom: 0px;
+	    border-radius: 0px;
+	}
+
+	.results-block .progress-wrapper .progress {
+	    border-radius: 0px;
+	    border-bottom-left-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	}
+
+
 }
 
 @media screen and (max-width: 769px) {
 	.results-filters-wrapper .result-views {
 	    margin-top: 20px;
+        justify-content: space-around;
 	}
 
 	.inner-page-wrapper {
@@ -3769,6 +3857,70 @@ body.short-version {
 	.results-block .progress-wrapper {
 	    position: relative;
 	    left: 0px;
+	    width: 100%;
+	}
+
+	.results-banners .chocolate .show-btn {
+	    display: block;
+	    margin-left: 0px;
+	    width: 75%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 20px;
+	}
+
+	.results-banners .chocolate .dismiss-btn {
+	    display: block;
+	    margin-left: 0px;
+	    width: 75%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.inner-page-wrapper .row-filters-panel .col-xs-6 {
+		width: 100%;
+	}
+
+	.results-block .white-info {
+		height: auto;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+
+	.results-block .white-info .weather {
+	    position: relative;
+	    width: 100%;
+	    right: 0px;
+	    left: 0px;
+	    margin: 0px;
+	    max-width: unset;
+	    margin-top: 20px;
+        padding-left: 20px;
+	    padding-right: 20px;
+	}
+
+	.row-filters-panel .filter-value.humans {
+		text-align: center;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	}
+
+	.results-filters-wrapper .filter-select-wrapper {
+		display: block;
+	    float: none;
+	    margin-left: 0px;
+	    margin-top: 10px;
+	}
+
+	.results-filters-wrapper .filter-select-wrapper .filter-select {
+	    margin-left: 0px;
+	    width: 100%;
+	}
+
+	.results-filters-wrapper .filter-select-wrapper .selected {
 	    width: 100%;
 	}
 }
