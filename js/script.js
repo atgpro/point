@@ -249,6 +249,20 @@ $(function (e) {
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 1,
+	  responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+	    	},
+	    	{
+		      breakpoint: 640,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+	    	}
+	    ]
 	});
 
 	$('.result-item .toggle-hidden-menu').on('click', function() {
@@ -284,8 +298,8 @@ $(function (e) {
 	});
 
 	$('.hide-last-column').on('click', function() {
-		$(this).parents('.tours-table').find('.last-column').fadeOut();
-		$(this).parents('.tours-table').addClass('no-last-column')
+		$(this).parents('.tours-table').find('.last-column').css('display', 'none');
+		$(this).parents('.tours-table').addClass('no-last-column');
 	});
 
 	$('.filter-additional-params .open-additional-params').on('click', function() {

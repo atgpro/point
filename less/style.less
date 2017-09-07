@@ -1877,10 +1877,10 @@ body.short-version {
 }
 
 .results-block {
-	background-image: url(../img/results-bg.png);	
-	background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 17px;
+	// background-image: url(../img/results-bg.png);	
+	// background-repeat: no-repeat;
+ //    background-position-x: center;
+ //    background-position-y: 17px;
 
     .results-content {
 	    position: relative;
@@ -1892,7 +1892,7 @@ body.short-version {
 	    width: 840px;
 	    bottom: 18px;
 	    top: auto;
-        left: 65px;
+        left: 49px;
 
 	    .progress {
 	        margin-bottom: 0px;
@@ -1906,9 +1906,18 @@ body.short-version {
 	    }
     }
 
-    .results-content {
+    .results-content-wrapper {
     	padding-left: 15px;
     	padding-right: 15px;
+    }
+
+    .results-content {
+    	padding-left: 0px;
+    	padding-right: 0px;
+    	background-image: url(../img/results-bg.png);	
+		background-repeat: no-repeat;
+	    background-position-x: center;
+        border-radius: 10px;
     }
 
     .results-title {
@@ -1923,13 +1932,12 @@ body.short-version {
 		background: #fff;
 	    border-top-left-radius: 10px;
 	    border-bottom-left-radius: 10px;
-	    padding-top: 38px;
 	    padding-left: 50px;
 	    margin-left: -1px;
 	    margin-top: -1px;
-	    height: 306px;
+        height: 293px;
         padding-left: 50px;
-	    padding-top: 51px;
+	    padding-top: 38px;
 
 	    .weather {
 		    margin-top: 31px;
@@ -3708,5 +3716,59 @@ body.short-version {
 	    		}
 	    	}
 	    }
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+	.row-filters-panel .filter-value {
+		margin-bottom: 20px;
+	}
+
+	.results-banners .found-amount {
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+
+	.results-banners .chocolate {
+		margin-left: 0px;
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.results-filters-wrapper .result-views {
+	    margin-top: 20px;
+	}
+
+	.inner-page-wrapper {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.results-block .container {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.results-filters-wrapper .results-filters {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+
+	.results-banners .chocolate {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+
+	.results-banners .found-amount {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+
+	.results-block .progress-wrapper {
+	    position: relative;
+	    left: 0px;
+	    width: 100%;
 	}
 }
