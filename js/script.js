@@ -302,6 +302,11 @@ $(function (e) {
 		$(this).parents('.tours-table').addClass('no-last-column');
 	});
 
+	$('.open-last-column').on('click', function() {
+		$(this).parents('.tours-table').find('.last-column').css('display', 'table-cell');
+		$(this).parents('.tours-table').removeClass('no-last-column');
+	});
+
 	$('.filter-additional-params .open-additional-params').on('click', function() {
 		$(this).parents('.filter-additional-params').find('.hidden-menu').fadeToggle();
 		$(this).toggleClass('open');

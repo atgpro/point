@@ -250,7 +250,9 @@
                     <div class="th"><div class="icon" style="background-image:url(img/car-white-icon.png)" alt=""></div><span>Экскурсии</span></div>
                     <div class="th"><div class="icon price" style="background-image:url(img/price-white-icon.png)" alt=""></div><span>Цена тура<br>ТО</span></div>
                     <div class="th"><span>Визы,<br>документы,<br>срок сдачи</span></div>
-                    <div class="th"><div class="icon price" style="background-image:url(img/price-white-icon.png)" alt=""></div><span>Полная<br></span>стоимость</div>
+                    <div class="th"><div class="icon price" style="background-image:url(img/price-white-icon.png)" alt=""></div><span>Полная<br></span>стоимость
+                      <button class="open-last-column">Развернуть</button>
+                    </div>
                     <div class="th last-column"><div class="icon" style="background-image:url(img/calc-white-icon.png)" alt=""></div><span>Расчеты<br>с ЦБТ</span>
                       <button class="hide-last-column">Свернуть</button>
                     </div>
