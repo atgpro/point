@@ -159,12 +159,7 @@ $(function (e) {
 		$(this).toggleClass('open');
 	});
 
-	$.each($('.open-collapse-list'), function(i, elem) {
-		if ($(elem).hasClass('open')) {
-			$($(this).data('list')).slideToggle();
-		}
-	});
-
+	
 	/* Hide/Show Detailed version */
 
 	function switchDetailedState()
@@ -349,3 +344,12 @@ $(function (e) {
 		manageTourCards();
 	});
 });
+
+
+// $(document).ready(function() {
+// 	$.each($('.open-collapse-list'), function(i, elem) {
+// 		if ($(elem).hasClass('open')) {
+// 			console.log($($(this).data('list')).slideToggle());
+// 		}
+// 	});
+// });

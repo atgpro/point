@@ -29,19 +29,17 @@
               <div class="scrollable-lists scroll scroll1">
                 <div class="list-header">Популярные направления</div>
                 <ul>
-                  <li><label class="check-group">Россия <input value="Россия" class="icheck-input" checked="" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Тунис <input value="Тунис" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Греция <input value="Греция" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
                 </ul>
                 <div class="list-header">Все направления</div>
                 <ul>
-                  <li><label class="check-group">Россия <input value="Россия" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Тунис <input value="Тунис" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Греция <input value="Греция" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
-                  <li><label class="check-group">Кипр <input value="Кипр" class="icheck-input" name="destination-country" type="radio"></label></li>
+                  <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                  <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
                 </ul>
               </div>
             </div>
@@ -200,15 +198,27 @@
                   <span>Тип отеля</span>
                   <i class="indicator">?</i>
                 </div>
-                <div class="filter-select-wrapper hotel-type-wrapper">
+                <div class="filter-select-wrapper hotel-type-wrapper choosen-filter">
                   <div class="filter-select">
                     <div class="selected">Выбрано 2 варианта</div>
+
                     <div class="select-items-wrapper">
-                      <div class="select-items">
-                        <div>Челябинск</div>
-                        <div>Ульяновск</div>
+                      <div class="scrollable-lists-wrapper">
+                        <div class="scrollable-lists scroll scroll1">
+                          <div class="list-header">Популярные курорты</div>
+                          <ul>
+                            <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>

@@ -44,9 +44,9 @@
                     <ul>
                       <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
                       <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                      <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
+                      <li><label class="check-group open-collapse-list" data-list="#list6">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
                       <li>
-                        <ul class="collapse-list" id="list1">
+                        <ul class="collapse-list" id="list6">
                           <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
                           <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
                           <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
