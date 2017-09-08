@@ -285,6 +285,13 @@ h1 {
 	    margin-top: 0px;
 	    margin-left: 210px;
 	    letter-spacing: 1px;
+
+	    .pin {
+	    	span {
+	    		display: block;
+    		    margin-top: 6px;
+	    	}
+	    }
     }
 
     .destination-country-select {
@@ -3784,8 +3791,28 @@ body.short-version {
 	}
 }
 
+.from-city {
+	.marker-point.point-a {
+	    margin: 0px;
+	    position: relative;
+	    left: 0px;
+	    top: 0px;
+	    margin-top: -15px;
+	    margin-left: -4px;
+	}
+
+	.filter-label {
+	    padding-left: 2px;
+	}
+}
+
 
 @media screen and (max-width: 1000px) {
+	.from-city {
+		.marker-point.point-a {
+			display: inline-block;
+		}
+	}
 	.row-filters-panel .filter-value {
 		margin-bottom: 20px;
 	}

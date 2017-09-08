@@ -10,7 +10,10 @@
     </div>
     <div class="col-md-6">
       <div class="from-city">
-        <img src="img/point-a.png" class="point-a" alt="">
+        <!-- <img src="img/point-a.png" class="point-a" alt=""> -->
+        <div class="marker-point point-a">
+          <div class='pin'><span>A</span></div>
+        </div>
         <label class="filter-label">
           Город вылета ?
         </label>
@@ -60,8 +63,13 @@
 
 <div class="destination-box">
   <div class="container">
-    <h2 class="destination-country-header">В какую страну летим?</h2>
-    <img src="img/point-b.png" class="point-b" alt="">
+    <h2 class="destination-country-header">
+      <div class="marker-point">
+        <div class='pin'><span>B</span></div>
+      </div>
+      <span>В какую страну летим?</span>
+    </h2>
+    <!-- <img src="img/point-b.png" class="point-b" alt=""> -->
 
     <div class="filter-select-wrapper destination-country-select radio-select-wrapper">
       <div class="filter-select">
