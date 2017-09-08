@@ -12,26 +12,97 @@
   <div class="inner-page-wrapper">
     <a href="index.php" class="btn-back-to-prev-step">Вернуться к странице подбора</a>
     <div class="row row-filters-panel">
-      <div class="col-sm-3">
+      <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
           <img src="img/calendar-icon.png" alt=""> <span>С 18.08.2017 &nbsp;&nbsp;По 25.08.2017</span>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
           <img src="img/moon-icon.png" alt=""> <span>На 3 - 11  ночей</span>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
           <img src="img/adult-icon.png" alt=""> <span>2 взрослых</span> <br>
           <img src="img/chlidren-icon.png" alt=""> <span>2 ребенка (5 и 10 лет) </span>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-additional-params">
           <img src="img/add-filter-params.png" alt=""> <span>Дополнительные фильтры</span>
           <button class="open-additional-params">Развернуть</button>
+          <div class="hidden-menu">
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Курорт:</div>
+              Афины, Василикос, и <a href="#">еще 6</a>
+              <div class="select-items-wrapper">
+                <div class="scrollable-lists-wrapper">
+                  <div class="scrollable-lists scroll scroll1">
+                    <div class="list-header">Популярные курорты</div>
+                    <ul>
+                      <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
+                      <li>
+                        <ul class="collapse-list" id="list1">
+                          <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Тип отеля:</div>
+              SPA-услуги <br>
+              (оздоровительный отдых)
+            </div>
+
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Рейтинг отеля:</div>
+              Не важен
+            </div>
+            
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Класс отеля:</div>
+              1 <span class="star">★</span>, 2 <span class="star">★</span>
+            </div>
+            
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Тип питанияля:</div>
+              BB (только завтраки) 
+            </div>
+            
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Отель:</div>
+              Любой 
+            </div>
+            
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Стоимость:</div>
+              30 000 - 70 000 р.
+            </div>
+            
+            <div class="item">
+              <button class="edit-btn"></button>
+              <div class="title">Туроператор:</div>
+              Анекс Тур<br>
+              Пегас Туристик и <a href="#">еще 5</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
