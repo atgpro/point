@@ -3819,8 +3819,63 @@ body.short-version {
 	    border-bottom-left-radius: 10px;
 	    border-bottom-right-radius: 10px;
 	}
+	
+	.tours-box,
+	.tours-box.for-cards-view {
+		position: fixed;
+	    width: 940px;
+	    top: 30px;
+	    left: 50%;
+	    margin-left: -470px;
+	    overflow-y: auto;
+	    z-index: 1001;
+	    margin-top: 0px;
+        width: 100%;
+	    left: 0px;
+	    margin-left: 0px;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    background: #262f41;
+	    top: 0px;
 
+	    .tours-box-content {
+    	    width: 940px;
+		    border-radius: 0px;
+	    }
+	}
 
+	.result-item .tour-description {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    margin-top: 20px;
+	}
+
+	.result-item[data-type="short-panel"] {
+		.content {
+			display: none;
+		}
+	}
+
+	.result-item[data-type="panel"] {
+		.main-preview {
+		    margin-bottom: 20px;
+		}
+
+		.gallery {
+			margin-bottom: 10px;
+		}
+
+		.gallery>div {
+		    width: 100px;
+		    display: inline-block;
+		    margin-right: 10px;
+		    margin-bottom: 10px;
+
+		    img {
+	    	    width: 100%;
+		    }
+		}
+	}
 }
 
 @media screen and (max-width: 769px) {

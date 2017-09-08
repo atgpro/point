@@ -146,7 +146,7 @@
     <div class="results-grid-wrapper">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -327,7 +327,7 @@
         </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -386,7 +386,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -447,7 +447,7 @@
      <!--  </div>
       <div class="row"> -->
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting middle">
                 Рейтинг<br>3,1
@@ -506,7 +506,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting middle">
                 Рейтинг<br>3,1
@@ -565,7 +565,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting middle">
                 Рейтинг<br>3,1
@@ -626,7 +626,7 @@
      <!--  </div>
       <div class="row"> -->
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting high">
                 Рейтинг<br>4,1
@@ -685,7 +685,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting high">
                 Рейтинг<br>4,1
@@ -744,7 +744,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="result-item result-type-card">
+          <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting high">
                 Рейтинг<br>4,1

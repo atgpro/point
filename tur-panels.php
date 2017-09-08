@@ -143,7 +143,7 @@
     <div class="results-grid-wrapper">
       <div class="row">
         <div class="col-sm-12">
-          <div class="result-item result-type-panel">
+          <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -334,7 +334,7 @@
           </div>
         </div>
         <div class="col-sm-12">
-          <div class="result-item result-type-panel">
+          <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -404,219 +404,7 @@
           </div>
         </div>
         <div class="col-sm-12">
-          <div class="result-item result-type-panel">
-            <div class="header">
-              <div class="raiting low">
-                Рейтинг<br>2,8
-              </div>
-              <ul class="stars">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="title">АЛЬПИНА 2*</div>
-              <button class="toggle-hidden-menu">
-              </button>
-            </div>
-            <div class="body">
-              <div class="params">
-                <div class="left">
-                  Страна: <span>Греция</span>
-                </div>
-                <div class="right">
-                  Курорт: <span>Афины</span>
-                </div>
-              </div>
-              <div class="content">
-                <div class="left">
-                  <div class="slider">
-                    <div class="main-preview"><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                    <div class="gallery">
-                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="tour-description">
-                    Приятный двухзвездочный отель рядом с поляной Азау. Простые, но уютно обставленные номера, хороший сервис, неплохой ресторан. Хороший вариант для семейного отдыха с небольшими затратами.
-                  </p>
-                </div>
-              </div>
-              <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-
-            <div class="footer">
-              <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
-              </div>
-              <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
-                <span class="param-2">2 детей</span>
-              </div>
-
-              <div class="socials">
-                <a href="#"><img src="img/vk.png" alt=""></a>
-                <a href="#"><img src="img/ok.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/g+.png" alt=""></a>
-                <a href="#"><img src="img/mailru.png" alt=""></a>
-              </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="result-item result-type-panel">
-            <div class="header">
-              <div class="raiting low">
-                Рейтинг<br>2,8
-              </div>
-              <ul class="stars">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="title">АЛЬПИНА 2*</div>
-              <button class="toggle-hidden-menu">
-              </button>
-            </div>
-            <div class="body">
-              <div class="params">
-                <div class="left">
-                  Страна: <span>Греция</span>
-                </div>
-                <div class="right">
-                  Курорт: <span>Афины</span>
-                </div>
-              </div>
-              <div class="content">
-                <div class="left">
-                  <div class="slider">
-                    <div class="main-preview"><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                    <div class="gallery">
-                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="tour-description">
-                    Приятный двухзвездочный отель рядом с поляной Азау. Простые, но уютно обставленные номера, хороший сервис, неплохой ресторан. Хороший вариант для семейного отдыха с небольшими затратами.
-                  </p>
-                </div>
-              </div>
-              <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-
-            <div class="footer">
-              <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
-              </div>
-              <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
-                <span class="param-2">2 детей</span>
-              </div>
-
-              <div class="socials">
-                <a href="#"><img src="img/vk.png" alt=""></a>
-                <a href="#"><img src="img/ok.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/g+.png" alt=""></a>
-                <a href="#"><img src="img/mailru.png" alt=""></a>
-              </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="result-item result-type-panel">
-            <div class="header">
-              <div class="raiting low">
-                Рейтинг<br>2,8
-              </div>
-              <ul class="stars">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="title">АЛЬПИНА 2*</div>
-              <button class="toggle-hidden-menu">
-              </button>
-            </div>
-            <div class="body">
-              <div class="params">
-                <div class="left">
-                  Страна: <span>Греция</span>
-                </div>
-                <div class="right">
-                  Курорт: <span>Афины</span>
-                </div>
-              </div>
-              <div class="content">
-                <div class="left">
-                  <div class="slider">
-                    <div class="main-preview"><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                    <div class="gallery">
-                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="tour-description">
-                    Приятный двухзвездочный отель рядом с поляной Азау. Простые, но уютно обставленные номера, хороший сервис, неплохой ресторан. Хороший вариант для семейного отдыха с небольшими затратами.
-                  </p>
-                </div>
-              </div>
-              <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
-                <a href="#">Отзывы</a>
-              </div>
-            </div>
-
-            <div class="footer">
-              <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
-              </div>
-              <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
-                <span class="param-2">2 детей</span>
-              </div>
-
-              <div class="socials">
-                <a href="#"><img src="img/vk.png" alt=""></a>
-                <a href="#"><img src="img/ok.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/g+.png" alt=""></a>
-                <a href="#"><img src="img/mailru.png" alt=""></a>
-              </div>
-              <button class="btn-show-tours">Показать туры (3)</button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="result-item result-type-panel">
+          <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -688,7 +476,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <div class="result-item result-type-panel">
+          <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -758,7 +546,7 @@
           </div>
         </div>
         <div class="col-sm-12">
-          <div class="result-item result-type-panel">
+          <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -828,7 +616,219 @@
           </div>
         </div>
         <div class="col-sm-12">
-          <div class="result-item result-type-panel">
+          <div class="result-item result-type-panel" data-type="panel">
+            <div class="header">
+              <div class="raiting low">
+                Рейтинг<br>2,8
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="left">
+                  <div class="slider">
+                    <div class="main-preview"><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                    <div class="gallery">
+                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <p class="tour-description">
+                    Приятный двухзвездочный отель рядом с поляной Азау. Простые, но уютно обставленные номера, хороший сервис, неплохой ресторан. Хороший вариант для семейного отдыха с небольшими затратами.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden-menu">
+                <a href="#">Об отеле</a>
+                <a href="#">На карте</a>
+                <a href="#">Отзывы</a>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="price">
+                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+              </div>
+              <div class="price-description">
+                за номер для: <span class="param-1">2 взрослых</span>
+                <span class="param-2">2 детей</span>
+              </div>
+
+              <div class="socials">
+                <a href="#"><img src="img/vk.png" alt=""></a>
+                <a href="#"><img src="img/ok.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/g+.png" alt=""></a>
+                <a href="#"><img src="img/mailru.png" alt=""></a>
+              </div>
+              <button class="btn-show-tours">Показать туры (3)</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="result-item result-type-panel" data-type="panel">
+            <div class="header">
+              <div class="raiting low">
+                Рейтинг<br>2,8
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="left">
+                  <div class="slider">
+                    <div class="main-preview"><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                    <div class="gallery">
+                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <p class="tour-description">
+                    Приятный двухзвездочный отель рядом с поляной Азау. Простые, но уютно обставленные номера, хороший сервис, неплохой ресторан. Хороший вариант для семейного отдыха с небольшими затратами.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden-menu">
+                <a href="#">Об отеле</a>
+                <a href="#">На карте</a>
+                <a href="#">Отзывы</a>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="price">
+                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+              </div>
+              <div class="price-description">
+                за номер для: <span class="param-1">2 взрослых</span>
+                <span class="param-2">2 детей</span>
+              </div>
+
+              <div class="socials">
+                <a href="#"><img src="img/vk.png" alt=""></a>
+                <a href="#"><img src="img/ok.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/g+.png" alt=""></a>
+                <a href="#"><img src="img/mailru.png" alt=""></a>
+              </div>
+              <button class="btn-show-tours">Показать туры (3)</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="result-item result-type-panel" data-type="panel">
+            <div class="header">
+              <div class="raiting low">
+                Рейтинг<br>2,8
+              </div>
+              <ul class="stars">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="title">АЛЬПИНА 2*</div>
+              <button class="toggle-hidden-menu">
+              </button>
+            </div>
+            <div class="body">
+              <div class="params">
+                <div class="left">
+                  Страна: <span>Греция</span>
+                </div>
+                <div class="right">
+                  Курорт: <span>Афины</span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="left">
+                  <div class="slider">
+                    <div class="main-preview"><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                    <div class="gallery">
+                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                      <div><a href="img/result-item-1.png"><img src="img/result-item-1.png" alt=""></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <p class="tour-description">
+                    Приятный двухзвездочный отель рядом с поляной Азау. Простые, но уютно обставленные номера, хороший сервис, неплохой ресторан. Хороший вариант для семейного отдыха с небольшими затратами.
+                  </p>
+                </div>
+              </div>
+              <div class="hidden-menu">
+                <a href="#">Об отеле</a>
+                <a href="#">На карте</a>
+                <a href="#">Отзывы</a>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="price">
+                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+              </div>
+              <div class="price-description">
+                за номер для: <span class="param-1">2 взрослых</span>
+                <span class="param-2">2 детей</span>
+              </div>
+
+              <div class="socials">
+                <a href="#"><img src="img/vk.png" alt=""></a>
+                <a href="#"><img src="img/ok.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/g+.png" alt=""></a>
+                <a href="#"><img src="img/mailru.png" alt=""></a>
+              </div>
+              <button class="btn-show-tours">Показать туры (3)</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8

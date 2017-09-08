@@ -317,4 +317,30 @@ $(function (e) {
 		$(this).parents('.item').find('.select-items-wrapper').fadeToggle();
 		$(this).toggleClass('open');
 	});
+
+
+	/* Tours cards manager */
+	function manageTourCards() {
+		if (window.innerWidth <= 1000) {
+			$.each($('[data-type="panel"]'), function(i, elem) {
+				$(elem).removeClass('result-type-panel');
+			});
+			$.each($('[data-type="short-panel"]'), function(i, elem) {
+				$(elem).removeClass('result-type-panel').removeClass('short-panel');
+			});
+		} else {
+			$.each($('[data-type="panel"]'), function(i, elem) {
+				$(elem).addClass('result-type-panel');
+			});
+			$.each($('[data-type="short-panel"]'), function(i, elem) {
+				$(elem).addClass('result-type-panel').addClass('short-panel');
+			});
+		}
+	}
+
+	manageTourCards();
+
+	$(window).resize(function() {
+		manageTourCards();
+	});
 });
