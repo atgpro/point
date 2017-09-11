@@ -101,9 +101,12 @@ $(function (e) {
 	    from: 1,
 	    to: 20,
 	    onChange: function (data, e) {
-	    	console.log($(data.slider).parents('.range-slider-wrapper'));
+	    	// console.log($(data.slider).parents('.nights-wrapper').find('.bottom-labels'));
 	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
 	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span').html(data.to);
+
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span').html(data.from + 1);
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span').html(data.to + 1);
 	    }
 	});
 
@@ -202,7 +205,7 @@ $(function (e) {
 	$('.calendar-buttons .buttons').daterangepicker(
 	{
 		"locale": {
-	        "format": "MM/DD/YYYY",
+	        "format": "DD.MM.YY",
 	        "separator": " - ",
 	        "applyLabel": "Применить",
 	        "cancelLabel": "Отмена",
@@ -279,7 +282,7 @@ $(function (e) {
 	$('.btn-show-tours').on('click', function() {
 		$($(this).data('t-box')).fadeToggle();
 		
-		if ($($(this).data('t-box')).hasClass('for-cards-view')) {
+		if ($($(this).data('t-box')).hasClass('for-cards-view') || window.innerWidth <= 1000) {
 			$('.tours-table-overlay').fadeToggle();
 		}
 
@@ -289,6 +292,12 @@ $(function (e) {
 	$('.tours-table-overlay').on('click', function() {
 		$('.tours-box').fadeToggle();
 		$('.tours-table-overlay').fadeToggle();
+		$('.btn-show-tours').removeClass('open');
+	});
+
+	$('.tours-box-content .close-me').on('click', function() {
+		$('.tours-box').fadeToggle();
+		$('.tours-table-overlay').fadeOut();
 		$('.btn-show-tours').removeClass('open');
 	});
 
@@ -342,6 +351,26 @@ $(function (e) {
 
 	$(window).resize(function() {
 		manageTourCards();
+	});
+
+	$('.search-box input').on('focus', function() {
+		$(this).parents('.search-box').addClass('focused');
+		$(this).attr('placeholder', '');
+	});
+
+	$('.search-box input').on('focusout', function() {
+		$(this).parents('.search-box').removeClass('focused');
+		$(this).attr('placeholder', 'Быстрый поиск по отелям');
+	});
+
+	$('.filter-value').on('click', function(e) {
+		if ($(e.target).parents('.choice-block').length || 
+			$(e.target).hasClass('choice-block')) {
+			return;
+		}
+
+		$(this).find('.hidden-change').fadeIn();
+		$(this).toggleClass('open');
 	});
 });
 

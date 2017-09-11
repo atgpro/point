@@ -287,6 +287,7 @@
 
           <div class="tours-box" id="toursBox1">
             <div class="tours-box-content">
+              <button class="close-me"></button>
               <div class="header">
                 <div class="row">
                   <div class="col-sm-6">

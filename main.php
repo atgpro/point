@@ -356,8 +356,8 @@
                 <input type="text" id="nightsSlider">
               </div>
               <div class="bottom-labels">
-                <div class="min-label">3 дня</div>
-                <div class="max-label">17 дней</div>
+                <div class="min-label"><span>3</span> дня</div>
+                <div class="max-label"><span>17</span> дней</div>
               </div>
             </div>
           </div>
