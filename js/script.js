@@ -145,9 +145,16 @@ $(function (e) {
 			var control = $(this).find('input[type="checkbox"]');
 			if ($(control).is(':checked')) {
 				$(this).removeClass('checked');
+				$(this).parents('.scrollable-table tr').removeClass('checked');
 			} else {
+				$(this).parents('.scrollable-table tr').addClass('checked');
 				$(this).addClass('checked');
 			}
+
+			if ($(this).hasClass('open-collapse-list')) {
+				$($(this).data('list')).find('.check-group').trigger('click');
+			}
+
 
 			return;
 		} else {
