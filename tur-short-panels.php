@@ -14,18 +14,96 @@
     <div class="row row-filters-panel">
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/calendar-icon.png" alt=""> <span>С 18.08.2017 &nbsp;&nbsp;По 25.08.2017</span>
+          <img src="img/calendar-icon.png" alt=""> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
+          <div class="hidden-change">
+            <div class="choice-block date-block">
+              <div class="title">
+                <img src="img/calendar-icon.png" class="title-icon">
+                <span>Дата вылета?</span>
+              </div>
+
+              <div class="calendar-buttons">
+                <div class="labels">
+                  <label>C</label>
+                  <label>По</label>
+                </div>
+                <div class="buttons">
+                  <button class="from">25.08.2017</button>
+                  <button class="to">18.08.2017</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/moon-icon.png" alt=""> <span>На 3 - 11  ночей</span>
+          <img src="img/moon-icon.png" alt=""> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
+          <div class="hidden-change">
+            <div class="choice-block nights-block for-detailed-version">
+              <div class="title">
+                <img src="img/moon-icon.png" class="title-icon">
+                <span>На сколько ночей?</span>
+              </div>
+              <div class="nights-wrapper">
+                <div class="top-labels">
+                  <div class="from"><span>2</span> ночи </div>
+                  <div class="to"><span>16</span> ночей</div>
+                </div>
+                <div class="range-slider-wrapper">
+                  <input type="text" id="nightsSlider">
+                </div>
+                <div class="bottom-labels">
+                  <div class="min-label"><span>3</span> дня</div>
+                  <div class="max-label"><span>17</span> дней</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
-          <img src="img/adult-icon.png" alt=""> <span>2 взрослых</span> <br>
-          <img src="img/chlidren-icon.png" alt=""> <span>2 ребенка (5 и 10 лет) </span>
+          <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
+          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
+          <div class="hidden-change">
+            <div class="choice-block tourists-block for-detailed-version">
+              <div class="title">
+                <img src="img/fly-icon.png" class="title-icon">
+                <span>Туристы</span>
+              </div>
+
+              <div class="adult-childrens-sliders-wrapper">
+                <div class="adult-slider-wrapper">
+                  <div class="icon-wrapper">
+                    <img src="img/adult-icon.png" class="icon" alt="">
+                    <div>
+                      <label for="">Взрослые</label>
+                      (от 12 лет)
+                    </div>
+                  </div>
+                  <div class="slider-wrapper">
+                    <input type="text" id="adultSlider">
+                  </div>
+                </div>
+
+                <div class="children-slider-wrapper">
+                  <div class="icon-wrapper">
+                    <img src="img/chlidren-icon.png" class="icon" alt="">
+                    <div>
+                      <label for="">Дети</label>
+                      (0 - 11 лет)
+                    </div>
+                  </div>
+                  <div class="slider-wrapper">
+                    <input type="text" id="childrenSlider">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
@@ -44,9 +122,9 @@
                     <ul>
                       <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
                       <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                      <li><label class="check-group open-collapse-list" data-list="#list6">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
+                      <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
                       <li>
-                        <ul class="collapse-list" id="list6">
+                        <ul class="collapse-list" id="list1">
                           <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
                           <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
                           <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
