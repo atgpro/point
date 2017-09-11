@@ -901,6 +901,10 @@ h1 {
 	    border: 0px;
 	    background: transparent;
 	    padding-left: 0px;
+
+	    img {
+	    	background: transparent;
+	    }
 	}
 }
 
@@ -1844,10 +1848,10 @@ body.short-version {
         position: relative;
         cursor: pointer;
 
-        &:hover,
-        &.open {
-    	    background: rgba(255, 255, 255, .7);
-        }
+        // &:hover,
+        // &.open {
+    	    
+        // }
 
         &.open {
     	    .choice-block {
@@ -3995,6 +3999,22 @@ body.short-version {
 .tours-box-content {
 	.close-me {
 		display: none;
+	}
+}
+
+.main-color-icon {
+	background: @main-color;
+}
+
+.choice-block {
+	img {
+		.main-color-icon;
+	}
+}
+
+.filter-value {
+	img {
+		.main-color-icon;
 	}
 }
 

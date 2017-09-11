@@ -214,19 +214,19 @@
             <div class="chars">
               <div class="item">
                 <div class="img-wrapper">
-                  <img src="img/markers-colored-icon.png" alt="">
+                  <img src="img/markers-colored-icon.png" class="main-color-icon" alt="">
                 </div>
                 <span>1332 км</span>
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                  <img src="img/fly-time-colored-icon.png" alt="">
+                  <img src="img/fly-time-colored-icon.png" class="main-color-icon" alt="">
                 </div>
                 <span>1 ч. 40 мин</span>
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                  <img src="img/clocks-colored-icon.png" alt="">
+                  <img src="img/clocks-colored-icon.png" class="main-color-icon" alt="">
                 </div>
                 <span>0 ч. 0 мин</span>
               </div>

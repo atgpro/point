@@ -14,7 +14,7 @@
     <div class="row row-filters-panel">
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/calendar-icon.png" alt=""> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
+          <img src="img/calendar-icon.png" alt="" class="main-color-icon"> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
           <div class="hidden-change">
             <div class="choice-block date-block">
               <div class="title">
@@ -39,7 +39,7 @@
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/moon-icon.png" alt=""> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
+          <img src="img/moon-icon.png" alt="" class="main-color-icon"> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
           <div class="hidden-change">
             <div class="choice-block nights-block for-detailed-version">
               <div class="title">
@@ -65,8 +65,8 @@
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
-          <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
-          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
+          <img src="img/adult-icon.png" class="main-color-icon" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
+          <img src="img/chlidren-icon.png" class="main-color-icon" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
           <div class="hidden-change">
             <div class="choice-block tourists-block for-detailed-version">
               <div class="title">
@@ -90,7 +90,7 @@
 
                 <div class="children-slider-wrapper">
                   <div class="icon-wrapper">
-                    <img src="img/chlidren-icon.png" class="icon" alt="">
+                    <img src="img/chlidren-icon.png"  class="icon" alt="">
                     <div>
                       <label for="">Дети</label>
                       (0 - 11 лет)
@@ -108,7 +108,7 @@
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-additional-params">
-          <img src="img/add-filter-params.png" alt=""> <span>Дополнительные фильтры</span>
+          <img src="img/add-filter-params.png" class="main-color-icon" alt=""> <span>Дополнительные фильтры</span>
           <button class="open-additional-params">Развернуть</button>
           <div class="hidden-menu">
             <div class="item">
@@ -215,19 +215,19 @@
             <div class="chars">
               <div class="item">
                 <div class="img-wrapper">
-                  <img src="img/markers-colored-icon.png" alt="">
+                  <img src="img/markers-colored-icon.png" class="main-color-icon" alt="">
                 </div>
                 <span>1332 км</span>
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                  <img src="img/fly-time-colored-icon.png" alt="">
+                  <img src="img/fly-time-colored-icon.png" class="main-color-icon" alt="">
                 </div>
                 <span>1 ч. 40 мин</span>
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                  <img src="img/clocks-colored-icon.png" alt="">
+                  <img src="img/clocks-colored-icon.png" class="main-color-icon" alt="">
                 </div>
                 <span>0 ч. 0 мин</span>
               </div>
