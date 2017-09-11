@@ -267,15 +267,27 @@
         <div class="row">
           <div class="col-md-9">
             Сортировать:
-            <div class="filter-select-wrapper">
+            <div class="filter-select-wrapper results-sort-filter">
               <div class="filter-select">
                 <div class="selected">От дешевых к дорогим</div>
+                
                 <div class="select-items-wrapper">
-                  <div class="select-items">
+                  <!-- <div class="select-items">
                     <div>Челябинск</div>
                     <div>Ульяновск</div>
+                  </div> -->
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <ul>
+                        <li><label class="check-group">От дешевых к дорогим <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">От дорогих к дешевым <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">По рейтингу отеля  <input class="icheck-input" type="checkbox"></label></li>
+                      </ul>
+                    </div>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>

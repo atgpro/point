@@ -1207,6 +1207,34 @@ h1 {
 	}
 }
 
+.results-sort-filter {
+	&:hover {
+	    .selected {
+		    border-bottom-left-radius: 0px;
+		    border-bottom-right-radius: 0px;
+	    }
+
+	    .select-items-wrapper {
+	        width: 212px;
+		    top: 30px;
+	    }
+
+	    .select-items-wrapper .scrollable-lists {
+	    	height: 100px;
+	    }
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.results-sort-filter {
+		&:hover {
+		    .select-items-wrapper {
+		        width: 100%;
+		    }
+		}
+	}
+}
+
 .currencies-wrapper {
     margin-top: 25px;
 
