@@ -98,8 +98,8 @@ $(function (e) {
 	    type: "double",
 	    min: 1,
 	    max: 20,
-	    from: 1,
-	    to: 20,
+	    from: 5,
+	    to: 14,
 	    onChange: function (data, e) {
 	    	// console.log($(data.slider).parents('.nights-wrapper').find('.bottom-labels'));
 	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
@@ -114,12 +114,15 @@ $(function (e) {
 	    type: "double",
 	    min: 1,
 	    max: 20,
-	    from: 1,
-	    to: 20,
+	    from: 5,
+	    to: 14,
 	    onChange: function (data, e) {
-	    	console.log($(data.slider).parents('.range-slider-wrapper'));
+	    	// console.log($(data.slider).parents('.range-slider-wrapper'));
 	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
 	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span').html(data.to);
+
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span').html(data.from + 1);
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span').html(data.to + 1);
 	    }
 	});
 
