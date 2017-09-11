@@ -4018,6 +4018,25 @@ body.short-version {
 	}
 }
 
+.main-loader {
+    position: fixed;
+    z-index: 1000;
+    background: fade(@main-color, 50%);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+
+    .animation-wrapper {
+    	position: absolute;
+    	left: 50%;
+    	margin-left: -25px;
+    	top: 50%;
+    	margin-top: -25px;
+    }
+}
+
+
 @media screen and (max-width: 1000px) {
 	.tours-box .tours-box-content .header {
 	    padding-top: 38px;

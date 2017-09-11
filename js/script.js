@@ -436,6 +436,10 @@ $(function (e) {
 		$(this).find('.hidden-change').fadeIn();
 		$(this).toggleClass('open');
 	});
+
+	setTimeout(function() {
+		$('.main-loader').fadeOut();
+	}, 1000);
 });
 
 
