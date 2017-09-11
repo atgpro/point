@@ -140,7 +140,7 @@ $(function (e) {
 			$(elem).parents('tr').addClass('checked');	
 		}
 	});
-	$('.check-group').on('click', function() {
+	$('.check-group').on('click', function(e) {
 		if ($(this).find('input[type="checkbox"]').length) {
 			var control = $(this).find('input[type="checkbox"]');
 			if ($(control).is(':checked')) {
@@ -152,7 +152,9 @@ $(function (e) {
 			}
 
 			if ($(this).hasClass('open-collapse-list')) {
-				$($(this).data('list')).find('.check-group').trigger('click');
+				if (!$(e.target).hasClass('custom-caret')) {
+					$($(this).data('list')).find('.check-group').trigger('click');
+				} 
 			}
 
 
