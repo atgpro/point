@@ -14,18 +14,96 @@
     <div class="row row-filters-panel">
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/calendar-icon.png" alt=""> <span>С 18.08.2017 &nbsp;&nbsp;По 25.08.2017</span>
+          <img src="img/calendar-icon.png" alt=""> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
+          <div class="hidden-change">
+            <div class="choice-block date-block">
+              <div class="title">
+                <img src="img/calendar-icon.png" class="title-icon">
+                <span>Дата вылета?</span>
+              </div>
+
+              <div class="calendar-buttons">
+                <div class="labels">
+                  <label>C</label>
+                  <label>По</label>
+                </div>
+                <div class="buttons">
+                  <button class="from">25.08.2017</button>
+                  <button class="to">18.08.2017</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/moon-icon.png" alt=""> <span>На 3 - 11  ночей</span>
+          <img src="img/moon-icon.png" alt=""> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
+          <div class="hidden-change">
+            <div class="choice-block nights-block for-detailed-version">
+              <div class="title">
+                <img src="img/moon-icon.png" class="title-icon">
+                <span>На сколько ночей?</span>
+              </div>
+              <div class="nights-wrapper">
+                <div class="top-labels">
+                  <div class="from"><span>2</span> ночи </div>
+                  <div class="to"><span>16</span> ночей</div>
+                </div>
+                <div class="range-slider-wrapper">
+                  <input type="text" id="nightsSlider">
+                </div>
+                <div class="bottom-labels">
+                  <div class="min-label"><span>3</span> дня</div>
+                  <div class="max-label"><span>17</span> дней</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
-          <img src="img/adult-icon.png" alt=""> <span>2 взрослых</span> <br>
-          <img src="img/chlidren-icon.png" alt=""> <span>2 ребенка (5 и 10 лет) </span>
+          <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
+          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
+          <div class="hidden-change">
+            <div class="choice-block tourists-block for-detailed-version">
+              <div class="title">
+                <img src="img/fly-icon.png" class="title-icon">
+                <span>Туристы</span>
+              </div>
+
+              <div class="adult-childrens-sliders-wrapper">
+                <div class="adult-slider-wrapper">
+                  <div class="icon-wrapper">
+                    <img src="img/adult-icon.png" class="icon" alt="">
+                    <div>
+                      <label for="">Взрослые</label>
+                      (от 12 лет)
+                    </div>
+                  </div>
+                  <div class="slider-wrapper">
+                    <input type="text" id="adultSlider">
+                  </div>
+                </div>
+
+                <div class="children-slider-wrapper">
+                  <div class="icon-wrapper">
+                    <img src="img/chlidren-icon.png" class="icon" alt="">
+                    <div>
+                      <label for="">Дети</label>
+                      (0 - 11 лет)
+                    </div>
+                  </div>
+                  <div class="slider-wrapper">
+                    <input type="text" id="childrenSlider">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
@@ -109,60 +187,61 @@
   </div>
 </div>
 
-
 <div class="results-block">
   <div class="container">
     <h2 class="results-title">Результаты подбора:</h2>
-    <div class="results-content">
-        <div class="white-info">
-          <div class="points">
-              
-            <div class="marker-point point-a">
-              <div class='pin'><span>A</span></div> <span class="country">Москва</span>
+    <div class="results-content-wrapper">
+        <div class="results-content">
+          <div class="white-info">
+            <div class="points">
+                
+              <div class="marker-point point-a">
+                <div class='pin'><span>A</span></div> <span class="country">Москва</span>
+              </div>
+              <div class="marker-point">
+                <div class='pin'><span>B</span></div> <span class="country">Греция</span>
+              </div>
             </div>
-            <div class="marker-point">
-              <div class='pin'><span>B</span></div> <span class="country">Греция</span>
-            </div>
-          </div>
-          <div class="weather">
-            <span class="title">Погода:</span>
-            <span class="values">
-              <span class="period">сегодня</span> +18...+25 С 
-              <span class="second-value">
-                <span class="period">сентябрь</span> +15...+20 С
+            <div class="weather">
+              <span class="title">Погода:</span>
+              <span class="values">
+                <span class="period">сегодня</span> +18...+25 С 
+                <span class="second-value">
+                  <span class="period">сентябрь</span> +15...+20 С
+                </span>
               </span>
-            </span>
+            </div>
+            <div class="chars">
+              <div class="item">
+                <div class="img-wrapper">
+                  <img src="img/markers-colored-icon.png" alt="">
+                </div>
+                <span>1332 км</span>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <img src="img/fly-time-colored-icon.png" alt="">
+                </div>
+                <span>1 ч. 40 мин</span>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <img src="img/clocks-colored-icon.png" alt="">
+                </div>
+                <span>0 ч. 0 мин</span>
+              </div>
+            </div>
           </div>
-          <div class="chars">
-            <div class="item">
-              <div class="img-wrapper">
-                <img src="img/markers-colored-icon.png" alt="">
+          <div class="progress-wrapper">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                100% Выполнено
               </div>
-              <span>1332 км</span>
-            </div>
-            <div class="item">
-              <div class="img-wrapper">
-                <img src="img/fly-time-colored-icon.png" alt="">
-              </div>
-              <span>1 ч. 40 мин</span>
-            </div>
-            <div class="item">
-              <div class="img-wrapper">
-                <img src="img/clocks-colored-icon.png" alt="">
-              </div>
-              <span>0 ч. 0 мин</span>
             </div>
           </div>
         </div>
-        <div class="progress-wrapper">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped active" role="progressbar"
-            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-              100% Выполнено
-            </div>
-          </div>
-        </div>
-    </div>
+      </div>
 
     <div class="no-turs-found-panel">
       <img src="img/no-turs-icon.png" alt="">

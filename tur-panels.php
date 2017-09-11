@@ -190,56 +190,58 @@
 <div class="results-block">
   <div class="container">
     <h2 class="results-title">Результаты подбора:</h2>
-    <div class="results-content">
-        <div class="white-info">
-          <div class="points">
-              
-            <div class="marker-point point-a">
-              <div class='pin'><span>A</span></div> <span class="country">Москва</span>
+    <div class="results-content-wrapper">
+        <div class="results-content">
+          <div class="white-info">
+            <div class="points">
+                
+              <div class="marker-point point-a">
+                <div class='pin'><span>A</span></div> <span class="country">Москва</span>
+              </div>
+              <div class="marker-point">
+                <div class='pin'><span>B</span></div> <span class="country">Греция</span>
+              </div>
             </div>
-            <div class="marker-point">
-              <div class='pin'><span>B</span></div> <span class="country">Греция</span>
-            </div>
-          </div>
-          <div class="weather">
-            <span class="title">Погода:</span>
-            <span class="values">
-              <span class="period">сегодня</span> +18...+25 С 
-              <span class="second-value">
-                <span class="period">сентябрь</span> +15...+20 С
+            <div class="weather">
+              <span class="title">Погода:</span>
+              <span class="values">
+                <span class="period">сегодня</span> +18...+25 С 
+                <span class="second-value">
+                  <span class="period">сентябрь</span> +15...+20 С
+                </span>
               </span>
-            </span>
+            </div>
+            <div class="chars">
+              <div class="item">
+                <div class="img-wrapper">
+                  <img src="img/markers-colored-icon.png" alt="">
+                </div>
+                <span>1332 км</span>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <img src="img/fly-time-colored-icon.png" alt="">
+                </div>
+                <span>1 ч. 40 мин</span>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <img src="img/clocks-colored-icon.png" alt="">
+                </div>
+                <span>0 ч. 0 мин</span>
+              </div>
+            </div>
           </div>
-          <div class="chars">
-            <div class="item">
-              <div class="img-wrapper">
-                <img src="img/markers-colored-icon.png" alt="">
+          <div class="progress-wrapper">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped active" role="progressbar"
+              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                100% Выполнено
               </div>
-              <span>1332 км</span>
-            </div>
-            <div class="item">
-              <div class="img-wrapper">
-                <img src="img/fly-time-colored-icon.png" alt="">
-              </div>
-              <span>1 ч. 40 мин</span>
-            </div>
-            <div class="item">
-              <div class="img-wrapper">
-                <img src="img/clocks-colored-icon.png" alt="">
-              </div>
-              <span>0 ч. 0 мин</span>
             </div>
           </div>
         </div>
-        <div class="progress-wrapper">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped active" role="progressbar"
-            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-              100% Выполнено
-            </div>
-          </div>
-        </div>
-    </div>
+      </div>
 
     <div class="results-banners">
       <div class="found-amount">
