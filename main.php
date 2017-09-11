@@ -426,10 +426,24 @@
               <div class="filter-select">
                 <div class="selected">Выбрано 2 варианта</div>
                 <div class="select-items-wrapper">
-                  <div class="select-items">
+                  <!-- <div class="select-items">
                     <div>Челябинск</div>
                     <div>Ульяновск</div>
+                  </div> -->
+                  <div class="scrollable-lists-wrapper">
+                  <div class="scrollable-lists scroll scroll1">
+                    <ul>
+                      <li><label class="check-group">Любой <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Без питания <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Только завтрак <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Завтрак и ужин<input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Завтрак, <br>обед и ужин <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Все включено <input class="icheck-input" type="checkbox"></label></li>
+                      <li><label class="check-group">Все включено <br>ультра <input class="icheck-input" type="checkbox"></label></li>
+                    </ul>
                   </div>
+                </div>
+
                 </div>
               </div>
             </div>
