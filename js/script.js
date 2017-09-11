@@ -242,7 +242,13 @@ $(function (e) {
 	    }
 	}, 
 	function(start, end, label) {
-	    alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		$(this.element).parents('.date-block').find('.from').html(start.format('DD.MM.YYYY'));
+		$(this.element).parents('.date-block').find('.to').html(end.format('DD.MM.YYYY'));
+		$(this.element).parents('.filter-value').find('.val .from').html(start.format('DD.MM.YYYY'));
+		$(this.element).parents('.filter-value').find('.val .to').html(end.format('DD.MM.YYYY'));
+		$(this.element).parents('.filter-value').removeClass('open');
+		// console.log(this.element);
+	    // alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 	});
 
 	$('.result-type-card .slider').slick({
