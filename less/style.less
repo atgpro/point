@@ -3011,6 +3011,10 @@ body.short-version {
 				    display: inline-block;
 				    font-size: 16px;
 				    vertical-align: middle;
+
+    	    	    &.active {
+	    	    	    color: @main-color;
+    	    	    }
 	    	    }
 
 	    	    .control {
@@ -3058,10 +3062,14 @@ body.short-version {
 
 	    	    .group-by-type {
     	    	    display: inline-block;
-    	    	    color: @main-color;
     	    	    font-family: 'RobotoCondensed-Regular';
     	    	    font-size: 16px;
     	    	    vertical-align: middle;
+					color: #b9c3c8;
+
+    	    	    &.active {
+	    	    	    color: @main-color;
+    	    	    }
 	    	    }
 		    }
 	    }
@@ -3137,7 +3145,12 @@ body.short-version {
 
 	    .body {
     	    border-top: 2px dashed #2e3c59;
-	        padding-top: 17px;
+    	    padding-top: 34px;
+
+	        &.grouped {
+		        padding-top: 17px;
+	        	display: none;
+	        }
 
 	        .operator {
         	    background: #fff;
@@ -3178,18 +3191,52 @@ body.short-version {
 				    }
 			    }
 	        }
+
+
+
+			&:not(.grouped) {
+				.tours-table {
+					.filter,
+					.th,
+					.td {
+					    width: 93px;
+					}
+				}
+
+				.tours-table.no-last-column {
+					.filter,
+					.th,
+					.td {
+						width: 105px;
+					}
+				}
+
+			}
+
+			&.grouped {
+				.tours-table {
+					.filter,
+					.th,
+					.td {
+						width: 105px;
+					}
+				}
+
+				.tours-table.no-last-column {
+					.filter,
+					.th,
+					.td {
+						width: 120px;
+					}
+				}
+			}
 	    }
     }
 }
 
 .tours-table {
-	.tr {
-
-	}
-
 	.filter {
 		display: table-cell;
-	    width: 105px;
 	    text-align: center;
 	    padding-top: 8px;
 	    padding-bottom: 15px;
@@ -3264,8 +3311,6 @@ body.short-version {
 
 	&.no-last-column {
 		.th {
-		    width: 120px;
-
 		    &:nth-last-child(2) {
 		    	border-top-right-radius: 10px;
 		    	border-bottom-right-radius: 10px;
@@ -3278,8 +3323,6 @@ body.short-version {
 
 		.td,
 		.filter {
-			width: 120px;
-
 		    &:nth-last-child(3) {
 		    	border-top-right-radius: 10px;
 		    	border-bottom-right-radius: 10px;
@@ -3288,6 +3331,7 @@ body.short-version {
 		    		display: none !important;
 		    	}
 		    }
+
 		}
 
 
@@ -3298,13 +3342,16 @@ body.short-version {
 		display: table-cell;
 		background: @main-color;
 		color: #fff;
-	    width: 105px;
 	    text-align: center;
 	    display: table-cell;
         padding-top: 5px;
 	    padding-bottom: 5px;
         vertical-align: middle;
         position: relative;
+
+	    .op-logo {
+			margin-bottom: 5px;
+	    }
 
         &:not(.last-column) {
 			&:after {
