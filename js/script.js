@@ -141,8 +141,28 @@ $(function (e) {
 		}
 	});
 	$('.check-group').on('click', function() {
-		$(this).toggleClass('checked');
-		$(this).parents('tr').toggleClass('checked');
+		if ($(this).find('input[type="checkbox"]').length) {
+			var control = $(this).find('input[type="checkbox"]');
+			if ($(control).is(':checked')) {
+				$(this).removeClass('checked');
+			} else {
+				$(this).addClass('checked');
+			}
+
+			return;
+		} else {
+			var control = $(this).find('input[type="radio"]');
+			var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
+			$.each(radios, function(i, elem) {
+				$(elem).parents('.check-group').removeClass('checked');
+				// if ($(elem).attr('checked')) {
+				// 	$(elem).parents('.check-group').addClass('checked');
+				// }
+			});
+			$(this).addClass('checked');
+		}
+
+		// $(this).parents('tr').toggleClass('checked');
 	});
 
 	$('.icheck-input').iCheck({
@@ -150,16 +170,30 @@ $(function (e) {
 	    radioClass: 'iradio_futurico'
 	});
 
-	$('.radio-select-wrapper .check-group').on('click', function() {
-		var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
+	// $('.radio-select-wrapper .check-group').on('click', function() {
+	// 	var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
 
-		$.each(radios, function(i, elem) {
-			// $(elem).parents('.check-group').removeClass('checked');
-			if ($(elem).attr('checked')) {
-				$(elem).parents('.check-group').addClass('checked');
-			}
-		});
-	});
+	// 	$.each(radios, function(i, elem) {
+	// 		$(elem).parents('.check-group').removeClass('checked');
+	// 		// if ($(elem).attr('checked')) {
+	// 		// 	$(elem).parents('.check-group').addClass('checked');
+	// 		// }
+	// 	});
+
+	// 	$.each(radios, function(i, elem) {
+	// 		$(elem).parents('.check-group').removeClass('checked');
+	// 		if ($(elem).attr('checked')) {
+	// 			$(elem).parents('.check-group').addClass('checked');
+	// 		}
+	// 	});
+	// });
+
+	// $('.radio-select-wrapper .check-group input[type=radio]').change(function() {
+	// 	console.log('HERER');
+	// 	if ($(this).is(':checked')) {
+	// 		$(elem).parents('.check-group').addClass('checked');
+	// 	}
+	// });
 
 	/* Open Tables */
 	$('.button-open-table').on('click', function() {
