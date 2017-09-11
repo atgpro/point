@@ -59,6 +59,8 @@ $(function (e) {
 	        var val = data.from_value;
 	        var grid = $(data.slider).find('.irs-grid-text');
 
+	        $(data.input).parents('.filter-value').find('.val .adults').html(val);
+
 	        hideSliderActiveLabel(val, grid);
 	    }
 	});
@@ -67,7 +69,7 @@ $(function (e) {
 
 	$("#childrenSlider, #childrenShortSlider").ionRangeSlider({
 	    grid: true,
-	    from: 1,
+	    from: 2,
 	    hide_min_max: true,
 	    values: [
 			"0", "1", "2", "3"
@@ -75,6 +77,8 @@ $(function (e) {
 	    onChange: function (data, e) {
 	        var val = data.from_value;
 	        var grid = $(data.slider).find('.irs-grid-text');
+
+	        $(data.input).parents('.filter-value').find('.val .children').html(val);
 
 	        hideSliderActiveLabel(val, grid);
 	    }
@@ -107,6 +111,9 @@ $(function (e) {
 
 	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span').html(data.from + 1);
 	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span').html(data.to + 1);
+
+	        $(data.slider).parents('.filter-value').find('.val .from').html(data.from);
+	        $(data.slider).parents('.filter-value').find('.val .to').html(data.to);
 	    }
 	});
 

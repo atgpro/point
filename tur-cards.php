@@ -39,7 +39,7 @@
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value">
-          <img src="img/moon-icon.png" alt=""> <span class="val">На 3 - 11  ночей</span>
+          <img src="img/moon-icon.png" alt=""> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
           <div class="hidden-change">
             <div class="choice-block nights-block for-detailed-version">
               <div class="title">
@@ -65,8 +65,8 @@
       </div>
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
-          <img src="img/adult-icon.png" alt=""> <span class="val">2 взрослых</span> <br>
-          <img src="img/chlidren-icon.png" alt=""> <span class="val">2 ребенка (5 и 10 лет) </span>
+          <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
+          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
           <div class="hidden-change">
             <div class="choice-block tourists-block for-detailed-version">
               <div class="title">
