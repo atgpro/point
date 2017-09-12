@@ -140,43 +140,64 @@ $(function (e) {
 			$(elem).parents('tr').addClass('checked');	
 		}
 	});
-	$('.check-group').on('click', function(e) {
-		if ($(this).find('input[type="checkbox"]').length) {
-			var control = $(this).find('input[type="checkbox"]');
-			if ($(control).is(':checked')) {
-				$(this).removeClass('checked');
-				$(this).parents('.scrollable-table tr').removeClass('checked');
-			} else {
-				$(this).parents('.scrollable-table tr').addClass('checked');
-				$(this).addClass('checked');
-			}
-
-			if ($(this).hasClass('open-collapse-list')) {
-				if (!$(e.target).hasClass('custom-caret')) {
-					$($(this).data('list')).find('.check-group').trigger('click');
-				} 
-			}
-
-
-			return;
-		} else {
-			var control = $(this).find('input[type="radio"]');
-			var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
-			$.each(radios, function(i, elem) {
-				$(elem).parents('.check-group').removeClass('checked');
-				// if ($(elem).attr('checked')) {
-				// 	$(elem).parents('.check-group').addClass('checked');
-				// }
-			});
-			$(this).addClass('checked');
-		}
-
-		// $(this).parents('tr').toggleClass('checked');
-	});
-
+	
 	$('.icheck-input').iCheck({
 	    checkboxClass: 'icheckbox_futurico',
 	    radioClass: 'iradio_futurico'
+	});
+
+	// $('.check-group').on('click', function(e) {
+	// 	console.log('HERER');
+
+	// 	if ($(this).find('input[type="checkbox"]').length) {
+	// 		return;
+	// 	} else {
+	// 		var control = $(this).find('input[type="radio"]');
+	// 		var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
+	// 		$.each(radios, function(i, elem) {
+	// 			$(elem).parents('.check-group').removeClass('checked');
+	// 			// if ($(elem).attr('checked')) {
+	// 			// 	$(elem).parents('.check-group').addClass('checked');
+	// 			// }
+	// 		});
+	// 		$(this).addClass('checked');
+	// 	}
+
+	// 	if ($(this).hasClass('open-collapse-list')) {
+	// 		if (!$(e.target).hasClass('custom-caret')) {
+	// 			$($(this).data('list')).find('.check-group').trigger('click');
+	// 		} 
+	// 	}
+	// });
+
+	$('input[type="checkbox"]').on('ifChanged', function(event) {
+		var control = $(this);
+		var group = $(this).parents('.check-group');
+		if ($(control).is(':checked')) {
+			$(group).parents('.scrollable-table tr').addClass('checked');
+			$(group).addClass('checked');
+		} else {
+			$(group).removeClass('checked');
+			$(group).parents('.scrollable-table tr').removeClass('checked');
+		}
+
+		if ($(group).hasClass('open-collapse-list')) {
+			if (!$(e.target).hasClass('custom-caret')) {
+				$($(group).data('list')).find('.check-group').trigger('click');
+			} 
+		}
+	});
+
+	$('input[type="radio"]').on('ifChanged', function(event) {
+		var control = $(this);
+		var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
+		$.each(radios, function(i, elem) {
+			$(elem).parents('.check-group').removeClass('checked');
+			// if ($(elem).attr('checked')) {
+			// 	$(elem).parents('.check-group').addClass('checked');
+			// }
+		});
+		$(this).parents('.check-group').addClass('checked');
 	});
 
 	// $('.radio-select-wrapper .check-group').on('click', function() {
