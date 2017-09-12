@@ -146,29 +146,13 @@ $(function (e) {
 	    radioClass: 'iradio_futurico'
 	});
 
-	// $('.check-group').on('click', function(e) {
-	// 	console.log('HERER');
-
-	// 	if ($(this).find('input[type="checkbox"]').length) {
-	// 		return;
-	// 	} else {
-	// 		var control = $(this).find('input[type="radio"]');
-	// 		var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
-	// 		$.each(radios, function(i, elem) {
-	// 			$(elem).parents('.check-group').removeClass('checked');
-	// 			// if ($(elem).attr('checked')) {
-	// 			// 	$(elem).parents('.check-group').addClass('checked');
-	// 			// }
-	// 		});
-	// 		$(this).addClass('checked');
-	// 	}
-
-	// 	if ($(this).hasClass('open-collapse-list')) {
-	// 		if (!$(e.target).hasClass('custom-caret')) {
-	// 			$($(this).data('list')).find('.check-group').trigger('click');
-	// 		} 
-	// 	}
-	// });
+	$('.check-group').on('click', function(e) {
+		if ($(this).hasClass('open-collapse-list')) {
+			if (!$(e.target).hasClass('custom-caret')) {
+				$($(this).data('list')).find('.check-group').trigger('click');
+			} 
+		}
+	});
 
 	$('input[type="checkbox"]').on('ifChanged', function(event) {
 		var control = $(this);
@@ -179,12 +163,6 @@ $(function (e) {
 		} else {
 			$(group).removeClass('checked');
 			$(group).parents('.scrollable-table tr').removeClass('checked');
-		}
-
-		if ($(group).hasClass('open-collapse-list')) {
-			if (!$(e.target).hasClass('custom-caret')) {
-				$($(group).data('list')).find('.check-group').trigger('click');
-			} 
 		}
 	});
 
@@ -373,26 +351,39 @@ $(function (e) {
 		}
 	});
 
-	$('.btn-show-tours').on('click', function() {
+	$('.btn-show-tours[data-t-box]').on('click', function() {
+		console.log($($(this).data('t-box')));
 		$($(this).data('t-box')).fadeToggle();
 		
 		if ($($(this).data('t-box')).hasClass('for-cards-view') || window.innerWidth <= 1000) {
 			$('.tours-table-overlay').fadeToggle();
 		}
 
+		if (window.innerWidth <= 1000) {
+			$('body').toggleClass('hide-overflow');
+		}
+
 		$(this).toggleClass('open');
 	});
 
 	$('.tours-table-overlay').on('click', function() {
-		$('.tours-box').fadeToggle();
+		$('.tours-box').fadeOut();
 		$('.tours-table-overlay').fadeToggle();
 		$('.btn-show-tours').removeClass('open');
+
+		if (window.innerWidth <= 1000) {
+			$('body').toggleClass('hide-overflow');
+		}
 	});
 
 	$('.tours-box-content .close-me').on('click', function() {
-		$('.tours-box').fadeToggle();
+		$('.tours-box').fadeOut();
 		$('.tours-table-overlay').fadeOut();
 		$('.btn-show-tours').removeClass('open');
+
+		if (window.innerWidth <= 1000) {
+			$('body').toggleClass('hide-overflow');
+		}
 	});
 
 	$('.hide-last-column').on('click', function() {

@@ -8,6 +8,10 @@
 	margin-right: auto;
 }
 
+.hide-overflow {
+	overflow: hidden;
+}
+
 .slider-container {
 	.back-bar .pointer {
 	    height: 25px;
@@ -573,8 +577,8 @@ h1 {
     		    // padding-top: 5px;
 			    // padding-bottom: 5px;
 
-		        padding-top: 3px;
-			    padding-bottom: 4px;
+		        padding-top: 5px;
+			    padding-bottom: 6px;
 			    margin-bottom: 0px;
 
     		    &:hover {
@@ -2711,14 +2715,19 @@ body.short-version {
         display: none;
 
         &:before {
-        	content: ' ';
-        	position: absolute;
-        	display: block;
-        	border: 20px solid transparent;
-        	border-bottom: 20px solid rgba(255, 255, 255, 0.95);
-    	    top: -28px;
+    	    content: ' ';
+		    position: absolute;
+		    display: block;
+		    background: url(http://127.0.0.1:8000/edsa-point/img/top-triangle.png);
+		    top: -7px;
 		    z-index: 3;
-	        right: 7px;
+		    right: 16px;
+		    width: 23px;
+		    height: 12px;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position-x: 0px;
+		    background-position-y: 0px;
         }
 
 	    a {
@@ -4037,6 +4046,11 @@ body.short-version {
     }
 }
 
+.tours-table {
+	.mobile-th {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 1000px) {
 	.tours-box .tours-box-content .header {
@@ -4212,6 +4226,7 @@ body.short-version {
 	    padding-right: 0px;
 	    background: #262f41;
 	    top: 0px;
+        max-height: 580px;
 
 	    .tours-box-content {
     	    width: 940px;
@@ -4346,9 +4361,181 @@ body.short-version {
 	    }
 		
 	}
+
+	.hotels-block .slider-wrapper {
+	    width: 100%;
+	    max-width: 250px;
+	}
 }
 
 @media screen and (max-width: 500px) {
+
+	.tours-box .tours-box-content,
+	.tours-box.for-cards-view .tours-box-content {
+	    width: 100%;
+	}
+	
+	.tours-box {
+		.tours-box-content {
+			.close-me {
+			    position: absolute;
+			}
+			
+			.header .group-by {
+			    float: none;
+			    margin-right: 0px;
+			    margin-top: 15px;
+			}
+		}
+	}
+
+	.tours-box .tours-box-content .body .operator .currencies {
+		float: none;
+	    margin-top: 10px;
+
+	    .item {
+    	    margin-left: 10px;
+	    }
+	}
+	.tours-box .tours-box-content {
+		.body.grouped {
+			.table-content .tr .add-to-basket,
+			.table-content .tr .add-to-basket:hover {
+				bottom: -24px;
+			}
+		}
+	}
+
+	.tours-table {
+		.table-content .tr .add-to-basket,
+		.table-content .tr .add-to-basket:hover {
+		    display: block;
+		    height: 49px;
+		    width: auto;
+		    position: absolute;
+		    width: 163px;
+		    padding-top: 12px;
+		    padding-bottom: 12px;
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    bottom: -55px;
+		    top: auto;
+		    left: 50%;
+		    margin-left: -81px;
+		    z-index: 11;
+		    /* box-shadow: none; */
+
+		    img {
+		    	position: relative;
+			    top: 0px;
+			    left: 0px;
+			    right: 0px;
+			    bottom: 0px;
+		        display: inline-block;
+			    float: left;
+		    }
+
+		    span {
+	    	    display: inline-block;
+			    color: #fff;
+			    position: relative;
+			    float: right;
+			    font-size: 15px;
+			    margin-top: -26px;
+		    }
+		}
+		
+		.table-content .tr:nth-child(odd) .td:not(.last-column):after,
+		.table-content .tr:nth-child(even) .td:not(.last-column):after {
+			display: none;
+		}
+
+		.tr-filters,
+		.tr-ths {
+			display: none;
+		}
+
+		.tr {
+			background: #ffffff;
+		}
+
+		.tr:nth-child(even) {
+			background: #c4dffc;
+		}
+
+		.tr {
+		    max-width: 300px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border-radius: 10px;
+	        margin-bottom: 54px !important;
+		    padding-bottom: 30px;
+		    padding-left: 15px;
+		    padding-right: 15px;
+
+
+			.th,
+			.filter {
+				display: none;
+			}
+			
+			.td {
+			    border-radius: 0px !important;
+			    padding-left: 15px;
+			    padding-top: 10px;
+			    padding-right: 15px;
+			    display: block;
+			    max-width: 300px;
+		        margin-left: auto;
+			    margin-right: auto;
+			    padding-top: 0px;
+			    padding-bottom: 0px;
+			    background: transparent !important;
+		        padding: 0px;
+			    width: 240px !important;
+
+			    &.last-column {
+			    	.mobile-th,
+			    	.mobile-td {
+			    		border-bottom: 0px;
+			    	}
+			    }
+			}
+
+			.mobile-th {
+			    display: table-cell;
+			    width: 120px;
+			    text-align: left;
+			    vertical-align: top;
+			    border: 1px solid #a1a2a5;
+			    padding-top: 10px;
+			    padding-bottom: 10px;
+			    padding-left: 10px;
+			    padding-right: 10px;
+			    border-top: 0px;
+			    border-left: 0px;
+		        font-family: 'RobotoCondensed-Bold';
+			}
+
+			.mobile-td {
+			    display: table-cell;
+			    width: 120px;
+			    text-align: left;
+			    border: 1px solid #a1a2a5;
+			    padding-top: 10px;
+			    padding-bottom: 10px;
+			    padding-left: 15px;
+			    padding-right: 10px;
+			    border-left: 0px;
+			    border-top: 0px;
+			    border-right: 0px;
+			    margin-left: -2px;
+			}
+		}
+	}
+
 	.inner-page-wrapper .row-filters-panel .col-xs-6 {
 		width: 100%;
 	}
