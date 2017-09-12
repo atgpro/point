@@ -4226,7 +4226,7 @@ body.short-version {
 	    padding-right: 0px;
 	    background: #262f41;
 	    top: 0px;
-        max-height: 580px;
+        // max-height: 400px;
 
 	    .tours-box-content {
     	    width: 940px;
@@ -4286,9 +4286,17 @@ body.short-version {
 	    	display: none;
 	    }
 	}
+	.tours-box {
+	    padding-bottom: 200px;
+	}
 }
 
 @media screen and (max-width: 769px) {
+	.tours-box {
+	    padding-bottom: 200px;
+	    max-height: 400px;
+	}
+
 	.results-filters-wrapper .result-views {
 	    margin-top: 20px;
         justify-content: space-around;
@@ -4369,6 +4377,9 @@ body.short-version {
 }
 
 @media screen and (max-width: 500px) {
+	.tours-box {
+		max-height: 700px;
+	}
 
 	.tours-box .tours-box-content,
 	.tours-box.for-cards-view .tours-box-content {
@@ -4397,16 +4408,21 @@ body.short-version {
     	    margin-left: 10px;
 	    }
 	}
-	.tours-box .tours-box-content {
-		.body.grouped {
-			.table-content .tr .add-to-basket,
-			.table-content .tr .add-to-basket:hover {
-				bottom: -24px;
-			}
-		}
-	}
+	// .tours-box .tours-box-content {
+	// 	.body.grouped {
+	// 		.table-content .tr .add-to-basket,
+	// 		.table-content .tr .add-to-basket:hover {
+	// 			bottom: -24px;
+	// 		}
+	// 	}
+	// }
 
 	.tours-table {
+		.table-content .tr .td .icon {
+			display: none;
+		}
+
+
 		.table-content .tr .add-to-basket,
 		.table-content .tr .add-to-basket:hover {
 		    display: block;
@@ -4418,7 +4434,7 @@ body.short-version {
 		    padding-bottom: 12px;
 		    padding-left: 15px;
 		    padding-right: 15px;
-		    bottom: -55px;
+		    bottom: -24px;
 		    top: auto;
 		    left: 50%;
 		    margin-left: -81px;
@@ -4449,6 +4465,7 @@ body.short-version {
 		.table-content .tr:nth-child(even) .td:not(.last-column):after {
 			display: none;
 		}
+
 
 		.tr-filters,
 		.tr-ths {
@@ -4494,7 +4511,7 @@ body.short-version {
 			    padding-bottom: 0px;
 			    background: transparent !important;
 		        padding: 0px;
-			    width: 240px !important;
+			    width: 250px !important;
 
 			    &.last-column {
 			    	.mobile-th,
@@ -4517,6 +4534,7 @@ body.short-version {
 			    border-top: 0px;
 			    border-left: 0px;
 		        font-family: 'RobotoCondensed-Bold';
+		        vertical-align: middle;
 			}
 
 			.mobile-td {
@@ -4526,12 +4544,16 @@ body.short-version {
 			    border: 1px solid #a1a2a5;
 			    padding-top: 10px;
 			    padding-bottom: 10px;
-			    padding-left: 15px;
+			    padding-left: 10px;
 			    padding-right: 10px;
 			    border-left: 0px;
 			    border-top: 0px;
 			    border-right: 0px;
 			    margin-left: -2px;
+
+			    br {
+			    	display: none;
+			    }
 			}
 		}
 	}
