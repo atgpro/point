@@ -4338,7 +4338,8 @@ body.short-version {
 	// }
 }
 
-.hotels-block {
+.hotels-block,
+.tourists-block {
 	.irs-line-mid {
 	    background-color: #d7d7d7;
         border-top: 1px solid white;
@@ -4362,6 +4363,94 @@ body.short-version {
 	//     padding-bottom: 200px;
 	//     // max-height: 400px;
 	// }
+
+	.hide-detailed-version {
+	    margin-bottom: 20px;
+	}
+
+	.second-choice-row {
+	    margin-top: 0px;
+	}
+
+	.first-choise-row,
+	.destination-box .wrapper {
+		margin-bottom: 0px;
+	}
+
+	.second-choice-row .choice-block {
+		margin-bottom: 20px;
+		height: auto;
+	}
+
+	body.short-version {
+		.choice-block {
+			height: auto;
+		}
+	}
+
+	.second-choice-row  {
+	    margin-right: -15px;
+	    margin-left: -15px;
+
+	    .filter-select-wrapper .filter-select:hover .select-items-wrapper {
+	    	width: 100%;
+	    }
+		
+		.nights-wrapper .top-labels {
+		    height: auto;
+		    margin-bottom: -7px;
+		}
+
+		.nights-wrapper .top-labels .from {
+		    display: block;
+		}
+
+		.nights-wrapper .top-labels .to {
+		    display: block;
+		    float: right;
+		    margin-top: -20px;
+		}
+
+		.choice-block {
+			max-width: 590px;
+			width: 100%;
+		}
+
+		.adult-childrens-sliders-wrapper {
+		    height: auto;
+		}
+
+		.adult-slider-wrapper .icon-wrapper,
+		.children-slider-wrapper .icon-wrapper {
+		    float: none;
+		}
+
+		.adult-slider-wrapper .slider-wrapper,
+		.children-slider-wrapper .slider-wrapper {
+		    float: none;
+		    width: 100%;
+		    margin-top: 0px;
+		}
+
+		.children-slider-wrapper .slider-wrapper {
+			float: none;
+		    width: 100%;
+		    margin-top: 0px;	
+		}
+
+		.tourists-block {
+			height: auto;
+		}
+
+		.range-slider-wrapper {
+			text-align: left;
+		}
+
+		.range-slider-wrapper .top-labels .to {
+		    margin-left: 85px;
+		}
+	}
+
 
 	.results-filters-wrapper .result-views {
 	    margin-top: 20px;
@@ -4486,51 +4575,53 @@ body.short-version {
 	    width: 200px;
 	}
 
-	.hotel-horisontal-table .hotel-horisontal-table-content {
-		min-width: unset;
-		overflow-x: hidden;
-	}
-	.scrollable-table {
-        max-width: 272px;
-	    min-width: 259px;
-	}
+	// .hotel-horisontal-table .hotel-horisontal-table-content {
+	// 	min-width: unset;
+	// 	overflow-x: hidden;
+	// }
 
-	.scrollable-table-box:after {
-		display: none;
-	}
 
-	.scrollable-table td:nth-child(4) {
-	    padding-left: 25px;
-	}
+	// .scrollable-table {
+ //        max-width: 272px;
+	//     min-width: 259px;
+	// }
 
-	.table-header {
-	    th {
-	    	font-size: 14px;
-		    &:nth-child(1) {
-    	        width: 20px;
-			    padding-left: 30px;
-			    padding-right: 24px;
-		    }
+	// .scrollable-table-box:after {
+	// 	display: none;
+	// }
 
-		    &:nth-child(2) {
-		        width: auto;
-		        padding-left: 7px;
-		        padding-right: 7px;
-		    }
+	// .scrollable-table td:nth-child(4) {
+	//     padding-left: 25px;
+	// }
 
-		    &:nth-child(3) {
-		        width: auto;
-		        padding-left: 7px;
-		        padding-right: 7px;
-		    }
+	// .table-header {
+	//     th {
+	//     	font-size: 14px;
+	// 	    &:nth-child(1) {
+ //    	        width: 20px;
+	// 		    padding-left: 30px;
+	// 		    padding-right: 24px;
+	// 	    }
 
-		    &:nth-child(4) {
-                width: 88px;
-			    padding-left: 7px;
-			    padding-right: 19px;
-		    }
-	    }
-	}
+	// 	    &:nth-child(2) {
+	// 	        width: auto;
+	// 	        padding-left: 7px;
+	// 	        padding-right: 7px;
+	// 	    }
+
+	// 	    &:nth-child(3) {
+	// 	        width: auto;
+	// 	        padding-left: 7px;
+	// 	        padding-right: 7px;
+	// 	    }
+
+	// 	    &:nth-child(4) {
+ //                width: 88px;
+	// 		    padding-left: 7px;
+	// 		    padding-right: 19px;
+	// 	    }
+	//     }
+	// }
 
 	// .tours-box {
 	// 	max-height: 700px;
@@ -4790,11 +4881,11 @@ body.short-version {
 }
 
 
-@media screen and (max-width: 500px) {
-	.hotel-horisontal-table .hotel-horisontal-table-content {
-	     overflow-x: auto; 
-	}
-}
+// @media screen and (max-width: 500px) {
+// 	.hotel-horisontal-table .hotel-horisontal-table-content {
+// 	     overflow-x: auto; 
+// 	}
+// }
 
 
 @media screen and (max-width: 410px) {
