@@ -424,6 +424,10 @@ h1 {
     margin-bottom: 18px;
 
     .weather {
+    	.weather-metrix {
+			display: inline-block;
+    	}
+
     	.title {
 		    font-size: 18px;
     	}
@@ -581,26 +585,7 @@ h1 {
 			    padding-bottom: 6px;
 			    margin-bottom: 0px;
 
-    		    &:hover {
-    		    	background: lighten(@main-color, 2%);
-			        color: #fff;
-				    border-radius: 10px;
-					position: relative;
-					box-shadow: 0px 5px 12px lighten(@main-color, 10%);
-					border-bottom-color: lighten(@main-color, 2%);
-					
-					.icheckbox_futurico {
-					    border-color: #fff;
-					    background-image: url(../img/futurico-checked.png);
-					    background-position-x: -1px;
-					}
-
-					.iradio_futurico {
-						border-color: #fff;
-					    background-image: url(../img/futurico-radio-checked.png);
-					    background-position-x: -1px;
-					}
-    		    }
+    		    
 
     		    .icheckbox_square-blue {
     		    	float: right;
@@ -726,6 +711,40 @@ h1 {
 		}
     }
 }
+
+@media screen and (min-width: 760px) {
+	.choice-block,
+	.select-items-wrapper {
+	    ul {
+
+		    li {
+		    	.check-group {
+					&:hover {
+				    	background: lighten(@main-color, 2%);
+				        color: #fff;
+					    border-radius: 10px;
+						position: relative;
+						box-shadow: 0px 5px 12px lighten(@main-color, 10%);
+						border-bottom-color: lighten(@main-color, 2%);
+						
+						.icheckbox_futurico {
+						    border-color: #fff;
+						    background-image: url(../img/futurico-checked.png);
+						    background-position-x: -1px;
+						}
+
+						.iradio_futurico {
+							border-color: #fff;
+						    background-image: url(../img/futurico-radio-checked.png);
+						    background-position-x: -1px;
+						}
+				    }
+		    	}
+			}
+		}
+	}
+}
+
 
 .select-items-wrapper {
 
@@ -1745,57 +1764,57 @@ body.short-version {
 	    margin-left: 0px;
 	}
 
-	.states-panel .weather .title {
-	    display: block;
-	    margin-bottom: 5px;
-	}
+	// .states-panel .weather .title {
+	//     display: block;
+	//     margin-bottom: 5px;
+	// }
 
-	.states-panel .weather .day {
-	    margin-left: 0px;
-	    display: block;
-	}
+	// .states-panel .weather .day {
+	//     margin-left: 0px;
+	//     display: block;
+	// }
 
-	.states-panel .weather .temp {
-	    margin-left: 0px;
-	    /* margin-left: 0px; */
-	    display: block;
-	    margin-bottom: 10px;
-	}
+	// .states-panel .weather .temp {
+	//     margin-left: 0px;
+	//     /* margin-left: 0px; */
+	//     display: block;
+	//     margin-bottom: 10px;
+	// }
 
-	.states-panel .weather .mounth {
-	    margin-left: 0px;
-	    /* display: block; */
-	    display: block;
-	}
+	// .states-panel .weather .mounth {
+	//     margin-left: 0px;
+	//     /* display: block; */
+	//     display: block;
+	// }
 
-	.states-panel .weather .mounth-temp {
-	    display: block;
-	    margin-left: 0px;
-	}
+	// .states-panel .weather .mounth-temp {
+	//     display: block;
+	//     margin-left: 0px;
+	// }
 
-	.states-panel .chars {
-	    text-align: left;
-	}
+	// .states-panel .chars {
+	//     text-align: left;
+	// }
 
-	.states-panel .map-markers {
-	    display: block;
-	    margin-left: 0px;
-	    margin-right: auto;
-	    margin-bottom: 10px;
-	}
+	// .states-panel .map-markers {
+	//     display: block;
+	//     margin-left: 0px;
+	//     margin-right: auto;
+	//     margin-bottom: 10px;
+	// }
 
-	.states-panel .fly-time {
-	    display: block;
-	    margin-left: 0px;
-	    margin-right: auto;
-	    margin-bottom: 10px;
-	}
+	// .states-panel .fly-time {
+	//     display: block;
+	//     margin-left: 0px;
+	//     margin-right: auto;
+	//     margin-bottom: 10px;
+	// }
 
-	.states-panel .clocks {
-	    display: block;
-	    margin-left: 0px;
-	    margin-right: auto;
-	}
+	// .states-panel .clocks {
+	//     display: block;
+	//     margin-left: 0px;
+	//     margin-right: auto;
+	// }
 
 	.from-city {
 		.filter-select {
@@ -4374,9 +4393,72 @@ body.short-version {
 	    width: 100%;
 	    max-width: 250px;
 	}
+	
+	.states-panel {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+
+	.states-panel .weather .mounth {
+	    margin-left: 20px;
+	}
 }
 
 @media screen and (max-width: 500px) {
+	.table-wrapper .search-box {
+	    max-width: 259px;
+	}
+
+	.table-wrapper input[type="text"] {
+	    width: 200px;
+	}
+
+	.hotel-horisontal-table .hotel-horisontal-table-content {
+		min-width: unset;
+		overflow-x: hidden;
+	}
+	.scrollable-table {
+        max-width: 272px;
+	    min-width: 259px;
+	}
+
+	.scrollable-table-box:after {
+		display: none;
+	}
+
+	.scrollable-table td:nth-child(4) {
+	    padding-left: 25px;
+	}
+
+	.table-header {
+	    th {
+	    	font-size: 14px;
+		    &:nth-child(1) {
+    	        width: 20px;
+			    padding-left: 30px;
+			    padding-right: 24px;
+		    }
+
+		    &:nth-child(2) {
+		        width: auto;
+		        padding-left: 7px;
+		        padding-right: 7px;
+		    }
+
+		    &:nth-child(3) {
+		        width: auto;
+		        padding-left: 7px;
+		        padding-right: 7px;
+		    }
+
+		    &:nth-child(4) {
+                width: 88px;
+			    padding-left: 7px;
+			    padding-right: 19px;
+		    }
+	    }
+	}
+
 	.tours-box {
 		max-height: 700px;
 	}
@@ -4389,7 +4471,7 @@ body.short-version {
 	.tours-box {
 		.tours-box-content {
 			.close-me {
-			    position: absolute;
+			    position: fixed;
 			}
 			
 			.header .group-by {
@@ -4457,7 +4539,7 @@ body.short-version {
 			    position: relative;
 			    float: right;
 			    font-size: 15px;
-			    margin-top: -26px;
+			    margin-top: -28px;
 		    }
 		}
 		
@@ -4632,4 +4714,42 @@ body.short-version {
 	    left: 12px;
 	    top: -26px;
 	}
+}
+
+
+@media screen and (max-width: 500px) {
+	.hotel-horisontal-table .hotel-horisontal-table-content {
+	     overflow-x: auto; 
+	}
+}
+
+
+@media screen and (max-width: 410px) {
+	.states-panel {
+	    .weather {
+	    	.weather-metrix {
+			    display: block;
+			    margin-left: 22px;
+	    	}
+	    }
+	}
+
+	.states-panel .chars {
+		text-align: left;
+	}
+
+	.states-panel .map-markers {
+	    display: inline-block;
+	    margin-bottom: 10px;
+	}
+
+	.states-panel .fly-time {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	.states-panel .clocks {
+		display: inline-block;
+		margin-bottom: 10px;
+	} 
 }
