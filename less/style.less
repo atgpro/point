@@ -715,7 +715,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1025px) {
 	.choice-block,
 	.select-items-wrapper {
 	    ul {
@@ -1670,7 +1670,7 @@ body.short-version {
 
 @media screen and (max-width: 998px) {
 	.filter-select-wrapper .filter-select {
-	    width: 185px;
+	    width: 211px;
 	}
 
 	.from-city {
@@ -4084,10 +4084,22 @@ body.short-version {
 }
 
 @media screen and (max-width: 1000px) {
+	.resort-block {
+	    max-width: 590px;
+	}
+
+	.states-panel .chars {
+	    text-align: left;
+	}
+
+	.slider-header span {
+	    font-size: 16px;
+	}
+
 	.result-item[data-type="short-panel"] .socials {
 	    display: none;
 	}
-	
+
 	.tours-box .tours-box-content .header {
 	    padding-top: 38px;
 	}
@@ -4095,7 +4107,7 @@ body.short-version {
 	.tours-box-content {
 		.close-me {
 			display: block;
-		    position: fixed;
+		    position: absolute;
 		    background: transparent;
 		    /* border: 0px; */
 		    width: 20px;
@@ -4261,7 +4273,7 @@ body.short-version {
 	    padding-right: 0px;
 	    background: #262f41;
 	    top: 0px;
-        // max-height: 400px;
+        height: 100%;
 
 	    .tours-box-content {
     	    width: 940px;
@@ -4321,16 +4333,35 @@ body.short-version {
 	    	display: none;
 	    }
 	}
-	.tours-box {
-	    padding-bottom: 200px;
+	// .tours-box {
+	//     padding-bottom: 200px;
+	// }
+}
+
+.hotels-block {
+	.irs-line-mid {
+	    background-color: #d7d7d7;
+        border-top: 1px solid white;
+	}
+
+	.irs-bar {
+	    border-top: 1px solid white;
+	}
+
+	.irs-bar-edge {
+		background-position: 9px -90px;
+	}
+
+	.class-slider-wrapper {
+		padding-right: 15px;
 	}
 }
 
 @media screen and (max-width: 769px) {
-	.tours-box {
-	    padding-bottom: 200px;
-	    max-height: 400px;
-	}
+	// .tours-box {
+	//     padding-bottom: 200px;
+	//     // max-height: 400px;
+	// }
 
 	.results-filters-wrapper .result-views {
 	    margin-top: 20px;
@@ -4407,7 +4438,8 @@ body.short-version {
 
 	.hotels-block .slider-wrapper {
 	    width: 100%;
-	    max-width: 250px;
+	    // max-width: 250px;
+	    max-width: unset;
 	}
 	
 	.states-panel {
@@ -4500,9 +4532,9 @@ body.short-version {
 	    }
 	}
 
-	.tours-box {
-		max-height: 700px;
-	}
+	// .tours-box {
+	// 	max-height: 700px;
+	// }
 
 	.tours-box .tours-box-content,
 	.tours-box.for-cards-view .tours-box-content {
@@ -4512,7 +4544,7 @@ body.short-version {
 	.tours-box {
 		.tours-box-content {
 			.close-me {
-			    position: fixed;
+			    position: absolute;
 			}
 			
 			.header .group-by {
