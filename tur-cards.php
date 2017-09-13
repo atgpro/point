@@ -306,7 +306,7 @@
 
     <div class="results-grid-wrapper">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting low">
@@ -371,7 +371,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting low">
@@ -436,7 +436,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting low">
@@ -504,7 +504,7 @@
         </div>
      <!--  </div>
       <div class="row"> -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting middle">
@@ -570,7 +570,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting middle">
@@ -636,7 +636,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting middle">
@@ -704,7 +704,7 @@
         </div>
      <!--  </div>
       <div class="row"> -->
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting high">
@@ -770,7 +770,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting high">
@@ -836,7 +836,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-6 col-sm-6 col-md-4">
           <div class="result-item result-type-card" data-type="card">
             <div class="header">
               <div class="raiting high">

@@ -111,8 +111,10 @@
               <span class="title">Погода:</span>
               <span class="day">сегодня</span>
               <span class="temp">+18...+25 С</span>
-              <span class="mounth">сентябрь</span>
-              <span class="mounth-temp">+15...+20 С</span>
+              <div class="weather-metrix">
+                <span class="mounth">сентябрь</span>
+                <span class="mounth-temp">+15...+20 С</span>
+              </div>
             </div>
           </div>
           <div class="col-md-6">

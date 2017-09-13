@@ -131,9 +131,11 @@
               <div class="mobile-th">Расчеты <br>с ЦБТ</div>
               <div class="mobile-td">
                 <span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span>
-                <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
+
+            <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
+            
           </div>
   
           <div class="tr">
@@ -194,9 +196,11 @@
               <div class="mobile-th">Расчеты <br>с ЦБТ</div>
               <div class="mobile-td">
                 <span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span>
-                <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
+
+            <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
+
           </div>
 
 
@@ -258,9 +262,11 @@
               <div class="mobile-th">Расчеты <br>с ЦБТ</div>
               <div class="mobile-td">
                 <span class="muted">Комиссия*<br>(до 5.6%) <br>до 1 529 </span><span class="muted">К оплате ТО*: <br>до 25 782 </span>
-                <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
+
+            <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
+
           </div>
 
 

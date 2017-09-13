@@ -24,9 +24,9 @@
      <link rel="stylesheet" href="css/magnific-popup.css">
   
      <!-- LESS -->
-     <link rel="stylesheet/less" type="text/css" href="less/style.less?v=3" /> 
+     <link rel="stylesheet/less" type="text/css" href="less/style.less?v=9" /> 
      <!-- LESS Compiler -->
-     <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
+     <script src="bower_components/less/dist/less.min.js?v=9" type="text/javascript"></script>
      <!-- CSS -->
      <!-- <link href="css/style.css" rel="stylesheet"> -->
 
