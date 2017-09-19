@@ -1,4 +1,51 @@
+
 $(function (e) {
+	$(window).scroll(function(e) {
+		if ($(this).scrollTop() >= 235) {
+			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
+				$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
+				$('.filters-panel-wrapper').addClass('fixed-header-filters');
+			}
+		} else {
+			$('.filters-panel-wrapper').removeClass('fixed-header-filters');
+			$('.inner-page-wrapper').css('margin-bottom', '0px');
+		}
+	});
+
+	function numStep() {
+		var e = this;
+		e.el = null;
+		e.up = function() {
+			e.set(e.get(this),true);
+		};
+		e.down = function() {
+			e.set(e.get(this));
+		}
+		e.get = function(_this) {
+			e.el = $(_this).closest('.num-step').find('input');
+			return +e.el.val()||0;
+		}
+		e.set = function(num,up) {
+			if (!e.el) return;
+			if (up) num++;
+			else num--;
+			if (num<1) num=1;
+			if (num>11) num=11;
+			e.el.val(num);
+		}
+		$('.num-step .num-up').on('click', e.up);
+		$('.num-step .num-down').on('click', e.down);
+	}
+	numStep();
+
+	$('.tours-table .mobile-short-view').on('click', function() {
+		$(this).parents('.tr').find('.mobile-detailed-view').fadeIn();
+	});
+
+	$('.tours-table .mobile-detailed-view .close-it').on('click', function() {
+		$(this).parents('.mobile-detailed-view').fadeOut();
+	});
+
 	$('.filter-select .select-items div').on('click', function() {
 		var select = $(this).parents('.filter-select');
 		select.find('.selected').html($(this).html());
@@ -81,8 +128,65 @@ $(function (e) {
 	        $(data.input).parents('.filter-value').find('.val .children').html(val);
 
 	        hideSliderActiveLabel(val, grid);
+
+	        var label = $(data.slider).parents('.slider-wrapper').find('.irs-slider');
+	        var agePanel = $(data.slider).parents('.slider-wrapper').find('.age-change-panel');
+	        $(agePanel).css('left', ($(label).position().left - 137) + 'px');
+	        $(agePanel).data('current', val);
+
+	        if (val) {
+		        $(agePanel).fadeIn();
+	        } else {
+	        	$(agePanel).fadeOut();
+	        }
+
+	        var count = 1;
+
+	        $.each($(agePanel).find('.input'), function(i, elem) {
+	        	if (count <= val) {
+	        		$(elem).css('display', 'block');
+	        	} else {
+	        		$(elem).css('display', 'none');
+	        	}
+
+	        	count++;
+	        });
+
 	    }
 	});
+
+	$(".numeric").numeric();
+
+	$(".age-change-panel input").change(function (e) {
+		if ($(this).val() > 11 || $(this).val() < 0) {
+			$(this).val(0);
+		}
+	});
+ //    $('body').on('click', function(e) {
+ //    	if (!$(e.target).parents('.children-slider-wrapper').length) {
+ //    		return;
+ //    	}
+ //    	// console.log($(e.target).parents('.slider-wrapper').length);
+ //    	if (!$(e.target).hasClass('irs-single')) {
+ //    		// console.log('HERERE');
+ //    		if ($(e.target).parents('.age-change-panel').length == 0) {
+	// 			$(this).find('.age-change-panel').fadeOut();
+ //    		}
+ //    	}
+	// });
+	$(window).on("orientationchange", function(event) {
+		$('.age-change-panel').fadeOut();
+	});
+
+	$(window).resize(function(){
+		$('.age-change-panel').css('display', 'none');
+	});
+
+	$('.age-change-panel .save').on('click', function() {
+		$(this).parents('.age-change-panel').fadeOut();
+	});
+
+	 
 
 	hideSliderActiveLabel($("#childrenSlider").val(), $("#childrenSlider").parents('.slider-wrapper').find('.irs').find('.irs-grid-text'));
 	
@@ -149,9 +253,14 @@ $(function (e) {
 	$('.check-group').on('click', function(e) {
 		if ($(this).hasClass('open-collapse-list')) {
 			if (!$(e.target).hasClass('custom-caret')) {
-				$($(this).data('list')).find('.check-group').trigger('click');
+				$($(this).data('list')).find('input[type="checkbox"]').iCheck('toggle');;
 			} 
 		}
+	});
+
+	$('.hotel-horisontal-table .scrollable-table tr').on('click', function() {
+		// console.log($(this).find('input[type="checkbox"]'));
+		$(this).find('input[type="checkbox"]').iCheck('toggle');
 	});
 
 	$('input[type="checkbox"]').on('ifChanged', function(event) {
@@ -287,7 +396,7 @@ $(function (e) {
 	            "Ноябрь",
 	            "Декабрь"
 	        ],
-	        "firstDay": 1
+	        "firstDay": 0
 	    }
 	}, 
 	function(start, end, label) {
@@ -298,7 +407,34 @@ $(function (e) {
 		$(this.element).parents('.filter-value').removeClass('open');
 		// console.log(this.element);
 	    // alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+	}).on('show.daterangepicker', function() {
+		// var startMonth = $('.daterangepicker .calendar.left .month').html();
+		// var endMonth = $('.daterangepicker .calendar.right .month').html();
+		// $('.daterangepicker .calendar.left thead').append('<tr><th colspan="7" class="cusom-month">' + startMonth + '<th></tr>');
+		// $('.daterangepicker .calendar.right thead').append('<tr><th colspan="7" class="cusom-month">' + endMonth + '<th></tr>');
+		$.each($('.daterangepicker .calendar tr'), function(i, elem) {
+			if ($(elem).find('.off').length == 7) {
+				$(elem).remove();
+			}
+		});
+
+		if ($('.daterangepicker .title').length) {
+			return;
+		}
+
+		$('.daterangepicker').bind("DOMSubtreeModified",function(){
+			$.each($('.daterangepicker .calendar tr'), function(i, elem) {
+				if ($(elem).find('.off').length == 7) {
+					$(elem).remove();
+				}
+			});
+		});
+
+		$('.daterangepicker').prepend('<div class="title">Выберите диапазон дат вылета</div>');
+		$('.daterangepicker').prepend('<div class="months"><div class="months-list scroll2"><div>Январь</div><div>Февраль</div><div>Март</div><div>Апрель</div><div>Май</div><div>Июнь</div><div>Июль</div><div>Август</div><div>Сентябрь</div><div>Октябрь</div><div>Ноябрь</div><div>Декабрь</div></div></div>');
+
 	});
+
 
 	$('.result-type-card .slider').slick({
 	  dots: false,
@@ -307,13 +443,13 @@ $(function (e) {
 	  slidesToShow: 1,
 	  responsive: [
 		    {
-		      breakpoint: 768,
+		      breakpoint: 650,
 		      settings: {
 		        slidesToShow: 2,
 		      }
 	    	},
 	    	{
-		      breakpoint: 640,
+		      breakpoint: 600,
 		      settings: {
 		        slidesToShow: 1,
 		      }
@@ -361,10 +497,17 @@ $(function (e) {
 
 		if (window.innerWidth <= 1000) {
 			$('body').toggleClass('hide-overflow');
+			// $($(this).data('t-box')).css('height', window.innerHeight + 'px');
 		}
 
 		$(this).toggleClass('open');
 	});
+
+	// $(window).on("orientationchange", function(event) {
+	// 	if (window.innerWidth <= 1000) {
+	// 		$('.tours-box').css('height', window.innerHeight + 'px');
+	// 	}
+	// });
 
 	$('.tours-table-overlay').on('click', function() {
 		$('.tours-box').fadeOut();
@@ -382,7 +525,7 @@ $(function (e) {
 		$('.btn-show-tours').removeClass('open');
 
 		if (window.innerWidth <= 1000) {
-			$('body').toggleClass('hide-overflow');
+			$('body').removeClass('hide-overflow');
 		}
 	});
 
@@ -409,6 +552,7 @@ $(function (e) {
 
 	$('.filter-additional-params .edit-btn').on('click', function() {
 		$(this).parents('.item').find('.select-items-wrapper').fadeToggle();
+		$(this).parents('.item').find('.select-items-wrapper').toggleClass('editable');
 		$(this).toggleClass('open');
 	});
 
@@ -456,7 +600,12 @@ $(function (e) {
 
 		$(this).find('.hidden-change').fadeIn();
 		$(this).toggleClass('open');
-	});
+	});/*
+	$(document).on("click", function(e) {
+		if (!$(e.target).closest(".filter-value").length) {
+			$(".filter-value.open").removeClass("open");
+		}
+	});*/
 
 	setTimeout(function() {
 		$('.main-loader').fadeOut();

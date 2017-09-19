@@ -766,6 +766,19 @@ h1 {
   background: #dee3e6; 
 }
 
+.scroll2::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.scroll2::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+.scroll2::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #448cd4; 
+}
+
 .slider-header {
 	span {
 		font-size: 18px;
@@ -1678,9 +1691,23 @@ body.short-version {
 	    margin-right: auto;
 	}
 
-	.states-panel .chars {
-	    margin-top: 15px;
+	.states-panel {
+		padding-left: 15px;
+		padding-right: 15px;
+	
+		.weather .mounth {
+		    margin-left: 15px;
+		}
+
+		.map-markers,
+		.fly-time,
+		.clocks {
+		    margin-right: 15px;
+		}
 	}
+	// .states-panel .chars {
+	//     margin-top: 15px;
+	// }
 
 	.destination-box .destination-country-header {
 	    margin-left: auto;
@@ -2378,7 +2405,72 @@ body.short-version {
     position: relative;
     padding-top: 90px;
     margin-bottom: 30px;
-    padding-bottom: 42px;
+	padding-bottom: 42px;
+	
+	&.short-item {
+		padding-top: 75px;
+		padding-bottom: 37px;
+	
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.raiting {
+			left: 14px;
+		}
+
+		.stars,.title {
+			left: 120px;
+		}
+
+		.params {
+			padding-left: 14px;
+			padding-right: 14px;
+					
+			.left,.right {
+				width: 100%;
+			}
+		}
+
+		.footer {
+			float: right;
+			width: 50%;
+
+			.price {
+				white-space: nowrap;
+				position: relative;
+
+				strong {
+					margin-left: 5px;
+					font-size: 30px;
+				}
+
+				img {
+					width: 13px;
+				}
+			}
+
+			.price-description {
+				text-align: right;
+				position: relative;
+				width: 200%;
+				left: -100%;
+				float: left;
+
+				.param-1,.param-2 {
+					display: inline-block;
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.body {
+			float: left;
+			width: 50%;
+		}
+	}
 
     .raiting {
 	    color: #fff;
@@ -2743,13 +2835,14 @@ body.short-version {
         top: 53px;
     	box-shadow: 1px 3px 10px rgba(37, 47, 67, 0.2);
         right: 0px;
-        display: none;
+		display: none;
+		z-index: 3;
 
         &:before {
     	    content: ' ';
 		    position: absolute;
 		    display: block;
-		    background: url(http://127.0.0.1:8000/edsa-point/img/top-triangle.png);
+		    background: url(../img/top-triangle.png);
 		    top: -7px;
 		    z-index: 3;
 		    right: 16px;
@@ -3052,6 +3145,13 @@ body.short-version {
     padding-right: 15px;
     margin-top: -20px;
     margin-bottom: 20px;
+
+    .title {
+	    font-size: 20px;
+	    color: #ffffff;
+	    position: relative;
+	    padding-top: 20px;
+    }
 
     &.for-cards-view {
     	position: fixed;
@@ -3894,6 +3994,7 @@ body.short-version {
 		    right: 138%;
 		    min-width: 200px;
 		    top: 0px;
+		    box-shadow: 1px 3px 10px rgba(37, 47, 67, 0.2);
 
 		    &:before {
 	    	    content: ' ';
@@ -4092,6 +4193,14 @@ body.short-version {
 	    text-align: left;
 	}
 
+	.states-panel .weather .day {
+		margin-left: 10px;
+	}
+
+	.states-panel .weather .temp {
+		margin-left: 10px;
+	}
+
 	.slider-header span {
 	    font-size: 16px;
 	}
@@ -4107,7 +4216,7 @@ body.short-version {
 	.tours-box-content {
 		.close-me {
 			display: block;
-		    position: absolute;
+		    position: fixed;
 		    background: transparent;
 		    /* border: 0px; */
 		    width: 20px;
@@ -4315,7 +4424,6 @@ body.short-version {
 	}
 
 	.row-filters-panel .filter-additional-params .select-items-wrapper {
-	    display: block;
 	    right: 0px;
 	    z-index: 3;
 	    width: 100%;
@@ -4329,6 +4437,11 @@ body.short-version {
 
 	    max-width: 100%;
 	    min-width: unset;
+
+	    &.editable {
+	    	display: block;
+	    }
+
 	    &:before {
 	    	display: none;
 	    }
@@ -4354,11 +4467,319 @@ body.short-version {
 	}
 
 	.class-slider-wrapper {
-		padding-right: 15px;
+		padding-right: 0px;
 	}
 }
 
+.num-step {
+	display: inline-block;
+	position: relative;
+	margin: 0 !important;
+
+	input {
+		text-align: center;
+	}
+
+	span {
+		position: absolute;
+		top: 0;
+		height: 24px;
+		width: 30px;
+		margin: 0 !important;
+		line-height: 24px;
+	}
+
+	.num-down {
+		left: 0;
+
+		&:after {
+			content: '-';
+		}
+	}
+
+	.num-up	{
+		right: 0;
+
+		&:after {
+			content: '+';
+		}
+	}
+}
+
+.children-slider-wrapper {
+	.slider-wrapper {
+		position: relative;
+	}
+	
+	.age-change-panel {
+	    position: absolute;
+	    background: #fff;
+	    z-index: 3;
+	    padding: 10px;
+	    left: 0px;
+	    max-width: 250px;
+	    box-shadow: 1px 1px 10px #bdbdbd;
+	    top: 100%;
+
+        min-width: 175px;
+	    margin-top: -10px;
+	    display: none;
+
+	    &:before {
+    	    content: ' ';
+		    position: absolute;
+		    display: block;
+		    background: url(../img/top-triangle.png);
+		    top: -7px;
+		    z-index: 3;
+		    right: 16px;
+		    width: 23px;
+		    height: 12px;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position-x: 0px;
+		    background-position-y: 0px;
+	    }
+
+	    .save {
+	    	display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    box-sizing: border-box;
+		    background: #4e93d5;
+		    border: 0px;
+		    color: #fff;
+		    border-radius: 1000px;
+		    padding-left: 15px;
+		    padding-right: 15px;
+		    padding-top: 2px;
+		    padding-bottom: 3px;
+		    outline: none;
+	    }
+
+	    .title {
+		    margin-bottom: 10px;
+	    }
+	    
+	    .input {
+		    margin-bottom: 10px;
+
+		    span {
+	    	    font-family: 'RobotoCondensed-Regular';
+			    margin-right: 10px;
+			    color: #3283d3;
+		    }
+
+		    input {
+	    	    background: rgba(243, 243, 243, 0.53);
+			    border: 1px solid #c3c3c3;
+			    border-radius: 1000px;
+			    max-width: 80px;
+			    padding-left: 10px;
+			    padding-right: 10px;
+			    outline: none;
+		    }
+	    }
+	}
+}
+
+.fixed-header-filters {
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+    background: #fff;
+    left: 0px;
+    width: 100%;
+    margin-left: 0px;
+    box-shadow: 1px 3px 10px rgba(37, 47, 67, 0.2);
+
+    .row-filters-panel {
+    	max-width: 970px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+    .filter-additional-params {
+    	border-radius: 0px;
+    }
+
+    .filter-value {
+	    background: rgba(233, 237, 240, 0.22);
+	    border-radius: 0px;
+	    border-right: 1px solid #e8ecef;
+	    border-left: 1px solid #e8ecef;
+    }
+
+    .filter-value,
+    .filter-additional-params {
+    	min-height: unset;
+    }
+
+    .filter-value.humans {
+	    padding-top: 13px;
+    }
+	
+	.filter-value:not(.humans),
+	.filter-additional-params {
+        padding-top: 30px;
+	    padding-bottom: 31px;
+	}
+}
+
+/* Date Range Picker Stilization */
+.daterangepicker {
+    max-width: 461px;
+    padding-left: 170px;
+    border: 0px;
+    border-radius: 10px;
+    width: 460px;
+    height: 420px;
+
+    .ranges {
+	    display: none;	
+    }
+
+    .daterangepicker_input {
+	   	display: none;
+    }
+
+    .calendar th,
+    .calendar td:not(.active) {
+   		color: #657d95;
+    }
+
+    .calendar .off {
+    	visibility: hidden;
+    }
+	
+	.calendar th,
+    .calendar td {
+	   padding: 0px;
+       min-width: 23px;
+       font-size: 15px;
+	    font-family: 'RobotoCondensed-Regular';
+
+		&:nth-last-child(1):not(.active),
+		&:nth-last-child(2):not(.active) {
+			color: #448cd4;
+		}
+    }
+
+    .calendar.right,
+    .calendar.left {
+    	float: none;
+    	margin: 0px;
+    }
+	
+	.calendar td.active {
+	    text-align: center;
+	    padding-right: 2px;
+		
+		&.end-date.start-date {
+	        border-radius: 5px;
+		}
+
+	    &.end-date {
+		    border-top-left-radius: 0px;
+		    border-bottom-left-radius: 0px; 
+	    }
+
+	    &.start-date {
+		    border-top-right-radius: 0px;
+		    border-bottom-right-radius: 0px; 
+	    }
+	}
+
+    .table-condensed {
+   		thead {
+   			tr:nth-child(1) {
+   				th:nth-child(1) {
+   					display: none;
+   				}
+
+   				th:nth-child(2) {
+	   				text-align: left;
+				    padding-top: 10px;
+				    padding-bottom: 7px;
+				    color: #2e3039;
+				}
+
+			    th:nth-child(3) {
+   					display: none;
+   				}
+   			}
+
+   		}
+    }
+
+    .title {
+    	font-size: 20px;
+	    color: #2e3039;
+	    margin-bottom: 10px;
+	    padding-left: 25px;
+	    padding-right: 20px;
+        position: absolute;
+	    left: 0px;
+	    top: 15px;
+    }
+
+    .months {
+    	background: #0f1a32;
+	    color: #fff;
+	    font-size: 15px;
+	    font-family: 'RobotoCondensed-Regular';
+	    width: 163px;
+	    border-top-right-radius: 10px;
+	    /* text-shadow: 0 0 black; */
+	    border-bottom-right-radius: 10px;
+	    /* float: left; */
+	    position: absolute;
+	    left: 0px;
+	    top: 63px;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 14px;
+
+        padding-right: 14px;
+	    border-bottom-right-radius: 0px;
+	    border-bottom-left-radius: 10px;
+
+
+        .months-list {
+		    max-height: 260px;
+		    overflow-y: auto;
+		    max-height: 307px;
+
+        	 div {
+    	 	    margin-bottom: 12px;
+			    cursor: pointer;
+			    line-height: 1;
+			    padding-left: 25px;
+        	 }
+        }
+
+    }
+
+    // .calendar .cusom-month {
+	   //  text-align: left;
+	   //  padding-top: 10px;
+	   //  padding-bottom: 7px;
+	   //  color: #2e3039;
+    // }
+
+    .calendar.left {
+        margin-top: 59px;
+        margin-bottom: 10px;
+    }
+
+    .calendar .month {
+    	padding-top: 0px !important;
+    }
+}
+
 @media screen and (max-width: 769px) {
+	
 	// .tours-box {
 	//     padding-bottom: 200px;
 	//     // max-height: 400px;
@@ -4453,7 +4874,6 @@ body.short-version {
 
 
 	.results-filters-wrapper .result-views {
-	    margin-top: 20px;
         justify-content: space-around;
 	}
 
@@ -4532,16 +4952,34 @@ body.short-version {
 	}
 	
 	.states-panel {
-	    padding-left: 20px;
-	    padding-right: 20px;
+	    padding-left: 15px;
+	    padding-right: 15px;
 	}
 
-	.states-panel .weather .mounth {
-	    margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.states-panel .chars {
+	    margin-top: 15px;
 	}
+
+	.results-filters-wrapper .result-views {
+		margin-top: 20px;
+	}
+
+	.hotels-block,
+	.tourists-block {
+		.class-slider-wrapper {
+			padding-right: 15px;
+		}
+	}
+
 }
 
 @media screen and (max-width: 650px) {
+	.states-panel .weather .mounth {
+	    margin-left: 20px;
+	}
 	.results-grid-wrapper {
 		.col-xs-6 {
 			width: 100% !important;
@@ -4561,11 +4999,75 @@ body.short-version {
 	}
 }
 
-.mobile-short-view {
-	display: none;
+.tours-box {
+	.mobile-short-view {
+		display: none;
+	}
+
+	.mobile-detailed-view {
+		display: block;
+	}
 }
 
+
 @media screen and (max-width: 500px) {
+	.children-slider-wrapper .age-change-panel {
+		left: 0px !important;
+		width: 100% !important;
+		max-width: unset;
+		text-align: center;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.daterangepicker {
+		.table-condensed>tbody>tr>td,
+		.table-condensed>tbody>tr>th,
+		.table-condensed>tfoot>tr>td,
+		.table-condensed>tfoot>tr>th,
+		.table-condensed>thead>tr>td,
+		.table-condensed>thead>tr>th
+		{
+			padding: 2px;
+		}
+	}
+	
+	.btn-back-to-prev-step {
+		width: 100%;
+		max-width: unset;
+	    text-align: center;
+	}
+
+	.second-choice-row {
+		.calendar-buttons .buttons {
+		    width: 100%;
+		}
+
+		.calendar-buttons .labels {
+		    width: 100%;
+		    text-align: center;
+		}
+
+		.calendar-buttons .labels label:nth-child(1),
+		.calendar-buttons .labels label:nth-child(2) {
+		    padding-left: 30px;
+		    padding-right: 30px;
+		}
+
+		.cost-block {
+			.range-slider-wrapper {
+				text-align: center;
+
+				.top-labels .from {
+					float: none;
+				}
+			}
+		}
+	}
+
+
 	.result-item[data-type="panel"] .gallery {
 	    max-width: 100%;
         margin-left: 0px;
@@ -4645,7 +5147,7 @@ body.short-version {
 	.tours-box {
 		.tours-box-content {
 			.close-me {
-			    position: absolute;
+			    position: fixed;
 			}
 			
 			.header .group-by {
@@ -4683,9 +5185,9 @@ body.short-version {
 		    width: 100%;
 		    height: 100%;
 	        padding-top: 70px;
-            display: block;
 		    overflow-y: auto;
 		    padding-bottom: 20px;
+		    z-index: 5;
 
 		    .close-it {
 				display: block;
@@ -4719,7 +5221,7 @@ body.short-version {
 				    display: block;
 				    content: ' ';
 			        background: #434b52;
-				    height: 16px;
+				    height: 15px;
 				    width: 1px;
 				    transform: rotate(45deg);
 				    top: 1px;
@@ -4794,7 +5296,7 @@ body.short-version {
 		}
 
 		.tr {
-		    max-width: 320px;
+		    max-width: 302px;
 		    margin-left: auto;
 		    margin-right: auto;
 		    padding-top: 15px;
@@ -4807,7 +5309,7 @@ body.short-version {
 
 		    .mobile-short-view {
 		    	.left {
-		    		width: 135px;
+		    		width: 118px;
 				    display: table-cell;
 				    vertical-align: top;
 			        border-right: 1px solid #a1a2a5;
@@ -4851,7 +5353,7 @@ body.short-version {
 			    padding-left: 15px;
 			    padding-top: 10px;
 			    padding-right: 15px;
-			    display: block;
+			    display: block !important;
 			    max-width: 300px;
 		        margin-left: auto;
 			    margin-right: auto;
@@ -4875,8 +5377,8 @@ body.short-version {
 			    text-align: left;
 			    vertical-align: top;
 			    border: 1px solid #a1a2a5;
-			    padding-top: 10px;
-			    padding-bottom: 10px;
+			    padding-top: 5px;
+			    padding-bottom: 5px;
 			    padding-left: 10px;
 			    padding-right: 10px;
 			    border-top: 0px;
@@ -4890,8 +5392,8 @@ body.short-version {
 			    width: 120px;
 			    text-align: left;
 			    border: 1px solid #a1a2a5;
-			    padding-top: 10px;
-			    padding-bottom: 10px;
+			    padding-top: 5px;
+			    padding-bottom: 5px;
 			    padding-left: 10px;
 			    padding-right: 10px;
 			    border-left: 0px;
@@ -4991,11 +5493,16 @@ body.short-version {
 
 
 @media screen and (max-width: 410px) {
+
 	.states-panel {
 	    .weather {
+    	    padding: 0px;
+		    text-align: center;
+
 	    	.weather-metrix {
 			    display: block;
 			    margin-left: 22px;
+			    margin-bottom: 25px;
 	    	}
 	    }
 	}
@@ -5007,15 +5514,30 @@ body.short-version {
 	.states-panel .map-markers {
 	    display: inline-block;
 	    margin-bottom: 10px;
+        margin-right: 10px;
+
+        img {
+    	    margin-right: 5px;
+        }
 	}
 
 	.states-panel .fly-time {
 		display: inline-block;
 		margin-bottom: 10px;
+		margin-right: 10px;
+
+		img {
+		    margin-right: 5px;
+		}
 	}
 
 	.states-panel .clocks {
 		display: inline-block;
 		margin-bottom: 10px;
+
+		img {
+		    margin-right: 5px;
+		}
 	} 
 }
+
