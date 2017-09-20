@@ -2407,71 +2407,6 @@ body.short-version {
     margin-bottom: 30px;
 	padding-bottom: 42px;
 	
-	&.short-item {
-		padding-top: 75px;
-		padding-bottom: 37px;
-	
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
-		}
-
-		.raiting {
-			left: 14px;
-		}
-
-		.stars,.title {
-			left: 120px;
-		}
-
-		.params {
-			padding-left: 14px;
-			padding-right: 14px;
-					
-			.left,.right {
-				width: 100%;
-			}
-		}
-
-		.footer {
-			float: right;
-			width: 50%;
-
-			.price {
-				white-space: nowrap;
-				position: relative;
-
-				strong {
-					margin-left: 5px;
-					font-size: 30px;
-				}
-
-				img {
-					width: 13px;
-				}
-			}
-
-			.price-description {
-				text-align: right;
-				position: relative;
-				width: 200%;
-				left: -100%;
-				float: left;
-
-				.param-1,.param-2 {
-					display: inline-block;
-					margin-left: 10px;
-				}
-			}
-		}
-
-		.body {
-			float: left;
-			width: 50%;
-		}
-	}
-
     .raiting {
 	    color: #fff;
 	    font-size: 16px;
@@ -2735,7 +2670,6 @@ body.short-version {
 	    .price-description {
     	    font-size: 14.04px;
 		    color: #798da2;
-
 		    .param-1 {
 		    	margin-left: 10px;
 		    }
@@ -3085,6 +3019,14 @@ body.short-version {
 	}
 
 	&.short-panel {
+		.price-description {
+		    right: 48px;
+
+		    .room-for {
+		    	display: inline-block;
+		    }
+		}
+
 		.content {
 			display: none;
 		}
@@ -4185,6 +4127,72 @@ body.short-version {
 }
 
 @media screen and (max-width: 1000px) {
+	.result-item[data-type="short-panel"] {
+		padding-top: 75px;
+		padding-bottom: 37px;
+	
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.raiting {
+			left: 14px;
+		}
+
+		.stars,.title {
+			left: 120px;
+		}
+
+		.params {
+			padding-left: 14px;
+			padding-right: 14px;
+					
+			.left,.right {
+				width: 100%;
+			}
+		}
+
+		.footer {
+			float: right;
+			width: 50%;
+		    text-align: right;
+
+			.price {
+				white-space: nowrap;
+				position: relative;
+
+				strong {
+					margin-left: 5px;
+					font-size: 30px;
+				}
+
+				img {
+					width: 13px;
+				}
+			}
+
+			.price-description {
+				text-align: right;
+				position: relative;
+				width: 200%;
+				left: -100%;
+				float: left;
+
+				.param-1,.param-2 {
+					display: inline-block;
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.body {
+			float: left;
+			width: 50%;
+		}
+	}
+
 	.resort-block {
 	    max-width: 590px;
 	}
@@ -4626,6 +4634,11 @@ body.short-version {
 	}
 }
 
+.open-about,
+.open-map {
+	cursor: pointer;
+}
+
 .result-type-panel .hidden-menu a {
 	&.open-about,
 	&.open-map {
@@ -4644,7 +4657,9 @@ body.short-version {
 	.text {
 	    font-size: 14px;
         letter-spacing: 0.5px;
-		
+        overflow-y: auto;
+	    max-height: 500px;
+
 		h1 {
 			font-size: 17px;
 			font-family: 'RobotoCondensed-Bold';
