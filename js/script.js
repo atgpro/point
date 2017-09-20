@@ -12,17 +12,17 @@ $(function (e) {
 		// .magnificPopup({delegate: 'a', type: 'image' });
 	});
 
-	// $(window).scroll(function(e) {
-	// 	if ($(this).scrollTop() >= 235) {
-	// 		if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
-	// 			$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
-	// 			$('.filters-panel-wrapper').addClass('fixed-header-filters');
-	// 		}
-	// 	} else {
-	// 		$('.filters-panel-wrapper').removeClass('fixed-header-filters');
-	// 		$('.inner-page-wrapper').css('margin-bottom', '0px');
-	// 	}
-	// });
+	$(window).scroll(function(e) {
+		if ($(this).scrollTop() >= 235) {
+			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
+				$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
+				$('.filters-panel-wrapper').addClass('fixed-header-filters');
+			}
+		} else {
+			$('.filters-panel-wrapper').removeClass('fixed-header-filters');
+			$('.inner-page-wrapper').css('margin-bottom', '0px');
+		}
+	});
 
 	function numStep() {
 		var e = this;
@@ -177,7 +177,7 @@ $(function (e) {
 	        	count++;
 	        });
 
-	        $(data.slider).parents('.filter-value').find('.child-ages').css('visibility', 'hidden');
+	        $(data.slider).parents('.filter-value').find('.child-ages').css('display', 'none');
 
 	        // $(data.slider).parents('.filter-value').find('.child-ages').css('visibility', 'hidden');
 	    }
@@ -221,7 +221,7 @@ $(function (e) {
 				$(elem).parents('.filter-value').find('.child-ages').html('(' + agesSrt + ')');
 			}
 
-			$(elem).parents('.filter-value').find('.child-ages').css('visibility', 'visible');
+			$(elem).parents('.filter-value').find('.child-ages').css('display', 'inline-block');
 		}
 	}
 
@@ -434,7 +434,7 @@ $(function (e) {
 	});
 
 	/* Calendar */
-	$('.calendar-buttons .buttons').daterangepicker(
+	$('.calendar-buttons .buttons, .filters-panel-wrapper .filter-value-date').daterangepicker(
 	{
 		"locale": {
 	        "format": "DD.MM.YY",
@@ -689,13 +689,20 @@ $(function (e) {
 		$(this).attr('placeholder', 'Быстрый поиск по отелям');
 	});
 
+
+
 	$('.filter-value').on('click', function(e) {
 		if ($(e.target).parents('.choice-block').length || 
 			$(e.target).hasClass('choice-block')) {
 			return;
 		}
 
+		if ($(this).find('.date-block').length) {
+			return;
+		}
+
 		$(this).find('.hidden-change').fadeIn();
+
 		$(this).toggleClass('open');
 	});/*
 	$(document).on("click", function(e) {

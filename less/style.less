@@ -1960,11 +1960,19 @@ body.short-version {
 		    text-align: left;
 
 		    &:before {
-	    	    content: '';
+    	        content: ' ';
 			    position: absolute;
-			    border: 13px solid transparent;
-			    border-bottom: 11px solid white;
-			    top: -22px;
+			    display: block;
+			    background: url(http://html.tommy-gun.pro/point/img/top-triangle.png);
+			    top: -7px;
+			    z-index: 3;
+			    right: 16px;
+			    width: 23px;
+			    height: 12px;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    background-position-x: 0px;
+			    background-position-y: 0px;
 		    }
 
 		    .calendar-buttons .labels {
@@ -4127,6 +4135,90 @@ body.short-version {
 }
 
 @media screen and (max-width: 1000px) {
+	.fixed-header-filters {
+		.hide-on-mobile-icon {
+			display: none !important;
+		}
+	}
+
+	.fixed-header-filters {
+		[class^="col-"] {
+		    padding-left: 5px;
+		    padding-right: 5px;
+		}
+		
+		.filter-value {
+		    text-align: center !important;
+		    padding-bottom: 9px !important;
+		    padding-top: 9px !important;
+		    margin-bottom: 0px !important;
+		    padding-left: 12px !important;
+		    padding-right: 12px !important;
+
+			&>.val {
+				display: none;
+			}
+			
+			&.humans {
+				text-align: center;
+				padding-bottom: 6px !important;
+			    padding-top: 6px !important;
+			}
+
+			&>img {
+				margin-bottom: 0px !important;
+			}
+
+			.choice-block {
+			    min-width: 230px;
+
+			    &:before {
+			    	left: 15px;
+			    }
+			}
+
+		    &.humans {
+		    	.choice-block {
+				    right: 0px;
+				    left: auto;
+
+    			    &:before {
+				    	right: 15px;
+				    }
+		    	}
+
+				.choice-block:before {
+				    right: 10px;
+				    left: auto;
+				}
+		    }
+
+		}
+
+		.filter-additional-params>span {
+			display: none;
+		}
+
+		.filter-additional-params {
+		    padding-top: 9px !important;
+		    padding-bottom: 10px !important;
+
+			.hidden-menu {
+				min-width: 300px;
+				right: 0px;
+				left: auto;
+			}
+
+		    .open-additional-params {
+			    top: 0px;
+			    overflow: hidden;
+			    max-width: 82px;
+			    margin-left: -40px;
+		        opacity: 0;
+		    }
+		}
+	}
+
 	.result-item[data-type="short-panel"] {
 		padding-top: 75px;
 		padding-bottom: 37px;
@@ -4498,7 +4590,7 @@ body.short-version {
 	}
 
 	.num-down {
-		left: 0;
+	    left: 14px;
 
 		&:after {
 			content: '-';
@@ -4506,7 +4598,7 @@ body.short-version {
 	}
 
 	.num-up	{
-		right: 0;
+	    right: -7px;
 
 		&:after {
 			content: '+';
@@ -4631,6 +4723,10 @@ body.short-version {
 	.filter-additional-params {
         padding-top: 30px;
 	    padding-bottom: 31px;
+	}
+
+	[class^="col-"] {
+	    width: 25% !important;
 	}
 }
 
@@ -5121,6 +5217,16 @@ body.short-version {
 
 
 @media screen and (max-width: 500px) {
+	.num-step {
+		.num-down {
+		    left: 0px;
+		}
+
+		.num-up	{
+		    right: 0px;
+		}
+	}
+
 	.children-slider-wrapper .age-change-panel {
 		left: 0px !important;
 		width: 100% !important;
