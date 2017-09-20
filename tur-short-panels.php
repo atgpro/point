@@ -66,7 +66,9 @@
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
           <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
-          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
+          
+          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
+
           <div class="hidden-change">
             <div class="choice-block tourists-block">
               <div class="title">
@@ -98,6 +100,13 @@
                   </div>
                   <div class="slider-wrapper">
                     <input type="text" id="childrenSlider">
+                    <div class="age-change-panel">
+                      <div class="title">Выберите возраст</div>
+                      <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <button class="save">Сохранить</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -263,9 +272,9 @@
 
     <div class="results-filters-wrapper">
 
-      <div class="results-filters">
+      <div id="filter" class="results-filters">
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-sm-9">
             Сортировать:
             <div class="filter-select-wrapper results-sort-filter">
               <div class="filter-select">
@@ -291,11 +300,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-3">
             <div class="result-views">
-              <a href="tur-panels.php" class=""><img src="img/res-view-1.png" alt=""></a>
-              <a href="tur-cards.php" class=""><img src="img/res-view-2.png" alt=""></a>
-              <a href="tur-short-panels.php" class="active"><img src="img/res-view-3.png" alt=""></a>
+              <a href="tur-panels.php#filter" class=""><img src="img/res-view-1.png" alt=""></a>
+              <a href="tur-cards.php#filter" class=""><img src="img/res-view-2.png" alt=""></a>
+              <a href="tur-short-panels.php#filter" class="active"><img src="img/res-view-3.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -306,7 +315,7 @@
     <div class="results-grid-wrapper">
       <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -348,8 +357,8 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox1-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox1-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
 
@@ -358,10 +367,10 @@
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -386,7 +395,7 @@
 
         </div>
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -428,18 +437,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox2-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox2-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -462,7 +471,7 @@
           ?>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -504,18 +513,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox3-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox3-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -539,7 +548,7 @@
         </div>
       
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -581,18 +590,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox4-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox4-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -615,7 +624,7 @@
           ?>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -657,18 +666,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox5-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox5-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -691,7 +700,7 @@
           ?>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -733,18 +742,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox6-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox6-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -768,7 +777,7 @@
         </div>
       
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -810,18 +819,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox7-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox7-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -845,7 +854,7 @@
           ?>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -887,18 +896,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox8-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox8-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 
@@ -922,7 +931,7 @@
           ?>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-12">
-          <div class="result-item result-type-panel short-panel" data-type="short-panel">
+          <div class="result-item short-item result-type-panel short-panel" data-type="short-panel">
             <div class="header">
               <div class="raiting low">
                 Рейтинг<br>2,8
@@ -964,18 +973,18 @@
                 </div>
               </div>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox9-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox9-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
 
             <div class="footer">
               <div class="price">
-                <span>Цена от:</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
+                <span>от</span> <strong>27 311</strong> <img src="img/result-price.png" alt="">
               </div>
               <div class="price-description">
-                за номер для: <span class="param-1">2 взрослых</span>
+                <div class="room-for">за номер для: </div><span class="param-1">2 взрослых</span>
                 <span class="param-2">2 детей</span>
               </div>
 

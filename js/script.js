@@ -177,6 +177,8 @@ $(function (e) {
 	        	count++;
 	        });
 
+	        $(data.slider).parents('.filter-value').find('.child-ages').css('visibility', 'hidden');
+
 	        // $(data.slider).parents('.filter-value').find('.child-ages').css('visibility', 'hidden');
 	    }
 	});
@@ -193,6 +195,7 @@ $(function (e) {
 				}
 			});
 
+
 			agesSrt = agesSrt.substr(0, (agesSrt.length - 2));
 
 			if (agesSrt == '1') {
@@ -203,10 +206,22 @@ $(function (e) {
 				agesSrt += ' лет';
 			}
 
-			// console.log($(elem).parents('.filter-value').find('.child-ages'));
+			var replaceAt = function(index, replacement, str) {
+			    return str.substr(0, index) + replacement + str.substr(index + replacement.length - 2);
+			}
+
+			if ((agesSrt.match(/,/g) || []).length < 2) {
+				if (agesSrt.indexOf(',') != -1) {
+					console.log(agesSrt.indexOf(','));
+					agesSrt = replaceAt(agesSrt.indexOf(','), ' и ', agesSrt);
+				}
+			}
+
 			if (agesSrt != ' лет') {
 				$(elem).parents('.filter-value').find('.child-ages').html('(' + agesSrt + ')');
 			}
+
+			$(elem).parents('.filter-value').find('.child-ages').css('visibility', 'visible');
 		}
 	}
 

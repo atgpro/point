@@ -66,7 +66,9 @@
       <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="filter-value humans">
           <img src="img/adult-icon.png" class="main-color-icon" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
-          <img src="img/chlidren-icon.png" class="main-color-icon" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
+          
+          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
+
           <div class="hidden-change">
             <div class="choice-block tourists-block">
               <div class="title">
@@ -98,6 +100,13 @@
                   </div>
                   <div class="slider-wrapper">
                     <input type="text" id="childrenSlider">
+                    <div class="age-change-panel">
+                      <div class="title">Выберите возраст</div>
+                      <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <button class="save">Сохранить</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -264,7 +273,7 @@
 
     <div class="results-filters-wrapper">
 
-      <div class="results-filters">
+      <div id="filter" class="results-filters">
         <div class="row">
           <div class="col-sm-9">
             <span>Сортировать:</span>
@@ -294,9 +303,9 @@
           </div>
           <div class="col-sm-3">
             <div class="result-views">
-              <a href="tur-panels.php"><img src="img/res-view-1.png" alt=""></a>
-              <a href="tur-cards.php" class="active"><img src="img/res-view-2.png" alt=""></a>
-              <a href="tur-short-panels.php"><img src="img/res-view-3.png" alt=""></a>
+              <a href="tur-panels.php#filter"><img src="img/res-view-1.png" alt=""></a>
+              <a href="tur-cards.php#filter" class="active"><img src="img/res-view-2.png" alt=""></a>
+              <a href="tur-short-panels.php#filter"><img src="img/res-view-3.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -323,8 +332,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox1-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox1-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -388,8 +397,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox2-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox2-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -453,8 +462,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox3-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox3-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -521,8 +530,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox4-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox4-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -587,8 +596,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox5-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox5-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -653,8 +662,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox6-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox6-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -721,8 +730,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox7-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox7-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -787,8 +796,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox8-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox8-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>
@@ -853,8 +862,8 @@
               <button class="toggle-hidden-menu">
               </button>
               <div class="hidden-menu">
-                <a href="#">Об отеле</a>
-                <a href="#">На карте</a>
+                <a class="open-about" data-t-box="#toursBox9-about">Об отеле</a>
+                <a class="open-map" data-t-box="#toursBox9-map">На карте</a>
                 <a href="#">Отзывы</a>
               </div>
             </div>

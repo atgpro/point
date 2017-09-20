@@ -67,7 +67,7 @@
         <div class="col-xs-6 col-sm-4 col-md-3">
           <div class="filter-value humans">
             <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
-            <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> ребенка (5 и 10 лет) </span>
+            <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
             <div class="hidden-change">
               <div class="choice-block tourists-block">
                 <div class="title">
@@ -101,9 +101,9 @@
                       <input type="text" id="childrenSlider">
                       <div class="age-change-panel">
                         <div class="title">Выберите возраст</div>
-                        <div class="input"><span>1й ребенок</span><input type="text" class="numeric"></div>
-                        <div class="input"><span>2й ребенок</span><input type="text" class="numeric"></div>
-                        <div class="input"><span>3й ребенок</span><input type="text" class="numeric"></div>
+                        <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                        <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                        <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
                         <button class="save">Сохранить</button>
                       </div>
                     </div>
