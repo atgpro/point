@@ -1,5 +1,17 @@
 
 $(function (e) {
+	$(document).ready(function(){
+		$('.tours-box .about-callery').magnificPopup({
+			delegate: 'a',
+		 	type:'image',
+		 	gallery:{
+				enabled:true
+			}
+		});
+
+		// .magnificPopup({delegate: 'a', type: 'image' });
+	});
+
 	$(window).scroll(function(e) {
 		if ($(this).scrollTop() >= 235) {
 			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
@@ -487,9 +499,23 @@ $(function (e) {
 		}
 	});
 
-	$('.btn-show-tours[data-t-box]').on('click', function() {
-		console.log($($(this).data('t-box')));
+	$('.btn-show-tours[data-t-box], .open-about, .open-map').on('click', function() {
+
 		$($(this).data('t-box')).fadeToggle();
+
+		var th = this;
+
+		// console.log($(th).data('t-box'));
+		$.each($(this).parents('div[class^="col-"]').find('[data-t-box]'), function(i, elem) {
+			if ($(elem).data('t-box') == $(th).data('t-box')) {
+				return;
+			}
+
+			$($(elem).data('t-box')).css('display', 'none');
+			$(elem).removeClass('open');
+			// console.log($(elem).data('t-box'));
+		});
+		// $(this).parents('div[class^="col-"]').find('.tours-box').css('display', 'none');
 		
 		if ($($(this).data('t-box')).hasClass('for-cards-view') || window.innerWidth <= 1000) {
 			$('.tours-table-overlay').fadeToggle();
@@ -500,7 +526,18 @@ $(function (e) {
 			// $($(this).data('t-box')).css('height', window.innerHeight + 'px');
 		}
 
+		// $(this).parents('div[class^="col-"]').find('[data-t-box]').removeClass('open');
+
 		$(this).toggleClass('open');
+
+		// $.each($(this).parents('div[class^="col-"]').find('[data-t-box]'), function(i, e) {
+		// 	console.log($(this));
+		// 	if ($(this).is(e)) {
+		// 		return;
+		// 	}
+
+		// 	$(e).removeClass('open');
+		// });
 	});
 
 	// $(window).on("orientationchange", function(event) {

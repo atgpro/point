@@ -4626,10 +4626,101 @@ body.short-version {
 	}
 }
 
+.result-type-panel .hidden-menu a {
+	&.open-about,
+	&.open-map {
+		cursor: pointer;
+
+		&.open {
+			color: #fff;
+		    background: #428bd2;
+		    border-color: #428bd2;
+		}
+	}
+	
+}
+
+.tours-box {
+	.text {
+	    font-size: 14px;
+        letter-spacing: 0.5px;
+		
+		h1 {
+			font-size: 17px;
+			font-family: 'RobotoCondensed-Bold';
+			font-weight: normal;
+		}
+
+		h2 {
+		    font-family: 'RobotoCondensed-Bold';
+		    font-size: 15px;
+		    font-weight: normal;
+		}
+
+		h3, 
+		h4,
+		h5 {
+			font-family: 'RobotoCondensed-Bold';
+		    font-size: 14px;
+		    font-weight: normal;
+		}
+
+		b {
+			font-family: 'RobotoCondensed-Bold';
+			font-weight: normal;	
+		}
+
+		ul {
+			padding-left: 0px;
+			padding-left: 16px;
+		    margin-top: 10px;
+		    margin-bottom: 10px;
+		}
+	}
+}
+
+.about-callery {
+    width: 360px;
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 15px;
+
+    &:after {
+    	visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+    }
+
+	img {
+		max-width: 100%;
+	    border-radius: 10px;
+	}
+
+	.main-img {
+		display: block; 
+	}
+
+	a:not(.main-img) {
+		display: inline-block;
+		max-width: 70px;
+	    margin-right: 10px;
+	    margin-top: 15px;
+	}
+
+	a {
+		outline: none;
+		border-radius: 10px;
+	}
+
+
+}
+
 /* Date Range Picker Stilization */
 .daterangepicker {
     max-width: 461px;
-    padding-left: 170px;
+    padding-left: 177px;
     border: 0px;
     border-radius: 10px;
     width: 460px;
@@ -4784,6 +4875,10 @@ body.short-version {
 	//     padding-bottom: 200px;
 	//     // max-height: 400px;
 	// }
+
+	.about-callery {
+		max-width: 100%;
+	}
 
 	.hide-detailed-version {
 	    margin-bottom: 20px;
