@@ -12,17 +12,17 @@ $(function (e) {
 		// .magnificPopup({delegate: 'a', type: 'image' });
 	});
 
-	$(window).scroll(function(e) {
-		if ($(this).scrollTop() >= 235) {
-			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
-				$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
-				$('.filters-panel-wrapper').addClass('fixed-header-filters');
-			}
-		} else {
-			$('.filters-panel-wrapper').removeClass('fixed-header-filters');
-			$('.inner-page-wrapper').css('margin-bottom', '0px');
-		}
-	});
+	// $(window).scroll(function(e) {
+	// 	if ($(this).scrollTop() >= 235) {
+	// 		if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
+	// 			$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
+	// 			$('.filters-panel-wrapper').addClass('fixed-header-filters');
+	// 		}
+	// 	} else {
+	// 		$('.filters-panel-wrapper').removeClass('fixed-header-filters');
+	// 		$('.inner-page-wrapper').css('margin-bottom', '0px');
+	// 	}
+	// });
 
 	function numStep() {
 		var e = this;
@@ -139,6 +139,19 @@ $(function (e) {
 
 	        $(data.input).parents('.filter-value').find('.val .children').html(val);
 
+	        $(data.slider).parents('.filter-value').find('.age-change-panel .numeric').val('');
+
+	        if (val == 0) {
+	        	$(data.input).parents('.filter-value').find('.val .word').html(' детей');
+	        	$(data.input).parents('.filter-value').find('.val .child-ages').css('visibility', 'hidden');
+	        } else if (val == 1) {
+	        	$(data.input).parents('.filter-value').find('.val .word').html(' ребенок');
+	        	$(data.input).parents('.filter-value').find('.val .child-ages').css('visibility', 'visible');
+	        } else {
+	        	$(data.input).parents('.filter-value').find('.val .word').html(' ребенка');
+	        	$(data.input).parents('.filter-value').find('.val .child-ages').css('visibility', 'visible');
+	        }
+
 	        hideSliderActiveLabel(val, grid);
 
 	        var label = $(data.slider).parents('.slider-wrapper').find('.irs-slider');
@@ -164,8 +177,38 @@ $(function (e) {
 	        	count++;
 	        });
 
+	        // $(data.slider).parents('.filter-value').find('.child-ages').css('visibility', 'hidden');
 	    }
 	});
+
+	function manageFilteValueChildAges(elem) {
+		// Change ages
+        if ($(elem).parents('.filter-value').length != 0) {
+			var ages = $(elem).parents('.filter-value').find('.age-change-panel .numeric');
+			var agesSrt = '';
+
+			$.each(ages, function(i, age) {
+				if ($(age).val()) {
+					agesSrt += $(age).val() + ', ';
+				}
+			});
+
+			agesSrt = agesSrt.substr(0, (agesSrt.length - 2));
+
+			if (agesSrt == '1') {
+				agesSrt += ' год';
+			} else if (agesSrt == '2' || agesSrt == '3' ||agesSrt == '4') {
+				agesSrt += ' года';
+			} else {
+				agesSrt += ' лет';
+			}
+
+			// console.log($(elem).parents('.filter-value').find('.child-ages'));
+			if (agesSrt != ' лет') {
+				$(elem).parents('.filter-value').find('.child-ages').html('(' + agesSrt + ')');
+			}
+		}
+	}
 
 	$(".numeric").numeric();
 
@@ -196,6 +239,7 @@ $(function (e) {
 
 	$('.age-change-panel .save').on('click', function() {
 		$(this).parents('.age-change-panel').fadeOut();
+		manageFilteValueChildAges(this);
 	});
 
 	 
@@ -501,7 +545,8 @@ $(function (e) {
 
 	$('.btn-show-tours[data-t-box], .open-about, .open-map').on('click', function() {
 
-		$($(this).data('t-box')).fadeToggle();
+		$($(this).data('t-box')).fadeToggle('slow');
+		// $($(this).data('t-box')).slideToggle('slow');
 
 		var th = this;
 
