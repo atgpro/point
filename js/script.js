@@ -454,13 +454,13 @@ $(function (e) {
 	        "toLabel": "До",
 	        "customRangeLabel": "",
 	        "daysOfWeek": [
+	            "Вс",
 	            "Пн",
 	            "Вт",
 	            "Ср",
 	            "Чт",
 	            "Пт",
 	            "Сб",
-	            "Вс"
 	        ],
 	        "monthNames": [
 	            "Январь",
@@ -476,7 +476,7 @@ $(function (e) {
 	            "Ноябрь",
 	            "Декабрь"
 	        ],
-	        "firstDay": 0
+	        "firstDay": 1
 	    }
 	}, 
 	function(start, end, label) {
