@@ -13,6 +13,12 @@ $(function (e) {
 	});
 
 	$(window).scroll(function(e) {
+		if (window.innerWidth < 500) {
+			if ($('.daterangepicker').css('display') == 'block') {
+				$('.filter-value-date').trigger('click');
+			}
+		}
+
 		if ($(this).scrollTop() >= 235) {
 			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
 				$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
@@ -436,6 +442,9 @@ $(function (e) {
 	/* Calendar */
 	$('.calendar-buttons .buttons, .filters-panel-wrapper .filter-value-date').daterangepicker(
 	{
+		// "startDate": '-3y'
+		"showDropdowns": true,
+
 		"locale": {
 	        "format": "DD.MM.YY",
 	        "separator": " - ",
@@ -502,7 +511,46 @@ $(function (e) {
 		});
 
 		$('.daterangepicker').prepend('<div class="title">Выберите диапазон дат вылета</div>');
-		$('.daterangepicker').prepend('<div class="months"><div class="months-list scroll2"><div>Январь</div><div>Февраль</div><div>Март</div><div>Апрель</div><div>Май</div><div>Июнь</div><div>Июль</div><div>Август</div><div>Сентябрь</div><div>Октябрь</div><div>Ноябрь</div><div>Декабрь</div></div></div>');
+		$('.daterangepicker').prepend('<div class="months"><div class="months-list scroll2">'
+			+ '<div data-year="2017" class="mounth-group"><div data-start="9">Сентябрь</div>'
+			+ '<div data-end="10">Октябрь</div></div>'
+
+			+ '<div data-year="2017" class="mounth-group"><div data-start="11">Ноябрь</div>'
+			+ '<div data-end="12">Декабрь</div></div>'
+
+			+ '<div data-year="2018" class="mounth-group"><div data-start="1">Январь</div>'
+			+ '<div data-end="2">Февраль</div></div>'
+
+			+ '<div data-year="2018" class="mounth-group"><div data-start="3">Март</div>'
+			+ '<div data-end="4">Апрель</div></div>'
+
+			+ '<div data-year="2018" class="mounth-group"><div data-start="5">Май</div>'
+			+ '<div data-end="6">Июнь</div></div>'
+
+			+ '<div data-year="2018" class="mounth-group"><div data-start="7">Июль</div>'
+			+ '<div data-end="8">Август</div></div>'
+
+			+ '</div></div>');
+
+		$('.daterangepicker .mounth-group').on('click', function() {
+			// console.log('start:', $(this).find('[data-start]').data('start'), $(this).data('year'));
+			// console.log('end:', $(this).find('[data-end]').data('end'), $(this).data('year'));
+
+			var start = $(this).find('[data-start]').data('start') - 1;
+			var end = $(this).find('[data-end]').data('end') - 1;
+
+			start = start == -1 ? 0 : start;
+			end = end == -1 ? 0 : end;
+
+			$('.daterangepicker .yearselect').val($(this).data('year')).change();
+			console.log(start , end);
+
+			$('.daterangepicker .left .monthselect').val(start).change();
+			$('.daterangepicker .right .monthselect').val(end).change();
+
+
+		});
+
 
 	});
 

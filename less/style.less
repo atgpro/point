@@ -4837,6 +4837,23 @@ body.short-version {
     width: 460px;
     height: 420px;
 
+
+	.yearselect {
+		display: none;
+	}
+
+	.calendar-table {
+		padding: 0px !important;
+	}
+
+	select.monthselect {
+	    border: 0px;
+	    color: #2e3039;
+	    font-size: 16px;
+	    font-family: 'RobotoCondensed-Regular';
+	    outline: none;
+	}
+
     .ranges {
 	    display: none;	
     }
@@ -4858,7 +4875,7 @@ body.short-version {
     .calendar td {
 	   padding: 0px;
        min-width: 23px;
-       font-size: 15px;
+       font-size: 14px;
 	    font-family: 'RobotoCondensed-Regular';
 
 		&:nth-last-child(1):not(.active),
@@ -4871,6 +4888,18 @@ body.short-version {
     .calendar.left {
     	float: none;
     	margin: 0px;
+    	position: relative;
+
+		&:after {
+		    content: ' ';
+		    position: absolute;
+		    background: #fff;
+		    width: 20px;
+		    height: 11px;
+		    top: 9px;
+		    left: 88px;
+		}
+
     }
 	
 	.calendar td.active {
@@ -4953,11 +4982,25 @@ body.short-version {
 		    overflow-y: auto;
 		    max-height: 307px;
 
-        	 div {
-    	 	    margin-bottom: 12px;
+        	 .mounth-group {
 			    cursor: pointer;
 			    line-height: 1;
 			    padding-left: 25px;
+			    padding-top: 5px;
+			    padding-bottom: 5px;
+
+			    &:hover {
+			    	background: #448cd4; 
+			    	color: #94c3f4;
+			    }
+			    
+			    div {
+	    	 	    margin-bottom: 12px;
+
+	    	 	    &:nth-last-child(1) {
+	    	 	    	margin-bottom: 0px;
+	    	 	    }
+			    }
         	 }
         }
 
@@ -4971,7 +5014,7 @@ body.short-version {
     // }
 
     .calendar.left {
-        margin-top: 59px;
+        margin-top: 53px;
         margin-bottom: 10px;
     }
 
@@ -5217,6 +5260,40 @@ body.short-version {
 
 
 @media screen and (max-width: 500px) {
+	.daterangepicker {
+	    width: 100%;
+	    left: 0px;
+	    border-radius: 0px;
+	    padding-left: 0px;
+	    padding-right: 0px;
+        height: auto;
+
+        .calendar {
+        	&.left {
+        		margin-left: auto;
+			    margin-right: auto;
+			    margin-top: 75px;
+        	}
+
+        	&.right {
+    		    margin-left: auto;
+			    margin-right: auto;
+			    margin-bottom: 20px;
+        	}
+        }
+
+	    .months {
+    	    position: relative;
+		    width: 100%;
+		    left: 0px;
+		    border-radius: 0px;
+
+		    .months-list {
+	    	    max-height: 70px;
+		    }
+	    }
+	}
+
 	.num-step {
 		.num-down {
 		    left: 0px;
