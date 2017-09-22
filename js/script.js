@@ -953,6 +953,13 @@ $(function (e) {
     	}
     });
 
+    $('.input-group.input-group-fix .fix-input').on('click', function(e){
+		var _this = $(this);
+		_this.closest('.input-group-fix').find('.iradio_futurico input').iCheck('check');   
+
+		console.log( _this.closest('.input-group-fix').find('.iradio_futurico input') ); 	
+    });
+
 	/* END Sergej works here*/
 
 });
