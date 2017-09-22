@@ -913,11 +913,45 @@ $(function (e) {
 	}
 	);
 
-	function goToThis( elem ){
+	function goToThis( elem, offset ){
 		$('html, body').animate({
-        	scrollTop: elem.offset().top - $('.inner-page-wrapper .filters-panel-wrapper').eq(0).outerHeight()
+        	scrollTop: elem.offset().top - ( offset ? offset : $('.inner-page-wrapper .filters-panel-wrapper').eq(0).outerHeight() ) 
     	}, 500);
     }
+
+
+    function cIsMobile(){
+
+	  	var myWidth = 0, myHeight = 0;
+		var int1=0;
+	  	if( typeof( window.innerWidth ) == 'number' ) {
+	    //Non-IE
+	    	myWidth = window.innerWidth;
+	    	myHeight = window.innerHeight;
+	    	int1=1;
+	  	} else if( document.documentElement && ( document.documentElement.clientWidth || 
+
+		document.documentElement.clientHeight ) ) {
+	    	//IE 6+ in 'standards compliant mode'
+	   		myWidth = document.documentElement.clientWidth;
+	    	myHeight = document.documentElement.clientHeight;
+	    	int1=2;
+	  	} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+	    	//IE 4 compatible
+	    	myWidth = document.body.clientWidth;
+	    	myHeight = document.body.clientHeight;
+	    	int1=3;
+	  	}
+
+	  	return myWidth < 768;
+
+	}
+
+    $('.from-city .filter-select, .destination-country-select .filter-select ').on('click', function(e){
+    	if( cIsMobile() ){
+    		goToThis( $(this), 200 );
+    	}
+    });
 
 	/* END Sergej works here*/
 
