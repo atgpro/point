@@ -1,6 +1,5 @@
 <?php include('header.php'); ?>
 <div class="container">
-  <div class="header-bar"></div>
   <div class="row">
     <div class="col-md-6">
       <h1>

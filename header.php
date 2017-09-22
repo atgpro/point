@@ -34,6 +34,9 @@
 
   </head>
   <body>
+
+    <div class="header-bar"></div>
+
     <div class="tours-table-overlay"></div>
     <div class="main-loader">
         <div class="animation-wrapper">
