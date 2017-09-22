@@ -289,10 +289,40 @@ $(function (e) {
 	    from: 30000,
 	    to: 400000,
 	    onChange: function (data, e) {
-	        $(data.slider).parents('.range-slider-wrapper').find('.left-label').html(data.from);
-	        $(data.slider).parents('.range-slider-wrapper').find('.right-label').html(data.to);
+	        $(data.slider).parents('.range-slider-wrapper').find('.left-label').val(data.from);
+	        $(data.slider).parents('.range-slider-wrapper').find('.right-label').val(data.to);
 	    }
 	});
+
+	$('.range-slider-wrapper .left-label').on('change', function() {
+		if ($(this).val() < 0) {
+    		$(this).val(0);
+    	}
+
+    	if ($(this).val() > 500000) {
+    		$(this).val(500000);
+    	}
+
+		$('#pricesSlider').data("ionRangeSlider").update({
+            from: $(this).val()
+        });
+	});
+
+	$('.range-slider-wrapper .right-label').on('change', function() {
+		if ($(this).val() < 0) {
+	    		$(this).val(0);
+    	}
+
+		if ($(this).val() > 500000) {
+    		$(this).val(500000);
+    	}
+    	
+		$('#pricesSlider').data("ionRangeSlider").update({
+            to: $(this).val()
+        });
+	});
+
+
 
 	$('#nightsSlider').ionRangeSlider({
 	    type: "double",
@@ -605,6 +635,12 @@ $(function (e) {
 			// console.log('start:', $(this).find('[data-start]').data('start'), $(this).data('year'));
 			// console.log('end:', $(this).find('[data-end]').data('end'), $(this).data('year'));
 
+			$.each($(this).parents('.months').find('.mounth-group'), function(i, elem) {
+				$(elem).removeClass('active');
+			});
+
+			$(this).addClass('active');
+
 			var start = $(this).find('[data-start]').data('start') - 1;
 			var end = $(this).find('[data-end]').data('end') - 1;
 
@@ -621,6 +657,9 @@ $(function (e) {
 		});
 
 
+	}).on('hide.daterangepicker', function() {
+		console.log($('.calendar-buttons .buttons'));
+		$('.calendar-buttons .buttons').removeClass('active');
 	});
 
 
@@ -643,11 +682,8 @@ $(function (e) {
 		      }
 	    	}
 	    ]
-	})
-	.on('hideCalendar.daterangepicker', function() {
-		console.log($('.calendar-buttons .buttons'));
-		$('.calendar-buttons .buttons').removeClass('active');
 	});
+	
 
 	$('.result-item .toggle-hidden-menu').on('click', function() {
 		$(this).parents('.result-item').find('.hidden-menu').fadeToggle();

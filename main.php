@@ -535,8 +535,10 @@
                 <div class="to">До</div>
               </div>
 
-              <div class="left-label">30 000</div>
-              <div class="right-label">40 0000</div>
+              <!-- <div class="left-label">30 000</div> -->
+              <input type="text" class="left-label numeric" value="30000">
+              <!-- <div class="right-label">40 0000</div> -->
+              <input type="text" class="right-label numeric" value="40000">
               <input type="text" id="pricesSlider">
 
               <div class="bottom-labels">

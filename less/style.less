@@ -1483,6 +1483,9 @@ h1 {
 	    text-align: center;
 	    border-radius: 1000px;
 	    margin-right: 8px;
+        box-sizing: border-box;
+	    border: 0px;
+	    outline: none;
 	}
 
 	.right-label {
@@ -1496,6 +1499,9 @@ h1 {
 		padding-bottom: 5px;
 		text-align: center;
 		border-radius: 1000px;
+		box-sizing: border-box;
+	    border: 0px;
+	    outline: none;
 	}
 
 	.bottom-labels {
@@ -5061,9 +5067,10 @@ body.short-version {
 			    padding-top: 5px;
 			    padding-bottom: 5px;
 
-			    &:hover {
+			    &:hover,
+			    &.active, {
 			    	background: #448cd4; 
-			    	color: #94c3f4;
+			    	color: #fff;
 			    }
 			    
 			    div {
