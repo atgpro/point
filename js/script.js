@@ -586,7 +586,7 @@ $(function (e) {
 		
 		// console.log(this.element);
 	    // alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-	}).on('show.daterangepicker', function() {
+	}).on('show.daterangepicker', function(ev,picker) {
 		// var startMonth = $('.daterangepicker .calendar.left .month').html();
 		// var endMonth = $('.daterangepicker .calendar.right .month').html();
 		// $('.daterangepicker .calendar.left thead').append('<tr><th colspan="7" class="cusom-month">' + startMonth + '<th></tr>');
@@ -608,27 +608,29 @@ $(function (e) {
 				}
 			});
 		});
+
 		$('.daterangepicker').prepend('<button class="btn btn-default back-from-calendar">⬅ Назад</button>');
+
+		var count_month = 24,
+			tmpl_month = "", tmpl_year = "",
+			dt = new Date,
+			dt_year = dt.getFullYear(),
+			dt_month = dt.getMonth();
+		for (var i=0; i < count_month; i++) {
+			dt_month++;
+			if (dt_month>12) {
+				dt_year++;
+				dt_month = 1;
+			
+			}
+			tmpl_year = "";
+			if (!tmpl_month||dt_month===1) tmpl_year = "<span class='new-year'>"+dt_year+"</span>";
+			tmpl_month += '<div data-year="'+dt_year+'" class="mounth-group">'+tmpl_year+'<div data-start="'+dt_month+'">'+picker.locale.monthNames[dt_month-1]+'</div></div>';
+		}
+
 		$('.daterangepicker').prepend('<div class="title">Выберите диапазон дат вылета</div>');
 		$('.daterangepicker').prepend('<div class="months"><div class="months-list scroll2">'
-			+ '<div data-year="2017" class="mounth-group"><div data-start="9">Сентябрь</div>'
-			+ '<div data-end="10">Октябрь</div></div>'
-
-			+ '<div data-year="2017" class="mounth-group"><div data-start="11">Ноябрь</div>'
-			+ '<div data-end="12">Декабрь</div></div>'
-
-			+ '<div data-year="2018" class="mounth-group"><div data-start="1">Январь</div>'
-			+ '<div data-end="2">Февраль</div></div>'
-
-			+ '<div data-year="2018" class="mounth-group"><div data-start="3">Март</div>'
-			+ '<div data-end="4">Апрель</div></div>'
-
-			+ '<div data-year="2018" class="mounth-group"><div data-start="5">Май</div>'
-			+ '<div data-end="6">Июнь</div></div>'
-
-			+ '<div data-year="2018" class="mounth-group"><div data-start="7">Июль</div>'
-			+ '<div data-end="8">Август</div></div>'
-
+			+ tmpl_month
 			+ '</div></div>');
 
 		$('.back-from-calendar').on('click', function() {
@@ -646,10 +648,10 @@ $(function (e) {
 			$(this).addClass('active');
 
 			var start = $(this).find('[data-start]').data('start') - 1;
-			var end = $(this).find('[data-end]').data('end') - 1;
+			//var end = $(this).find('[data-end]').data('end') - 1;
 
 			start = start == -1 ? 0 : start;
-			end = end == -1 ? 0 : end;
+			end = start+1;
 
 			$('.daterangepicker .yearselect').val($(this).data('year')).change();
 			console.log(start , end);
