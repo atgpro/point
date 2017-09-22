@@ -1765,6 +1765,8 @@ body.short-version {
 	.btn-success:focus {
 		border-color: @main-color;
 		background-color: @main-color;
+		float: right;
+		margin-left: 4px;
 	}
 
 	td.end-date.in-range {
@@ -2021,7 +2023,11 @@ body.short-version {
         // &:hover,
         // &.open {
     	    
-        // }
+		// }
+		
+		&.filter-value-date {
+			padding-top: 32px;
+		}
 
         &.open {
     	    .choice-block {
@@ -4947,9 +4953,9 @@ body.short-version {
     height: 420px;
 
 
-	// .yearselect {
-	// 	display: none;
-	// }
+	.yearselect {
+	 	display: none;
+	}
 
 	.calendar-table {
 		padding: 0px !important;
@@ -5121,6 +5127,7 @@ body.short-version {
 					top: 32px;
 					transform-origin: top left;
 					transform: rotate(-90deg);
+					z-index: 1;
 				}
         	}
         }
@@ -5412,16 +5419,27 @@ body.short-version {
 		    background: #eee;
 		    top: 0px;
 		    border: 0px;
-		    outline: none;
+			outline: none;
+			font-size: 17px;
 	    }
 
 	    .ranges {
 	    	position: absolute;
-		    left: 23px;
-		    bottom: -30px;
+		    left: 0;
 		    right: auto;
-		    top: auto;
-		    min-width: 150px;
+		    top: 100%;
+			width: 100%;
+			padding: 0 23px;
+			margin: -40px 0 50px;
+
+			.btn {
+				float: left;
+				width: 47%;
+
+				&.btn-success {
+					float: right;
+				}
+			}
 	    }
 
 	    .title {
@@ -6021,3 +6039,13 @@ body.short-version {
 
 /*Hotfixes ENDS*/
 
+.fixed-picker {
+	position: fixed !important;
+	top: 101px !important;
+}
+
+@media screen and (max-width: 1000px) {
+	.fixed-picker {
+		top: 39px !important;
+	}
+}

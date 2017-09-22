@@ -14,7 +14,7 @@
       <div class="row row-filters-panel">
         <div class="col-xs-6 col-sm-4 col-md-3">
           <div class="filter-value filter-value-date">
-            <img src="img/calendar-icon.png" alt="" class="main-color-icon"> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
+            <img src="img/calendar-icon.png" alt="" class="main-color-icon"> <span class="val">С <span class="from">25.08.2017</span> <div>По <span class="to">18.08.2017</span></div>
             <div class="hidden-change">
               <div class="choice-block date-block">
                 <div class="title">
