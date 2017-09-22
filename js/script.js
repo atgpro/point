@@ -302,11 +302,27 @@ $(function (e) {
 	    to: 14,
 	    onChange: function (data, e) {
 	    	// console.log($(data.slider).parents('.nights-wrapper').find('.bottom-labels'));
-	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
-	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span').html(data.to);
 
-	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span').html(data.from + 1);
-	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span').html(data.to + 1);
+	    	function declOfNum(number, titles) {  
+				cases = [2, 0, 1, 1, 1, 2]; 
+				
+				return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]]; 
+			}
+
+			var nightsLabelsRu = ['ночь', 'ночи', 'ночей'];
+			var daysLabelsRu = ['день', 'дня', 'дней'];
+
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span')
+	        .html(data.from + ' ' + declOfNum(data.from, nightsLabelsRu));
+	        
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span')
+	        .html(data.to + ' ' + declOfNum(data.to, nightsLabelsRu));
+
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span')
+	        .html((data.from + 1) + ' ' + declOfNum((data.from + 1), daysLabelsRu));
+	        
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span')
+	        .html((data.to + 1) + ' ' + declOfNum((data.to + 1), daysLabelsRu));
 
 	        $(data.slider).parents('.filter-value').find('.val .from').html(data.from);
 	        $(data.slider).parents('.filter-value').find('.val .to').html(data.to);
@@ -320,12 +336,31 @@ $(function (e) {
 	    from: 5,
 	    to: 14,
 	    onChange: function (data, e) {
-	    	// console.log($(data.slider).parents('.range-slider-wrapper'));
-	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span').html(data.from);
-	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span').html(data.to);
+	    	// console.log($(data.slider).parents('.nights-wrapper').find('.bottom-labels'));
 
-	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span').html(data.from + 1);
-	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span').html(data.to + 1);
+	    	function declOfNum(number, titles) {  
+				cases = [2, 0, 1, 1, 1, 2]; 
+				
+				return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]]; 
+			}
+
+			var nightsLabelsRu = ['ночь', 'ночи', 'ночей'];
+			var daysLabelsRu = ['день', 'дня', 'дней'];
+
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .from span')
+	        .html(data.from + ' ' + declOfNum(data.from, nightsLabelsRu));
+	        
+	        $(data.slider).parents('.nights-wrapper').find('.top-labels .to span')
+	        .html(data.to + ' ' + declOfNum(data.to, nightsLabelsRu));
+
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .min-label span')
+	        .html((data.from + 1) + ' ' + declOfNum((data.from + 1), daysLabelsRu));
+	        
+	        $(data.slider).parents('.nights-wrapper').find('.bottom-labels .max-label span')
+	        .html((data.to + 1) + ' ' + declOfNum((data.to + 1), daysLabelsRu));
+
+	        $(data.slider).parents('.filter-value').find('.val .from').html(data.from);
+	        $(data.slider).parents('.filter-value').find('.val .to').html(data.to);
 	    }
 	});
 
@@ -344,9 +379,9 @@ $(function (e) {
 
 	$('.check-group').on('click', function(e) {
 		if ($(this).hasClass('open-collapse-list')) {
-			if (!$(e.target).hasClass('custom-caret')) {
-				$($(this).data('list')).find('input[type="checkbox"]').iCheck('toggle');;
-			} 
+			// if (!$(e.target).hasClass('custom-caret')) {
+				// $($(this).data('list')).find('input[type="checkbox"]').iCheck('toggle');;
+			// } 
 		}
 	});
 
@@ -467,6 +502,11 @@ $(function (e) {
 	});
 
 	/* Calendar */
+
+	$('.calendar-buttons .buttons').on('click', function() {
+		$(this).toggleClass('active');
+	});
+
 	$('.calendar-buttons .buttons, .filters-panel-wrapper .filter-value-date').daterangepicker(
 	{
 		// "startDate": '-3y'
@@ -603,6 +643,10 @@ $(function (e) {
 		      }
 	    	}
 	    ]
+	})
+	.on('hideCalendar.daterangepicker', function() {
+		console.log($('.calendar-buttons .buttons'));
+		$('.calendar-buttons .buttons').removeClass('active');
 	});
 
 	$('.result-item .toggle-hidden-menu').on('click', function() {

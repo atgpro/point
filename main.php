@@ -141,7 +141,9 @@
                 <ul>
                   <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
                   <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                  <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
+                  <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> 
+                  <!-- <input class="icheck-input" type="checkbox"> -->
+                  <span class="border"></span></label></li>
                   <li>
                     <ul class="collapse-list" id="list1">
                       <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
@@ -352,15 +354,15 @@
             </div>
             <div class="nights-wrapper">
               <div class="top-labels">
-                <div class="from"><span>2</span> ночи </div>
-                <div class="to"><span>16</span> ночей</div>
+                <div class="from"><span>2 ночи</span></div>
+                <div class="to"><span>16 ночей</span></div>
               </div>
               <div class="range-slider-wrapper">
                 <input type="text" id="nightsSlider">
               </div>
               <div class="bottom-labels">
-                <div class="min-label"><span>3</span> дня</div>
-                <div class="max-label"><span>17</span> дней</div>
+                <div class="min-label"><span>3 дня</span></div>
+                <div class="max-label"><span>17 дней</span></div>
               </div>
             </div>
           </div>
@@ -373,15 +375,15 @@
             </div>
             <div class="nights-wrapper">
               <div class="top-labels">
-                <div class="from"><span>2</span> ночи </div>
-                <div class="to"><span>16</span> ночей</div>
+                <div class="from"><span>2 ночи</span></div>
+                <div class="to"><span>16 ночей</span></div>
               </div>
               <div class="range-slider-wrapper">
                 <input type="text" id="nightsShortSlider">
               </div>
               <div class="bottom-labels">
-                <div class="min-label"><span>3</span> дня</div>
-                <div class="max-label"><span>17</span> дней</div>
+                <div class="min-label"><span>3 дня</span></div>
+                <div class="max-label"><span>17 дней</span></div>
               </div>
             </div>
           </div>
