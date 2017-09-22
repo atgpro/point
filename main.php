@@ -49,7 +49,7 @@
         </div>
         
         <label class="check-group">
-          <input class="icheck-input" type="radio" name="iCheck">
+          <input class="icheck-input" type="checkbox" name="iCheck">
           <span>Запомнить выбор по умолчанию</span>
         </label>
 
