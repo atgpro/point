@@ -12,6 +12,6 @@
 
 
     <!-- JS-->
-    <script src="js/script.js?v=26"></script>  
+    <script src="js/script.js?v=27"></script>  
   </body>
 </html>

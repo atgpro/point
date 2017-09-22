@@ -608,7 +608,7 @@ $(function (e) {
 				}
 			});
 		});
-
+		$('.daterangepicker').prepend('<button class="btn btn-default back-from-calendar">⬅ Назад</button>');
 		$('.daterangepicker').prepend('<div class="title">Выберите диапазон дат вылета</div>');
 		$('.daterangepicker').prepend('<div class="months"><div class="months-list scroll2">'
 			+ '<div data-year="2017" class="mounth-group"><div data-start="9">Сентябрь</div>'
@@ -630,6 +630,10 @@ $(function (e) {
 			+ '<div data-end="8">Август</div></div>'
 
 			+ '</div></div>');
+
+		$('.back-from-calendar').on('click', function() {
+			$(this).parents('.daterangepicker').find('.cancelBtn').trigger('click');
+		});
 
 		$('.daterangepicker .mounth-group').on('click', function() {
 			// console.log('start:', $(this).find('[data-start]').data('start'), $(this).data('year'));
