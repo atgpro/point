@@ -678,6 +678,20 @@ h1 {
 			background: transparent;
 			box-shadow: 0 -24px 17px rgba(255, 255, 255, 0.43);
 		}
+
+		&:before {
+			content: ' ';
+		    display: block;
+		    position: absolute;
+		    width: 98%;
+		    height: 30px;
+		    background: #000;
+	        top: -45px;
+		    /* box-shadow: 0px -10px 40px #ffffff; */
+		    height: 38px;
+		    background: transparent;
+		    box-shadow: 0 34px 17px rgba(255, 255, 255, 0.43);
+		}
     }
 
     .scrollable-lists {
@@ -1035,8 +1049,23 @@ h1 {
 	    box-shadow: 0 -24px 17px rgba(255, 255, 255, 0.43);
 	}
 
+	&:before {
+        content: ' ';
+	    display: block;
+	    position: absolute;
+	    width: 98%;
+	    height: 30px;
+	    background: #000;
+	    top: -40px;
+	    /* box-shadow: 0px -10px 40px #ffffff; */
+	    height: 38px;
+	    background: transparent;
+	    box-shadow: 0 34px 17px rgba(255, 255, 255, 0.43);
+	}
+
 	&.open {
-		&:after {
+		&:after,
+		&:before {
 			display: none;
 		}
 	}
