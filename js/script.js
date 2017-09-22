@@ -379,9 +379,9 @@ $(function (e) {
 
 	$('.check-group').on('click', function(e) {
 		if ($(this).hasClass('open-collapse-list')) {
-			if (!$(e.target).hasClass('custom-caret')) {
-				$($(this).data('list')).find('input[type="checkbox"]').iCheck('toggle');;
-			} 
+			// if (!$(e.target).hasClass('custom-caret')) {
+				// $($(this).data('list')).find('input[type="checkbox"]').iCheck('toggle');;
+			// } 
 		}
 	});
 
@@ -502,6 +502,11 @@ $(function (e) {
 	});
 
 	/* Calendar */
+
+	$('.calendar-buttons .buttons').on('click', function() {
+		$(this).toggleClass('active');
+	});
+
 	$('.calendar-buttons .buttons, .filters-panel-wrapper .filter-value-date').daterangepicker(
 	{
 		// "startDate": '-3y'
@@ -638,6 +643,10 @@ $(function (e) {
 		      }
 	    	}
 	    ]
+	})
+	.on('hideCalendar.daterangepicker', function() {
+		console.log($('.calendar-buttons .buttons'));
+		$('.calendar-buttons .buttons').removeClass('active');
 	});
 
 	$('.result-item .toggle-hidden-menu').on('click', function() {
