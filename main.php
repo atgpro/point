@@ -133,7 +133,7 @@
             <div class="title">
               Курорты (регионы)
             </div>
-            <a href="#" class="dashed-link show-choosen"><span>Показать выбранные курорты</span> <span class="indicator">3</span></a>
+            <a href="#" class="dashed-link show-choosen"><span>Показать выбранные курорты</span> <span class="indicator">0</span></a>
             
             <div class="scrollable-lists-wrapper">
               <div class="scrollable-lists scroll scroll1">
@@ -250,7 +250,7 @@
                 </div>
               </div>
               <div class="col-md-5">
-               <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">7</span></a>
+               <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">0</span></a>
               </div>
             </div>
             
@@ -553,7 +553,7 @@
               <img src="img/ship-icon.png" class="title-icon">
               <span>Туроператоры</span>
             </div>
-            <a href="#" class="dashed-link show-choosen"><span>Показать выбранные</span> <span class="indicator">3</span></a>
+            <a href="#" class="dashed-link show-choosen"><span>Показать выбранные</span> <span class="indicator">0</span></a>
             
             <div class="scrollable-lists-wrapper tur-operators">
               <div class="scrollable-lists scroll scroll1">
