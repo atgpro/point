@@ -871,6 +871,38 @@ $(function (e) {
 	setTimeout(function() {
 		$('.main-loader').fadeOut();
 	}, 1000);
+
+	/* START Sergej works here*/
+
+	var sCountersArray = [
+		{
+			counter : ".hotel-horisontal-table-content .indicator",
+			checkboxes : ".hotel-horisontal-table-content .scrollable-table .icheck-input",
+			notAjaxElement : ".choice-block.hotels-block"
+		},
+		{
+			counter : ".indicator",
+			checkboxes : ".scrollable-lists .icheck-input",
+			notAjaxElement : ".choice-block.resort-block"
+		},
+		{
+			counter : ".indicator",
+			checkboxes : ".scrollable-lists .icheck-input",
+			notAjaxElement : "choice-block.operators-block"
+		},
+
+	];
+
+	sCountersArray.forEach(function(i){
+		$(i.notAjaxElement).on('ifChanged ifUnchecked', i.checkboxes, function(e){
+			$(i.notAjaxElement).find(i.counter).text( $(i.notAjaxElement).find(i.checkboxes+":checked").length );
+			return true;
+		});
+	}
+	);
+
+	/* END Sergej works here*/
+
 });
 
 
