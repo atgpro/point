@@ -1,13 +1,13 @@
 <?php include('header.php'); ?>
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <h1>
         <span class="bold">Подберите тур</span>
         <span class="thin">по своим желаниям</span>
       </h1>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <div class="from-city">
         <!-- <img src="img/point-a.png" class="point-a" alt=""> -->
         <div class="marker-point point-a">
