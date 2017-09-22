@@ -5040,11 +5040,12 @@ body.short-version {
 			    line-height: 1;
 			    padding-left: 25px;
 			    padding-top: 5px;
-			    padding-bottom: 5px;
+				padding-bottom: 5px;
+				position: relative;
 
-			    &:hover {
+			    &:hover, &:hover + .mounth-group {
 			    	background: #448cd4; 
-			    	color: #94c3f4;
+					color: #94c3f4;
 			    }
 			    
 			    div {
@@ -5053,8 +5054,16 @@ body.short-version {
 	    	 	    &:nth-last-child(1) {
 	    	 	    	margin-bottom: 0px;
 	    	 	    }
-			    }
-        	 }
+				}
+				.new-year {
+					font-size: 13px;
+					position: absolute;
+					left: 5px;
+					top: 32px;
+					transform-origin: top left;
+					transform: rotate(-90deg);
+				}
+        	}
         }
 
     }
