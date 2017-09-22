@@ -181,7 +181,7 @@
               <div class="col-sm-4">
                 <div class="slider-header">
                   <span>Рейтинг отеля, от</span>
-                  <i class="indicator" title="Подсказка для поля - Рейтинг отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="click">?</i>
+                  <i class="indicator" title="Подсказка для поля - Рейтинг отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
                 </div>
                 <div class="slider-wrapper">
                   <input type="text" id="raitingSlider">
@@ -190,7 +190,7 @@
               <div class="col-sm-3 class-slider-wrapper">
                 <div class="slider-header">
                   <span>Класс отеля, от</span>
-                  <i class="indicator" title="Подсказка для поля - Касса отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="click">?</i>
+                  <i class="indicator" title="Подсказка для поля - Касса отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
                 </div>
                 <div class="slider-wrapper">
                   <input type="text" id="classSlider">
@@ -199,7 +199,7 @@
               <div class="col-sm-5">
                 <div class="slider-header">
                   <span>Тип отеля</span>
-                  <i class="indicator" title="Подсказка для поля - Тип отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="click">?</i>
+                  <i class="indicator" title="Подсказка для поля - Тип отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
                 </div>
                 <div class="filter-select-wrapper hotel-type-wrapper choosen-filter">
                   <div class="filter-select">
@@ -240,18 +240,19 @@
                 <th>Рейтинг</th>
               </tr>
             </table>
-            
-            <div class="row search-box-wrapper">
-              <div class="col-md-7">
-                <div class="table-wrapper">
-                  <div class="search-box">
-                    <input type="text" placeholder="Быстрый поиск по отелям">
-                    <button><img src="img/search-icon.png" alt=""></button>
+            <div class="table-768-fix">
+              <div class="row search-box-wrapper">
+                <div class="col-sm-7">
+                  <div class="table-wrapper">
+                    <div class="search-box">
+                      <input type="text" placeholder="Быстрый поиск по отелям">
+                      <button><img src="img/search-icon.png" alt=""></button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-5">
-               <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">0</span></a>
+                <div class="col-sm-5">
+                 <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">0</span></a>
+                </div>
               </div>
             </div>
             

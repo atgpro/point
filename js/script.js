@@ -753,6 +753,10 @@ $(function (e) {
 
 		$(this).toggleClass('open');
 
+		if( $(this).hasClass('open') ){
+			goToThis( $(this).closest('.tour-itself') );
+		}
+		
 		// $.each($(this).parents('div[class^="col-"]').find('[data-t-box]'), function(i, e) {
 		// 	console.log($(this));
 		// 	if ($(this).is(e)) {
@@ -880,6 +884,8 @@ $(function (e) {
 
 	/* START Sergej works here*/
 
+	//Счетчики выбранных на главной
+
 	var sCountersArray = [
 		{
 			counter : ".hotel-horisontal-table-content .indicator",
@@ -906,6 +912,12 @@ $(function (e) {
 		});
 	}
 	);
+
+	function goToThis( elem ){
+		$('html, body').animate({
+        	scrollTop: elem.offset().top - $('.inner-page-wrapper .filters-panel-wrapper').eq(0).outerHeight()
+    	}, 500);
+    }
 
 	/* END Sergej works here*/
 
