@@ -10,6 +10,19 @@ $(function (e) {
 		});
 
 		// .magnificPopup({delegate: 'a', type: 'image' });
+
+		$('.filter-select .selected').on('click', function() {
+			$(this).parent().next('.block-select').toggleClass('show');
+		});
+		$('.block-select').on('click', function() {
+			$(this).removeClass('show');
+		});
+		$(document).on('click', function(e) {
+			if (!$(e.target).closest('.filter-select-wrapper').length) {
+				var a = $('.block-select.show');
+				if (a.length) a.removeClass('show');
+			}
+		});
 	});
 
 	$(window).scroll(function(e) {
@@ -30,6 +43,9 @@ $(function (e) {
 		}
 	});
 
+	//Подсказки
+	$('.indicator[data-toggle="tooltip"]').tooltip();
+
 	function numStep() {
 		var e = this;
 		e.el = null;
@@ -48,7 +64,6 @@ $(function (e) {
 			if (up) num++;
 			else num--;
 			if (num<1) num=1;
-			if (num>11) num=11;
 			e.el.val(num);
 		}
 		$('.num-step .num-up').on('click', e.up);
@@ -393,6 +408,8 @@ $(function (e) {
 	$('.button-open-table').on('click', function() {
 		$(this).parents('.scrollable-table-box').toggleClass('open').find('.scrollable-table-wrapper').toggleClass('open');
 		$(this).toggleClass('open');
+		if ($(this).hasClass('open')) $(this).text('Свернуть таблицу');
+		else $(this).text('Развернуть таблицу');
 	});
 
 	$('.open-collapse-list').on('click', function() {
@@ -482,9 +499,11 @@ $(function (e) {
 	function(start, end, label) {
 		$(this.element).parents('.date-block').find('.from').html(start.format('DD.MM.YYYY'));
 		$(this.element).parents('.date-block').find('.to').html(end.format('DD.MM.YYYY'));
-		$(this.element).parents('.filter-value').find('.val .from').html(start.format('DD.MM.YYYY'));
-		$(this.element).parents('.filter-value').find('.val .to').html(end.format('DD.MM.YYYY'));
-		$(this.element).parents('.filter-value').removeClass('open');
+
+		$('.filter-value-date').find('.val .from').html(start.format('DD.MM.YYYY'));
+		$('.filter-value-date').find('.val .to').html(end.format('DD.MM.YYYY'));
+		$('.filter-value-date').removeClass('open');
+		
 		// console.log(this.element);
 	    // alert("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 	}).on('show.daterangepicker', function() {
