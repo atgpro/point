@@ -106,7 +106,7 @@
     <div class="wrapper">
       <div class="states-panel">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="weather">
               <span class="title">Погода:</span>
               <span class="day">сегодня</span>
@@ -117,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="chars">
               <span class="map-markers"><img src="img/markers-icon.png" alt="">1332 км</span>
               <span class="fly-time"><img src="img/fly-time.png" alt="">1 ч. 40 мин</span>
@@ -180,7 +180,7 @@
               <div class="col-sm-4">
                 <div class="slider-header">
                   <span>Рейтинг отеля, от</span>
-                  <i class="indicator">?</i>
+                  <i class="indicator" title="Подсказка для поля - Рейтинг отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="click">?</i>
                 </div>
                 <div class="slider-wrapper">
                   <input type="text" id="raitingSlider">
@@ -189,7 +189,7 @@
               <div class="col-sm-3 class-slider-wrapper">
                 <div class="slider-header">
                   <span>Класс отеля, от</span>
-                  <i class="indicator">?</i>
+                  <i class="indicator" title="Подсказка для поля - Касса отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="click">?</i>
                 </div>
                 <div class="slider-wrapper">
                   <input type="text" id="classSlider">
@@ -198,7 +198,7 @@
               <div class="col-sm-5">
                 <div class="slider-header">
                   <span>Тип отеля</span>
-                  <i class="indicator">?</i>
+                  <i class="indicator" title="Подсказка для поля - Тип отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="click">?</i>
                 </div>
                 <div class="filter-select-wrapper hotel-type-wrapper choosen-filter">
                   <div class="filter-select">
@@ -222,6 +222,7 @@
 
 
                   </div>
+                  <i class="block-select"></i>
                 </div>
               </div>
             </div>
@@ -415,6 +416,13 @@
                 </div>
                 <div class="slider-wrapper">
                   <input type="text" id="childrenSlider">
+                  <div class="age-change-panel">
+                      <div class="title">Выберите возраст</div>
+                      <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <button class="save">Сохранить</button>
+                    </div>
                 </div>
               </div>
             </div>
@@ -484,6 +492,13 @@
                 </div>
                 <div class="slider-wrapper">
                   <input type="text" id="childrenShortSlider">
+                  <div class="age-change-panel">
+                      <div class="title">Выберите возраст</div>
+                      <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                      <button class="save">Сохранить</button>
+                    </div>
                 </div>
               </div>
             </div>

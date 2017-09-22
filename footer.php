@@ -8,7 +8,10 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.numeric.min.js"></script>
+
+
     <!-- JS-->
-    <script src="js/script.js"></script>  
+    <script src="js/script.js?v=25"></script>  
   </body>
 </html>

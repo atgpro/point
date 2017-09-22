@@ -540,7 +540,7 @@
     <div class="title">АЛЬПИНА 2*</div>
     <button class="close-me"></button>
     <div class="header">
-      <div class="text">
+      <div class="text scroll2">
         <div class="about-callery">
           <a href="img/tour-imgs/1.jpg" class="main-img"><img src="img/tour-imgs/1.jpg" alt=""></a>
           <a href="img/tour-imgs/4.jpg"><img src="img/tour-imgs/4.jpg" alt=""></a>

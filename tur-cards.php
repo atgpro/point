@@ -11,183 +11,185 @@
   </div>
   <div class="inner-page-wrapper">
     <a href="index.php" class="btn-back-to-prev-step">Вернуться к странице подбора</a>
-    <div class="row row-filters-panel">
-      <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="filter-value">
-          <img src="img/calendar-icon.png" alt="" class="main-color-icon"> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
-          <div class="hidden-change">
-            <div class="choice-block date-block">
-              <div class="title">
-                <img src="img/calendar-icon.png" class="title-icon">
-                <span>Дата вылета?</span>
-              </div>
-
-              <div class="calendar-buttons">
-                <div class="labels">
-                  <label>C</label>
-                  <label>По</label>
+    <div class="filters-panel-wrapper">
+      <div class="row row-filters-panel">
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="filter-value filter-value-date">
+            <img src="img/calendar-icon.png" alt="" class="main-color-icon"> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
+            <div class="hidden-change">
+              <div class="choice-block date-block">
+                <div class="title">
+                  <img src="img/calendar-icon.png" class="title-icon">
+                  <span>Дата вылета?</span>
                 </div>
-                <div class="buttons">
-                  <button class="from">25.08.2017</button>
-                  <button class="to">18.08.2017</button>
+
+                <div class="calendar-buttons">
+                  <div class="labels">
+                    <label>C</label>
+                    <label>По</label>
+                  </div>
+                  <div class="buttons">
+                    <button class="from">25.08.2017</button>
+                    <button class="to">18.08.2017</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="filter-value">
+            <img src="img/moon-icon.png" alt="" class="main-color-icon"> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
+            <div class="hidden-change">
+              <div class="choice-block nights-block">
+                <div class="title">
+                  <img src="img/moon-icon.png" class="title-icon">
+                  <span>На сколько ночей?</span>
+                </div>
+                <div class="nights-wrapper">
+                  <div class="top-labels">
+                    <div class="from"><span>2</span> ночи </div>
+                    <div class="to"><span>16</span> ночей</div>
+                  </div>
+                  <div class="range-slider-wrapper">
+                    <input type="text" id="nightsSlider">
+                  </div>
+                  <div class="bottom-labels">
+                    <div class="min-label"><span>3</span> дня</div>
+                    <div class="max-label"><span>17</span> дней</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="filter-value">
-          <img src="img/moon-icon.png" alt="" class="main-color-icon"> <span class="val">На <span class="from">6</span> - <span class="to">16</span>  ночей</span>
-          <div class="hidden-change">
-            <div class="choice-block nights-block">
-              <div class="title">
-                <img src="img/moon-icon.png" class="title-icon">
-                <span>На сколько ночей?</span>
-              </div>
-              <div class="nights-wrapper">
-                <div class="top-labels">
-                  <div class="from"><span>2</span> ночи </div>
-                  <div class="to"><span>16</span> ночей</div>
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="filter-value humans">
+            <img src="img/adult-icon.png" class="main-color-icon" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
+            
+            <img src="img/chlidren-icon.png" class="hide-on-mobile-icon"> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
+
+            <div class="hidden-change">
+              <div class="choice-block tourists-block">
+                <div class="title">
+                  <img src="img/fly-icon.png" class="title-icon">
+                  <span>Туристы</span>
                 </div>
-                <div class="range-slider-wrapper">
-                  <input type="text" id="nightsSlider">
+
+                <div class="adult-childrens-sliders-wrapper">
+                  <div class="adult-slider-wrapper">
+                    <div class="icon-wrapper">
+                      <img src="img/adult-icon.png" class="icon" alt="">
+                      <div>
+                        <label for="">Взрослые</label>
+                        (от 12 лет)
+                      </div>
+                    </div>
+                    <div class="slider-wrapper">
+                      <input type="text" id="adultSlider">
+                    </div>
+                  </div>
+
+                  <div class="children-slider-wrapper">
+                    <div class="icon-wrapper">
+                      <img src="img/chlidren-icon.png"  class="icon" alt="">
+                      <div>
+                        <label for="">Дети</label>
+                        (0 - 11 лет)
+                      </div>
+                    </div>
+                    <div class="slider-wrapper">
+                      <input type="text" id="childrenSlider">
+                      <div class="age-change-panel">
+                        <div class="title">Выберите возраст</div>
+                        <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                        <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                        <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
+                        <button class="save">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="bottom-labels">
-                  <div class="min-label"><span>3</span> дня</div>
-                  <div class="max-label"><span>17</span> дней</div>
-                </div>
+
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="filter-value humans">
-          <img src="img/adult-icon.png" class="main-color-icon" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
-          
-          <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
-
-          <div class="hidden-change">
-            <div class="choice-block tourists-block">
-              <div class="title">
-                <img src="img/fly-icon.png" class="title-icon">
-                <span>Туристы</span>
-              </div>
-
-              <div class="adult-childrens-sliders-wrapper">
-                <div class="adult-slider-wrapper">
-                  <div class="icon-wrapper">
-                    <img src="img/adult-icon.png" class="icon" alt="">
-                    <div>
-                      <label for="">Взрослые</label>
-                      (от 12 лет)
-                    </div>
-                  </div>
-                  <div class="slider-wrapper">
-                    <input type="text" id="adultSlider">
-                  </div>
-                </div>
-
-                <div class="children-slider-wrapper">
-                  <div class="icon-wrapper">
-                    <img src="img/chlidren-icon.png"  class="icon" alt="">
-                    <div>
-                      <label for="">Дети</label>
-                      (0 - 11 лет)
-                    </div>
-                  </div>
-                  <div class="slider-wrapper">
-                    <input type="text" id="childrenSlider">
-                    <div class="age-change-panel">
-                      <div class="title">Выберите возраст</div>
-                      <div class="input"><span>1й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
-                      <div class="input"><span>2й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
-                      <div class="input"><span>3й ребенок</span><span class="num-step"><input type="text" class="numeric"><span class="num-up"></span><span class="num-down"></span></span></div>
-                      <button class="save">Сохранить</button>
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="filter-additional-params">
+            <img src="img/add-filter-params.png" alt=""> <span>Дополнительные фильтры</span>
+            <button class="open-additional-params">Развернуть</button>
+            <div class="hidden-menu">
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Курорт:</div>
+                Афины, Василикос, и <a href="#">еще 6</a>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
+                        <li>
+                          <ul class="collapse-list" id="list1">
+                            <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                          </ul>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-3">
-        <div class="filter-additional-params">
-          <img src="img/add-filter-params.png" class="main-color-icon" alt=""> <span>Дополнительные фильтры</span>
-          <button class="open-additional-params">Развернуть</button>
-          <div class="hidden-menu">
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Курорт:</div>
-              Афины, Василикос, и <a href="#">еще 6</a>
-              <div class="select-items-wrapper">
-                <div class="scrollable-lists-wrapper">
-                  <div class="scrollable-lists scroll scroll1">
-                    <div class="list-header">Популярные курорты</div>
-                    <ul>
-                      <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
-                      <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                      <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> <input class="icheck-input" type="checkbox"> <span class="border"></span></label></li>
-                      <li>
-                        <ul class="collapse-list" id="list1">
-                          <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
-                          <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
-                          <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
-                          <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Тип отеля:</div>
+                SPA-услуги <br>
+                (оздоровительный отдых)
               </div>
-            </div>
-            
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Тип отеля:</div>
-              SPA-услуги <br>
-              (оздоровительный отдых)
-            </div>
 
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Рейтинг отеля:</div>
-              Не важен
-            </div>
-            
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Класс отеля:</div>
-              1 <span class="star">★</span>, 2 <span class="star">★</span>
-            </div>
-            
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Тип питанияля:</div>
-              BB (только завтраки) 
-            </div>
-            
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Отель:</div>
-              Любой 
-            </div>
-            
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Стоимость:</div>
-              30 000 - 70 000 р.
-            </div>
-            
-            <div class="item">
-              <button class="edit-btn"></button>
-              <div class="title">Туроператор:</div>
-              Анекс Тур<br>
-              Пегас Туристик и <a href="#">еще 5</a>
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Рейтинг отеля:</div>
+                Не важен
+              </div>
+              
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Класс отеля:</div>
+                1 <span class="star">★</span>, 2 <span class="star">★</span>
+              </div>
+              
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Тип питанияля:</div>
+                BB (только завтраки) 
+              </div>
+              
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Отель:</div>
+                Любой 
+              </div>
+              
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Стоимость:</div>
+                30 000 - 70 000 р.
+              </div>
+              
+              <div class="item">
+                <button class="edit-btn"></button>
+                <div class="title">Туроператор:</div>
+                Анекс Тур<br>
+                Пегас Туристик и <a href="#">еще 5</a>
+              </div>
             </div>
           </div>
         </div>

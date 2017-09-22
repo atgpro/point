@@ -22,11 +22,13 @@
      <link rel="stylesheet" href="css/daterangepicker.css">
      <link rel="stylesheet" href="css/slick.css">
      <link rel="stylesheet" href="css/magnific-popup.css">
-  
+     
+     <script type="text/javascript"> localStorage.clear();</script>
+     
      <!-- LESS -->
-     <link rel="stylesheet/less" type="text/css" href="less/style.less?v=9" /> 
+     <link rel="stylesheet/less" type="text/css" href="less/style.less?v=11" /> 
      <!-- LESS Compiler -->
-     <script src="bower_components/less/dist/less.min.js?v=9" type="text/javascript"></script>
+     <script src="bower_components/less/dist/less.min.js?v=11" type="text/javascript"></script>
      <!-- CSS -->
      <!-- <link href="css/style.css" rel="stylesheet"> -->
 

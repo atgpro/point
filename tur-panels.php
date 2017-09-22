@@ -14,7 +14,7 @@
     <div class="filters-panel-wrapper">
       <div class="row row-filters-panel">
         <div class="col-xs-6 col-sm-4 col-md-3">
-          <div class="filter-value">
+          <div class="filter-value filter-value-date">
             <img src="img/calendar-icon.png" alt=""> <span class="val">С <span class="from">25.08.2017</span>&nbsp;&nbsp;<span class="to">По 18.08.2017</span>
             <div class="hidden-change">
               <div class="choice-block date-block">
@@ -67,7 +67,7 @@
         <div class="col-xs-6 col-sm-4 col-md-3">
           <div class="filter-value humans">
             <img src="img/adult-icon.png" alt=""> <span class="val"><span class="adults">2</span> взрослых</span> <br>
-            <img src="img/chlidren-icon.png" alt=""> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
+            <img src="img/chlidren-icon.png" class="hide-on-mobile-icon"> <span class="val"><span class="children">2</span> <span class="word">ребенка</span> <span class="child-ages">(5 и 10 лет)</span> </span>
             <div class="hidden-change">
               <div class="choice-block tourists-block">
                 <div class="title">
