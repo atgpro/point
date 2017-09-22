@@ -269,7 +269,7 @@
           нашла еще <b>893</b> тура для <b>51</b> отеля
         </div>
         <button class="show-btn">Показать</button>
-        <button class="dismiss-btn">Спасибо, не надо</button>
+        <!--<button class="dismiss-btn">Спасибо, не надо</button> -->
       </div>
     </div>
 
@@ -288,12 +288,12 @@
                     <div>Челябинск</div>
                     <div>Ульяновск</div>
                   </div> -->
-                  <div class="scrollable-lists-wrapper">
-                    <div class="scrollable-lists scroll scroll1">
+                  <div class="">
+                    <div class="">
                       <ul>
-                        <li><label class="check-group">От дешевых к дорогим <input class="icheck-input" type="checkbox"></label></li>
-                        <li><label class="check-group">От дорогих к дешевым <input class="icheck-input" type="checkbox"></label></li>
-                        <li><label class="check-group">По рейтингу отеля  <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group check-group-fix">От дешевых к дорогим <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group check-group-fix">От дорогих к дешевым <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group check-group-fix">По рейтингу отеля  <input class="icheck-input" type="checkbox"></label></li>
                       </ul>
                     </div>
                   </div>
@@ -317,7 +317,7 @@
 
     <div class="results-grid-wrapper">
       <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -393,7 +393,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -469,7 +469,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -547,7 +547,7 @@
           ?>
         </div>
       
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -624,7 +624,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -701,7 +701,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -779,7 +779,7 @@
           ?>
         </div>
       
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -857,7 +857,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
@@ -934,7 +934,7 @@
             include('tours-box.php');
           ?>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-12">
+        <div class="col-xs-6 col-sm-6 col-md-12 tour-itself">
           <div class="result-item result-type-panel" data-type="panel">
             <div class="header">
               <div class="raiting low">
