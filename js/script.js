@@ -422,6 +422,7 @@ $(function (e) {
 
 	function switchDetailedState()
 	{
+		$('.main-loader').css('display', 'block');
 		$('.hide-detailed-version').addClass('open-btn');
 		$('.first-choise-row').fadeIn();
 		$('.states-panel').fadeIn();
@@ -430,11 +431,16 @@ $(function (e) {
 		$('.destination-box').css('background-image', 'url(img/destination-bg.png)');
 		$('.for-short-version').fadeOut();
 		$('.for-detailed-version').fadeIn();
-		$('body').removeClass('short-version');		
+		$('body').removeClass('short-version');
+
+		setTimeout(function() {
+			$('.main-loader').fadeOut();
+		}, 400);	
 	}
 
 	function switchShortState()
 	{
+		$('.main-loader').css('display', 'block');
 		$('.first-choise-row').fadeOut();
 		$('.states-panel').fadeOut();
 		$('.hide-detailed-version').html('Открыть расширенную версию');
@@ -442,7 +448,11 @@ $(function (e) {
 		$('.destination-box').css('background-image', 'url(img/destination-short-bg.png)');
 		$('.for-short-version').fadeIn();
 		$('.for-detailed-version').fadeOut();
-		$('body').addClass('short-version');		
+		$('body').addClass('short-version');	
+
+		setTimeout(function() {
+			$('.main-loader').fadeOut();
+		}, 400);		
 	}
 
 	switchDetailedState();
