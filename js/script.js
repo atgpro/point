@@ -31,6 +31,8 @@ $(function (e) {
 				$('.filter-value-date').trigger('click');
 			}
 		}
+		var dateBtn = $(".filter-value-date"),
+			dropPicker = $(".daterangepicker");
 
 		if ($(this).scrollTop() >= 235) {
 			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
@@ -40,7 +42,21 @@ $(function (e) {
 		} else {
 			$('.filters-panel-wrapper').removeClass('fixed-header-filters');
 			$('.inner-page-wrapper').css('margin-bottom', '0px');
+			if (dropPicker.length&&dateBtn.length) {
+				dropPicker.css({
+					top: dateBtn.offset().top+dateBtn.innerHeight()
+				});
+			}
 		}
+		if (dropPicker.length&&dateBtn.length) {
+			if (dateBtn.closest(".fixed-header-filters").length) {
+				if (dropPicker.is(":visible")) {
+					dropPicker.addClass("fixed-picker");
+					return;
+				}
+			}
+		}
+		dropPicker.removeClass("fixed-picker");
 	});
 
 	//Подсказки
@@ -609,7 +625,7 @@ $(function (e) {
 			});
 		});
 
-		$('.daterangepicker').prepend('<button class="btn btn-default back-from-calendar">⬅ Назад</button>');
+		$('.daterangepicker').prepend('<button class="btn btn-default back-from-calendar">&larr; Назад</button>');
 
 		var count_month = 24,
 			tmpl_month = "", tmpl_year = "",
