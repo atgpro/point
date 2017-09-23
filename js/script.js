@@ -340,6 +340,24 @@ $(function (e) {
 	    }
 	});
 
+	function formatInt($str){
+		return $str.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+	};
+
+	$('#pricesSlider2').ionRangeSlider({
+	    type: "double",
+	    min: 0,
+	    max: 500000,
+	    from: 30000,
+	    to: 40000,
+	    onChange: function (data, e) {
+	        $(data.slider).parents('.range-slider-wrapper').find('.left-label').val(data.from);
+	        $(data.slider).parents('.range-slider-wrapper').find('.right-label').val(data.to);
+	        
+	        $(data.slider).closest('.item').find('.e-cont').text( formatInt(data.from) + " - " + formatInt(data.to) + " р.");
+	    }
+	});
+
 	$('.range-slider-wrapper .left-label').on('change', function() {
 		if ($(this).val() < 0) {
     		$(this).val(0);
@@ -862,9 +880,20 @@ $(function (e) {
 	});
 
 	$('.filter-additional-params .edit-btn').on('click', function() {
-		$(this).parents('.item').find('.select-items-wrapper').fadeToggle();
-		$(this).parents('.item').find('.select-items-wrapper').toggleClass('editable');
-		$(this).toggleClass('open');
+
+		var flag = false;
+		if( !$(this).hasClass('open') ){
+			flag = true;
+		}
+		$(this).closest('.hidden-menu').find('.item .select-items-wrapper.editable').fadeToggle().removeClass('editable');
+		$(this).closest('.hidden-menu').find('.item .edit-btn.open').removeClass('open');
+
+		if(flag){
+			$(this).parents('.item').find('.select-items-wrapper').fadeToggle();
+			$(this).parents('.item').find('.select-items-wrapper').toggleClass('editable');
+			$(this).toggleClass('open');
+		}
+
 	});
 
 
@@ -1051,7 +1080,7 @@ $(function (e) {
     	_city.remove();
 
     	return false;
-    })
+    });
 
     $('.tours-box-content .cities').on('click','.city:not(.add)',function(e){
     	e.preventDefault();
@@ -1077,7 +1106,36 @@ $(function (e) {
     	}
 
     	return false;
-    })
+    });
+
+    $('.filter-additional-params .select-items-wrapper').on('ifChecked ifUnchecked','input', function() {
+
+		var _this = $(this);
+		var _elems = _this.closest('.select-items-wrapper').find('input:checked').closest('label');
+		console.log( _elems );
+		console.log( _elems[0]);
+
+		var _str = "";
+		var _length = _elems.length;
+		if( _length == 0 ){
+			_str = "Не важно";
+		}else{
+			if( _length==1 ){
+				_str = $(_elems[0]).text();
+			}
+			if( _length > 1){
+				_str = $(_elems[0]).text() + ", " + $(_elems[1]).text();
+			}
+			if( _length >= 3){
+				_str += " и <a href=#>еще "+(_length - 2)+"</a>";
+			}
+
+		}
+
+		console.log( _str );
+
+		_this.closest('.item').find('.e-cont').html( _str);
+	});
 
 	/* END Sergej works here*/
 
