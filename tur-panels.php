@@ -158,7 +158,7 @@
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
-                      <div class="list-header">Популярные курорты</div>
+                      <div class="list-header">Тип отеля</div>
                       <ul>
                         <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
@@ -179,7 +179,7 @@
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
-                      <div class="list-header">Популярные курорты</div>
+                      <div class="list-header">Рейтинг отеля</div>
                       <ul>
                         <li><label class="check-group">1 ★<input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">2 ★<input class="icheck-input" type="checkbox"></label></li>
@@ -201,7 +201,7 @@
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
-                      <div class="list-header">Популярные курорты</div>
+                      <div class="list-header">Класс отеля</div>
                       <ul>
                         <li><label class="check-group">1 ★<input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">2 ★<input class="icheck-input" type="checkbox"></label></li>
@@ -223,7 +223,7 @@
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
-                      <div class="list-header">Популярные курорты</div>
+                      <div class="list-header">Тип питания</div>
                       <ul>
                         <li><label class="check-group">Любой <input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">Без питания <input class="icheck-input" type="checkbox"></label></li>
@@ -247,7 +247,7 @@
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
-                      <div class="list-header">Популярные курорты</div>
+                      <div class="list-header">Отель</div>
                       <ul>
                         <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
@@ -299,7 +299,7 @@
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
-                      <div class="list-header">Популярные курорты</div>
+                      <div class="list-header">Туроператор</div>
                       <ul>
                         <li><label class="check-group">Acti Tour <input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">Adonis <input class="icheck-input" type="checkbox"></label></li>

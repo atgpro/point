@@ -5187,7 +5187,17 @@ body.short-version {
     }
 
     .calendar .month {
-    	padding-top: 0px !important;
+		padding-top: 0px !important;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			cursor: default;
+		}
     }
 }
 
@@ -5442,7 +5452,6 @@ body.short-version {
 	display: none;
 }
 
-
 @media screen and (max-width: 500px) {
 	.daterangepicker {
 	    width: 100%;
@@ -5457,7 +5466,6 @@ body.short-version {
 	    margin-top: 0px;
 	    padding-bottom: 70px !important;
 	    height: 100% !important;
-	    min-height: 700px;
 	    overflow-y: auto;
 	    padding-top: 20px;
 
@@ -6304,5 +6312,17 @@ input.fix-input {
 @media screen and (max-width: 759px) {
 	.city .closer {
 		transform: scale(1.35);
+	}
+}
+
+@media screen and (max-height: 730px) and (max-width: 500px) {
+	.daterangepicker {
+		padding-bottom: 30px !important;
+		
+		.ranges {
+			position: relative;
+			top: 0;
+			margin: 0;
+		}
 	}
 }
