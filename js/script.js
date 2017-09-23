@@ -33,21 +33,51 @@ $(function (e) {
 		}
 		var dateBtn = $(".filter-value-date"),
 			dropPicker = $(".daterangepicker");
+		var _p = $('.tur-tur');
 
-		if ($(this).scrollTop() >= 235) {
-			if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
-				$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
-				$('.filters-panel-wrapper').addClass('fixed-header-filters');
+		if(_p.length > 0){
+			var initH = _p.outerHeight();
+			if ($(this).scrollTop() >= 235 + initH ) {
+				if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
+					//$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
+					_p.css('height', _p.outerHeight() + 'px' );
+					console.log( _p.outerHeight() );
+					$('.filters-panel-wrapper').addClass('fixed-header-filters');
+				}
+			} else {
+				$('.filters-panel-wrapper').removeClass('fixed-header-filters');
+				$('.inner-page-wrapper').css('margin-bottom', '0px');
+				_p.css('height', 'auto' );
+				if (dropPicker.length&&dateBtn.length) {
+					dropPicker.css({
+						top: dateBtn.offset().top+dateBtn.innerHeight()
+					});
+				}
 			}
-		} else {
-			$('.filters-panel-wrapper').removeClass('fixed-header-filters');
-			$('.inner-page-wrapper').css('margin-bottom', '0px');
-			if (dropPicker.length&&dateBtn.length) {
-				dropPicker.css({
-					top: dateBtn.offset().top+dateBtn.innerHeight()
-				});
+
+		}else{
+
+			if ($(this).scrollTop() >= 235) {
+				if (!$('.filters-panel-wrapper').hasClass('fixed-header-filters')) {
+					$('.inner-page-wrapper').css('margin-bottom', $('.filters-panel-wrapper').height() + 'px');
+					$('.filters-panel-wrapper').addClass('fixed-header-filters');
+				}
+			} else {
+				$('.filters-panel-wrapper').removeClass('fixed-header-filters');
+				$('.inner-page-wrapper').css('margin-bottom', '0px');
+				if (dropPicker.length&&dateBtn.length) {
+					dropPicker.css({
+						top: dateBtn.offset().top+dateBtn.innerHeight()
+					});
+				}
 			}
+
 		}
+
+
+		
+
+
 		if (dropPicker.length&&dateBtn.length) {
 			if (dateBtn.closest(".fixed-header-filters").length) {
 				if (dropPicker.is(":visible")) {
@@ -824,6 +854,7 @@ $(function (e) {
 		$(this).toggleClass('open');
 
 		if ($(this).hasClass('open')) {
+			$(this).closest('.row-filters-panel').find('.filter-value.open').removeClass('open');
 			$(this).html('Свернуть');
 		} else {
 			$(this).html('Развернуть');
@@ -875,6 +906,12 @@ $(function (e) {
 
 
 	$('.filter-value').on('click', function(e) {
+		
+		//if( $(this).hasClass('open') ){
+			$(this).closest('.row-filters-panel').find('.filter-value.open').removeClass('open');
+			$(this).closest('.row-filters-panel').find('.open-additional-params.open').trigger('click');
+		//}
+
 		if ($(e.target).parents('.choice-block').length || 
 			$(e.target).hasClass('choice-block')) {
 			return;
@@ -975,6 +1012,72 @@ $(function (e) {
 
 		console.log( _this.closest('.input-group-fix').find('.iradio_futurico input') ); 	
     });
+
+    $('.city.add').on('click',function(e){
+    	e.preventDefault();
+    	var _this = $(this);
+    	var _parent = _this.closest('.city-add-wrapper');
+
+    	_parent.toggleClass('open');
+    });
+
+    $('.city-add-wrapper').on('ifChecked','.iradio_futurico input',function(e){
+    	var _this = $(this);
+    	var _parent = _this.closest('.city-add-wrapper');
+
+    	_parent.removeClass('open');
+    	_this.iCheck('uncheck');
+    	_this.closest('label').removeClass('checked');
+    	_this.removeClass('checked');
+
+    	var _container = _this.closest('.cities');
+
+    	var _cities = _container.find('> .city');
+
+    	if( _cities.length < 3){
+    		_parent.before('<div class="city">'+_this.closest('label').text()+'<br>от <b>27 311 <span class="thin">Р</span></b><div class="closer"></div>');
+
+    		_container.find('> .city:nth-last-child(2)').trigger('click');
+
+    	}
+    });
+
+    $('.tours-box-content .cities').on('click','.city .closer',function(e){
+    	e.preventDefault();
+
+    	var _this = $(this);
+    	console.log(_this);
+    	var _city = _this.closest('.city');
+    	_city.remove();
+
+    	return false;
+    })
+
+    $('.tours-box-content .cities').on('click','.city:not(.add)',function(e){
+    	e.preventDefault();
+
+    	var _this = $(this);
+    	
+    	if( !_this.hasClass('selected')){
+
+    		var _parent = _this.closest('.cities');
+    		var _e_container = _this.closest('.tours-box-content').find('.body');
+
+    		_parent.find('> .selected').removeClass('selected');
+    		_this.addClass('selected');
+    		var timer = null;
+    		if( !_e_container.hasClass('loading') ){
+    			_e_container.addClass('loading');
+    			timer = setTimeout(function(){
+    				_e_container.removeClass('loading');
+    			}, 1000)
+
+    		}
+    		
+    	}
+
+    	return false;
+    })
 
 	/* END Sergej works here*/
 

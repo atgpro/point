@@ -6,8 +6,35 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="cities">
-            <div class="city">Москва<br>от <b>27 311 <span class="thin">Р</span></b></div>
-            <button class="city add">Добавить город вылета</button>
+            <div class="city selected">Москва<br>от <b>27 311 <span class="thin">Р</span></b><div class="closer"></div></div>
+            <div class="city-add-wrapper">
+              <button class="city add">Добавить город вылета</button>
+              <div class="filter-select-wrapper">
+                <div class="filter-select">
+                  <div class="select-items-wrapper">
+                    <div class="scrollable-lists-wrapper">
+                      <div class="scrollable-lists scroll scroll1">
+                        <div class="list-header">Популярные направления</div>
+                        <ul>
+                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                        </ul>
+                        <div class="list-header">Все направления</div>
+                        <ul>
+                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-6">

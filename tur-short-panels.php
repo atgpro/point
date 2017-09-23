@@ -8,7 +8,7 @@
       </h1>
     </div>
   </div>
-  <div class="inner-page-wrapper">
+  <div class="inner-page-wrapper tur-tur">
     <a href="index.php" class="btn-back-to-prev-step">Вернуться к странице подбора</a>
     <div class="filters-panel-wrapper">
       <div class="row row-filters-panel">
@@ -270,7 +270,7 @@
           нашла еще <b>893</b> тура для <b>51</b> отеля
         </div>
         <button class="show-btn">Показать</button>
-        <button class="dismiss-btn">Спасибо, не надо</button>
+        <!--<button class="dismiss-btn">Спасибо, не надо</button>-->
       </div>
     </div>
 
@@ -385,7 +385,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox1">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox1"></button>
             </div>
 
           </div>
@@ -463,7 +463,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox2">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox2"></button>
             </div>
 
           </div>
@@ -539,7 +539,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox3">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox3"></button>
             </div>
 
           </div>
@@ -616,7 +616,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox4">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox4"></button>
             </div>
 
           </div>
@@ -692,7 +692,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox5">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox5"></button>
             </div>
 
           </div>
@@ -768,7 +768,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox6">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox6"></button>
             </div>
 
           </div>
@@ -845,7 +845,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox7">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox7"></button>
             </div>
 
           </div>
@@ -922,7 +922,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox8">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox8"></button>
             </div>
 
           </div>
@@ -999,7 +999,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox9">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count='3' data-t-box="#toursBox9"></button>
             </div>
 
           </div>

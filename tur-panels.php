@@ -8,7 +8,7 @@
       </h1>
     </div>
   </div>
-  <div class="inner-page-wrapper">
+  <div class="inner-page-wrapper tur-tur">
     <a href="index.php" class="btn-back-to-prev-step">Вернуться к странице подбора</a>
     <div class="filters-panel-wrapper">
       <div class="row row-filters-panel">
@@ -149,45 +149,59 @@
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Тип отеля:</div>
-                SPA-услуги <br>
-                (оздоровительный отдых)
+                <span class="e-cont">
+                  SPA-услуги <br>
+                  (оздоровительный отдых)
+                </span>
               </div>
 
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Рейтинг отеля:</div>
-                Не важен
+                <span class="e-cont">
+                  Не важен
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Класс отеля:</div>
-                1 <span class="star">★</span>, 2 <span class="star">★</span>
+                <span class="e-cont">
+                  <span class="star">1 ★</span><span class="star">2 ★</span>
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
-                <div class="title">Тип питанияля:</div>
-                BB (только завтраки) 
+                <div class="title">Тип питания:</div>
+                <span class="e-cont">
+                  BB (только завтраки) 
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Отель:</div>
-                Любой 
+                <span class="e-cont">
+                  Любой
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Стоимость:</div>
-                30 000 - 70 000 р.
+                <span class="e-cont">
+                  30 000 - 70 000 р.
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Туроператор:</div>
-                Анекс Тур<br>
-                Пегас Туристик и <a href="#">еще 5</a>
+                <span class="e-cont">
+                  Анекс Тур<br>
+                  Пегас Туристик и <a href="#">еще 5</a>
+                </span>
               </div>
             </div>
           </div>
@@ -381,7 +395,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours"  data-t-box="#toursBox1">Показать туры (3)</button>
+              <button class="btn-show-tours"  data-count="3"  data-t-box="#toursBox1"></button>
             </div>
 
           </div>
@@ -457,7 +471,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox2">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox2"></button>
             </div>
 
           </div>
@@ -533,7 +547,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox3">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox3"></button>
             </div>
 
           </div>
@@ -611,7 +625,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox4">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox4"></button>
             </div>
 
           </div>
@@ -688,7 +702,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox5">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox5"></button>
             </div>
 
           </div>
@@ -765,7 +779,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox6">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox6"></button>
             </div>
 
           </div>
@@ -843,7 +857,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox7">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox7"></button>
             </div>
 
           </div>
@@ -921,7 +935,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox8">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox8"></button>
             </div>
 
           </div>
@@ -998,7 +1012,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox9">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox9"></button>
             </div>
 
           </div>
