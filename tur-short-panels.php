@@ -152,45 +152,59 @@
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Тип отеля:</div>
-                SPA-услуги <br>
-                (оздоровительный отдых)
+                <span class="e-cont">
+                  SPA-услуги <br>
+                  (оздоровительный отдых)
+                </span>
               </div>
 
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Рейтинг отеля:</div>
-                Не важен
+                <span class="e-cont">
+                  Не важен
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Класс отеля:</div>
-                1 <span class="star">★</span>, 2 <span class="star">★</span>
+                <span class="e-cont">
+                  <span class="star">1 ★</span><span class="star">2 ★</span>
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
-                <div class="title">Тип питанияля:</div>
-                BB (только завтраки) 
+                <div class="title">Тип питания:</div>
+                <span class="e-cont">
+                  BB (только завтраки) 
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Отель:</div>
-                Любой 
+                <span class="e-cont">
+                  Любой
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Стоимость:</div>
-                30 000 - 70 000 р.
+                <span class="e-cont">
+                  30 000 - 70 000 р.
+                </span>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Туроператор:</div>
-                Анекс Тур<br>
-                Пегас Туристик и <a href="#">еще 5</a>
+                <span class="e-cont">
+                  Анекс Тур<br>
+                  Пегас Туристик и <a href="#">еще 5</a>
+                </span>
               </div>
             </div>
           </div>
