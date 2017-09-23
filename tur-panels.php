@@ -8,7 +8,7 @@
       </h1>
     </div>
   </div>
-  <div class="inner-page-wrapper">
+  <div class="inner-page-wrapper tur-tur">
     <a href="index.php" class="btn-back-to-prev-step">Вернуться к странице подбора</a>
     <div class="filters-panel-wrapper">
       <div class="row row-filters-panel">
@@ -121,7 +121,9 @@
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Курорт:</div>
-                Афины, Василикос, и <a href="#">еще 6</a>
+                <span class="e-cont">
+                  Афины, Василикос, и <a href="#">еще 6</a>
+                </span>
                 <div class="select-items-wrapper">
                   <div class="scrollable-lists-wrapper">
                     <div class="scrollable-lists scroll scroll1">
@@ -129,11 +131,11 @@
                       <ul>
                         <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
                         <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
-                        <li><label class="check-group open-collapse-list" data-list="#list1">Закинф <span class="custom-caret"></span> 
+                        <li><label class="check-group open-collapse-list" data-list="#list2">Закинф <span class="custom-caret"></span> 
                         <!-- <input class="icheck-input" type="checkbox"> -->
                         <span class="border"></span></label></li>
                         <li>
-                          <ul class="collapse-list" id="list1">
+                          <ul class="collapse-list" id="list2">
                             <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
                             <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
                             <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
@@ -148,46 +150,166 @@
               
               <div class="item">
                 <button class="edit-btn"></button>
-                <div class="title">Тип отеля:</div>
-                SPA-услуги <br>
-                (оздоровительный отдых)
+                <div class="title">Тип отеля:</div> 
+                <span class="e-cont">               
+                  SPA-услуги <br>
+                  (оздоровительный отдых)
+                </span>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Рейтинг отеля:</div>
-                Не важен
+                <span class="e-cont">
+                  Не важен
+                </span>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">1 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">2 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">3 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">4 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">5 ★<input class="icheck-input" type="checkbox"></label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Класс отеля:</div>
-                1 <span class="star">★</span>, 2 <span class="star">★</span>
+                <span class="e-cont">
+                  <span class="star">1 ★</span><span class="star">2 ★</span>
+                </span>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">1 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">2 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">3 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">4 ★<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">5 ★<input class="icheck-input" type="checkbox"></label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
-                <div class="title">Тип питанияля:</div>
-                BB (только завтраки) 
+                <div class="title">Тип питания:</div>
+                <span class="e-cont">
+                  BB (только завтраки) 
+                </span>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">Любой <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Без питания <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Только завтрак <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Завтрак и ужин<input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Завтрак, <br>обед и ужин <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Все включено <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Все включено <br>ультра <input class="icheck-input" type="checkbox"></label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Отель:</div>
-                Любой 
+                <span class="e-cont">
+                  Любой
+                </span>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Дельфы <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group open-collapse-list" data-list="#list7">Закинф <span class="custom-caret"></span> 
+                        <!-- <input class="icheck-input" type="checkbox"> -->
+                        <span class="border"></span></label></li>
+                        <li>
+                          <ul class="collapse-list" id="list7">
+                            <li><label class="check-group">Аргасси <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Василикос <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Лаганас <input class="icheck-input" type="checkbox"></label></li>
+                            <li><label class="check-group">Цивили <input class="icheck-input" type="checkbox"></label></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Стоимость:</div>
-                30 000 - 70 000 р.
+                <span class="e-cont">
+                  30 000 - 40 000 р.
+                </span>
+                <div class="select-items-wrapper range-slider-wrapper">
+                  
+                  <input type="text" class="left-label numeric" value="30000">
+                  
+                  <input type="text" class="right-label numeric" value="40000">
+                  <input type="text" id="pricesSlider2">
+
+                  <div class="bottom-labels">
+                    <div class="min-label">0</div>
+                    <div class="max-label">500 000</div>
+                  </div>
+                </div>
+                
               </div>
               
               <div class="item">
                 <button class="edit-btn"></button>
                 <div class="title">Туроператор:</div>
-                Анекс Тур<br>
-                Пегас Туристик и <a href="#">еще 5</a>
+                <span class="e-cont">
+                  Анекс Тур<br>
+                  Пегас Туристик и <a href="#">еще 5</a>
+                </span>
+                <div class="select-items-wrapper">
+                  <div class="scrollable-lists-wrapper">
+                    <div class="scrollable-lists scroll scroll1">
+                      <div class="list-header">Популярные курорты</div>
+                      <ul>
+                        <li><label class="check-group">Acti Tour <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Adonis <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Ambotis Holidays <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Anex Tour <input class="icheck-input" type="checkbox"></label></li>
+                        <li><label class="check-group">Art Tour <input class="icheck-input" type="checkbox"></label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -381,7 +503,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours"  data-t-box="#toursBox1">Показать туры (3)</button>
+              <button class="btn-show-tours"  data-count="3"  data-t-box="#toursBox1"></button>
             </div>
 
           </div>
@@ -457,7 +579,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox2">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox2"></button>
             </div>
 
           </div>
@@ -533,7 +655,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox3">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox3"></button>
             </div>
 
           </div>
@@ -611,7 +733,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox4">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox4"></button>
             </div>
 
           </div>
@@ -688,7 +810,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox5">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox5"></button>
             </div>
 
           </div>
@@ -765,7 +887,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox6">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox6"></button>
             </div>
 
           </div>
@@ -843,7 +965,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox7">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox7"></button>
             </div>
 
           </div>
@@ -921,7 +1043,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox8">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox8"></button>
             </div>
 
           </div>
@@ -998,7 +1120,7 @@
                 <a href="#"><img src="img/g+.png" alt=""></a>
                 <a href="#"><img src="img/mailru.png" alt=""></a>
               </div>
-              <button class="btn-show-tours" data-t-box="#toursBox9">Показать туры (3)</button>
+              <button class="btn-show-tours" data-count="3" data-t-box="#toursBox9"></button>
             </div>
 
           </div>
