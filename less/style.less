@@ -2102,7 +2102,8 @@ body.short-version {
 	    min-height: 107px;
 	    padding-top: 42px;
 	    text-align: center;
-	    position: relative;
+		position: relative;
+		cursor: pointer;
 
 	     img {
     	    display: inline-block;
@@ -4110,7 +4111,8 @@ body.short-version {
 	    padding-right: 25px;
 	    padding-top: 5px;
 	    padding-bottom: 5px;
-	    display: none;
+		display: none;
+		cursor: auto;
 
 	    .item {
     		border-bottom: 2px dotted #2c3b58;
@@ -5540,8 +5542,26 @@ body.short-version {
 
 
 	.result-item[data-type="panel"] .gallery {
-	    max-width: 100%;
-        margin-left: 0px;
+		max-width: none;
+		width: auto;
+		display: block;
+		margin-left: 0px;
+		position: relative;
+		margin: 0 -10px 10px;
+
+		>div {
+			float: left;
+			padding: 0 10px 10px;
+			width: 50%;
+			max-width: 130px;
+			margin: 0;
+		}
+
+		&:after {
+			content: '';
+			clear: both;
+			display: block;
+		}
 	}
 
 	.table-wrapper .search-box {

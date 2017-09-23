@@ -819,6 +819,12 @@ $(function (e) {
 		$(this).parents('.tours-table').removeClass('no-last-column');
 	});
 
+	$('.filter-additional-params').on('click', function (e) {
+		if ($(e.target).closest('.hidden-menu').length) return;
+		if ($(e.target).closest('.open-additional-params').length) return;
+		$('.filter-additional-params .open-additional-params').click();
+	});
+
 	$('.filter-additional-params .open-additional-params').on('click', function() {
 		$(this).parents('.filter-additional-params').find('.hidden-menu').fadeToggle();
 		$(this).toggleClass('open');
