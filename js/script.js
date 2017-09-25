@@ -1042,11 +1042,30 @@ $(function (e) {
     	}
     });
 
-    $('.input-group.input-group-fix .fix-input').on('click', function(e){
+    $('.destination-country-select').on('ifChecked ifUnchecked','input', function(e){
+    	$(this).closest('.destination-country-select').find('.selected').text( $(this).val() ? $(this).val() : $(this).closest('.destination-country-select').find('.fix-input').val() );
+    	console.log($(this).closest('.destination-country-select').find('.fix-input').val());
+    });
+
+    /*$('.input-group.input-group-fix .fix-input').on('click', function(e){
 		var _this = $(this);
 		_this.closest('.input-group-fix').find('.iradio_futurico input').iCheck('check');   
 
-		console.log( _this.closest('.input-group-fix').find('.iradio_futurico input') ); 	
+		//console.log( _this.closest('.input-group-fix').find('.iradio_futurico input') ); 	
+    });*/
+
+    $('.input-group.input-group-fix .fix-input').on('change keyup', function(e){
+    	var _this = $(this);
+    	var _val = _this.val();
+    	var _rexp = new RegExp( _val, 'i' );
+    	var _filtered = _this.closest('.scrollable-lists-wrapper').find('ul li');
+    	_filtered.hide();
+    	_filtered.filter(function(i){
+    		if( _val != '' ){
+    			return _rexp.test( $(this).text() );
+    		}
+    		return true;
+    	}).show();
     });
 
     $('.city.add').on('click',function(e){
