@@ -25,11 +25,13 @@
                 <div>Ульяновск</div>
               </div> -->
               <div class="scrollable-lists-wrapper">
-              <div class="scrollable-lists scroll scroll1">
                 <div class="input-group input-group-fix">
                   <input type="text" class="fix-input" placeholder="Фильтр">
                   <input value="" class="icheck-input hidden-icheck" checked="" name="destination-country" type="radio">
                 </div>
+              
+              <div class="scrollable-lists scroll scroll1">
+                
                 <div class="list-header">Популярные направления</div>
                 <ul>
                   <li><label class="check-group">Афины <input class="icheck-input" type="checkbox"></label></li>
@@ -81,11 +83,11 @@
             <div>Ульяновск</div>
           </div> -->
           <div class="scrollable-lists-wrapper">
-            <div class="scrollable-lists scroll scroll1">
               <div class="input-group input-group-fix">
                 <input type="text" class="fix-input" placeholder="Фильтр">
                 <input value="" class="icheck-input hidden-icheck" checked="" name="destination-country" type="radio">
               </div>
+            <div class="scrollable-lists scroll scroll1">
               <div class="list-header">Популярные направления</div>
               <ul>
                 <li><label class="check-group">Россия <input value="Россия" class="icheck-input" checked="" name="destination-country" type="radio"></label></li>
