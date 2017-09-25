@@ -1042,9 +1042,34 @@ $(function (e) {
     	}
     });
 
-    $('.destination-country-select').on('ifChecked ifUnchecked','input', function(e){
+    $('.destination-country-select, .from-city .filter-select').on('ifChecked ifUnchecked','input', function(e){
+
+    	var _select = $(this).closest('.from-city').find('.selected');
+    	var _elems = $(this).closest('.from-city').find('.filter-select input:checked').closest('label');
+    	var _length = _elems.length;
+    	var _str = "";
+
+    	if( _length == 0 ){
+			_str = "Не выбран";
+		}else{
+			if( _length==1 ){
+				_str = $(_elems[0]).text();
+			}
+			if( _length > 1){
+				_str = $(_elems[0]).text() + ", " + $(_elems[1]).text();
+			}
+			if( _length >= 3){
+				_str += " и еще "+(_length - 2);
+			}
+
+		}
+
+    	_select.text( _str );
+    	
+    });
+
+    $('.destination-country-select, .from-city .filter-select').on('ifChecked ifUnchecked','input', function(e){
     	$(this).closest('.destination-country-select').find('.selected').text( $(this).val() ? $(this).val() : $(this).closest('.destination-country-select').find('.fix-input').val() );
-    	console.log($(this).closest('.destination-country-select').find('.fix-input').val());
     });
 
     /*$('.input-group.input-group-fix .fix-input').on('click', function(e){
