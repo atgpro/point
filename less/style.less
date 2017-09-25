@@ -6296,6 +6296,33 @@ input.fix-input {
 	text-overflow: ellipsis;
 }
 
+.showmore-btn {
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.showmore-btn a{
+	color: #fff;
+}
+
+.showmore-btn a:hover{
+	color: #337ab7;
+}
+
+.tours-table .showmore .table-content {
+    display: none;
+}
+
+.showmore .add-to-basket {
+    opacity: 0;
+}
+
+.showmore.opened .add-to-basket {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 500px) {
 
 	.tours-table .tr .mobile-short-view .right:after {
@@ -6348,6 +6375,10 @@ input.fix-input {
 
 	body.daterange-visible {
 	    overflow-y: hidden;
+	}
+
+	.showmore-btn {
+	    padding-right: 0px;
 	}
 
 }

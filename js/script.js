@@ -1188,6 +1188,31 @@ $(function (e) {
 		_this.closest('.item').find('.e-cont').html( _str);
 	});
 
+    var timer;
+
+	$('.showmore-btn a.show-more-tours').on('click',function(e){
+		e.preventDefault();
+		var _this = $(this);
+		var _toggler = _this.closest('.showmore');
+		_toggler.toggleClass('open');
+
+		if( !_toggler.hasClass('open')){
+			_toggler.find('.table-content').slideUp(300);
+			_this.find('span').text( _this.data('text') );
+			_toggler.removeClass('opened');
+		}else{
+			_toggler.find('.table-content').slideDown(300);
+			_this.find('span').text('Свернуть');
+			timer = setTimeout(function(){
+				_toggler.addClass('opened');
+			}, 300);
+		}
+
+
+
+		return false;
+	});
+
 	/* END Sergej works here*/
 
 });
