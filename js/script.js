@@ -26,11 +26,11 @@ $(function (e) {
 	});
 
 	$(window).scroll(function(e) {
-		if (window.innerWidth < 500) {
+		/*if (window.innerWidth < 500) {
 			if ($('.daterangepicker').css('display') == 'block') {
 				$('.filter-value-date').trigger('click');
 			}
-		}
+		}*/
 		var dateBtn = $(".filter-value-date"),
 			dropPicker = $(".daterangepicker");
 		var _p = $('.tur-tur');
@@ -655,6 +655,7 @@ $(function (e) {
 		// var endMonth = $('.daterangepicker .calendar.right .month').html();
 		// $('.daterangepicker .calendar.left thead').append('<tr><th colspan="7" class="cusom-month">' + startMonth + '<th></tr>');
 		// $('.daterangepicker .calendar.right thead').append('<tr><th colspan="7" class="cusom-month">' + endMonth + '<th></tr>');
+		$('body').addClass('daterange-visible');
 		$.each($('.daterangepicker .calendar tr'), function(i, elem) {
 			if ($(elem).find('.off').length == 7) {
 				$(elem).remove();
@@ -728,7 +729,7 @@ $(function (e) {
 
 
 	}).on('hide.daterangepicker', function() {
-		console.log($('.calendar-buttons .buttons'));
+		$('body').removeClass('daterange-visible');
 		$('.calendar-buttons .buttons').removeClass('active');
 	});
 

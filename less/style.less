@@ -1325,7 +1325,7 @@ h1 {
 
 .children-slider-wrapper {
 	.slider-wrapper {
-		margin-top: -26px;
+		//margin-top: -26px;
 	}
 }
 
@@ -5545,7 +5545,7 @@ body.short-version {
 	}
 
 	.children-slider-wrapper .age-change-panel {
-		left: 0px !important;
+		right: 0px !important;
 		width: 100% !important;
 		max-width: unset;
 		text-align: center;
@@ -6296,6 +6296,48 @@ input.fix-input {
 	    color: #428bd2;
 	    text-decoration: underline;
 	    padding-top: 5px;
+	}
+
+	.adult-slider-wrapper:after,
+	.children-slider-wrapper:after {
+	    display: table;
+	    content: "";
+	    clear: both;
+	}
+
+	.irs-hidden-input {
+	    border: 0;
+	}
+
+	.adult-slider-wrapper .irs-with-grid {
+	    height: 40px;
+	}
+
+	.fixed-header-filters .filter-value.humans .choice-block, .fixed-header-filters .filter-value .choice-block.nights-block {
+	    width: calc(~"100vw - 10px");
+	    position: fixed;
+	    left: 5px;
+	    top: 39px;
+	}
+
+	.fixed-header-filters .filter-value.humans .choice-block:before {
+	    right: 34%;
+	}
+
+	.fixed-header-filters .filter-value .choice-block:before {
+	    left: 34%;
+	}
+
+	.fixed-header-filters .filter-additional-params .hidden-menu {
+	    min-width: calc(~"100vw - 10px");
+	}
+
+	.children-slider-wrapper .slider-wrapper .irs-slider:before{
+		top: -3px;
+	}
+
+	body.daterange-visible {
+	    overflow-y: hidden;
 	}
 
 }
