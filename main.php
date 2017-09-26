@@ -190,7 +190,7 @@
             <div class="row">
               <div class="col-sm-4">
                 <div class="slider-header">
-                  <span>Рейтинг отеля, от</span>
+                  <span>Класс отеля, от</span>
                   <i class="indicator" title="Подсказка для поля - Рейтинг отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
                 </div>
                 <div class="slider-wrapper">
@@ -199,7 +199,7 @@
               </div>
               <div class="col-sm-3 class-slider-wrapper">
                 <div class="slider-header">
-                  <span>Класс отеля, от</span>
+                  <span>Рейтинг отеля, от</span>
                   <i class="indicator" title="Подсказка для поля - Касса отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
                 </div>
                 <div class="slider-wrapper">
