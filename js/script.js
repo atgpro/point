@@ -486,6 +486,7 @@ $(function (e) {
 
 	$('input[type="checkbox"]').on('ifChanged', function(event) {
 		var control = $(this);
+		console.log(123);
 		var group = $(this).parents('.check-group');
 		if ($(control).is(':checked')) {
 			$(group).parents('.scrollable-table tr').addClass('checked');
@@ -498,7 +499,7 @@ $(function (e) {
 
 	$('input[type="radio"]').on('ifChanged', function(event) {
 		var control = $(this);
-		var radios = $(this).parents('.radio-select-wrapper').find('input[type=radio]');
+		var radios = $(this).parents('.radio-select-wrapper, .select-items-wrapper').find('input[type=radio]');
 		$.each(radios, function(i, elem) {
 			$(elem).parents('.check-group').removeClass('checked');
 			// if ($(elem).attr('checked')) {
@@ -1163,8 +1164,6 @@ $(function (e) {
 
 		var _this = $(this);
 		var _elems = _this.closest('.select-items-wrapper').find('input:checked').closest('label');
-		console.log( _elems );
-		console.log( _elems[0]);
 
 		var _str = "";
 		var _length = _elems.length;
