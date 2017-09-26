@@ -486,7 +486,6 @@ $(function (e) {
 
 	$('input[type="checkbox"]').on('ifChanged', function(event) {
 		var control = $(this);
-		console.log(123);
 		var group = $(this).parents('.check-group');
 		if ($(control).is(':checked')) {
 			$(group).parents('.scrollable-table tr').addClass('checked');
@@ -720,7 +719,7 @@ $(function (e) {
 			end = start+1;
 
 			$('.daterangepicker .yearselect').val($(this).data('year')).change();
-			console.log(start , end);
+			//console.log(start , end);
 
 			$('.daterangepicker .left .monthselect').val(start).change();
 			$('.daterangepicker .right .monthselect').val(end).change();
@@ -1102,34 +1101,61 @@ $(function (e) {
     	_parent.toggleClass('open');
     });
 
-    $('.city-add-wrapper').on('ifChecked','.iradio_futurico input',function(e){
+    $('.city-add-wrapper').on('ifChecked','.icheckbox_futurico input',function(e){
     	var _this = $(this);
     	var _parent = _this.closest('.city-add-wrapper');
-
-    	_parent.removeClass('open');
-    	_this.iCheck('uncheck');
-    	_this.closest('label').removeClass('checked');
-    	_this.removeClass('checked');
-
     	var _container = _this.closest('.cities');
-
     	var _cities = _container.find('> .city');
 
-    	if( _cities.length < 3){
+    	if(_cities.length < 3){
+    		//console.log('less then', _this.val());
+
+
+	    	_parent.before('<div class="city" data-id="'+_this.val()+'">'+_this.closest('label').text()+'<br>от <b>27 311 <span class="thin">Р</span></b><div class="closer"></div>');
+
+    		_container.find('> .city:nth-last-child(2)').trigger('click');
+
+
+    	}else{
+    		
+    		return false;
+    	}
+
+    	/*if( _cities.length < 3){
     		_parent.before('<div class="city">'+_this.closest('label').text()+'<br>от <b>27 311 <span class="thin">Р</span></b><div class="closer"></div>');
 
     		_container.find('> .city:nth-last-child(2)').trigger('click');
 
-    	}
+    	}*/
+    });
+
+    $('.city-add-wrapper').on('ifUnchecked','.icheckbox_futurico input',function(e){
+    	var _this = $(this);
+    	var _parent = _this.closest('.city-add-wrapper');
+    	var _container = _this.closest('.cities');
+    	var _cities = _container.find('> .city');
+
+    	//console.log( _cities );
+
+    	_container.find('[data-id = '+_this.val()+']').find('.closer').trigger('click');
+
     });
 
     $('.tours-box-content .cities').on('click','.city .closer',function(e){
     	e.preventDefault();
 
     	var _this = $(this);
-    	console.log(_this);
+    	//console.log(_this);
     	var _city = _this.closest('.city');
+    	
+    	var _container = _this.closest('.cities');
+    	var _id = _city.data('id');
     	_city.remove();
+
+    	var _input = _container.find(".city-add-wrapper input:checked[value = '"+_id+"']");
+    	
+    	_input.iCheck('uncheck');
+    	//console.log(_input, _container, _city);
 
     	return false;
     });
@@ -1182,7 +1208,7 @@ $(function (e) {
 
 		}
 
-		console.log( _str );
+		//console.log( _str );
 
 		_this.closest('.item').find('.e-cont').html( _str);
 	});

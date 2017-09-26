@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="cities">
-            <div class="city selected">Москва<br>от <b>27 311 <span class="thin">Р</span></b><div class="closer"></div></div>
+            <div class="city selected" data-id="1">Афины<br>от <b>27 311 <span class="thin">Р</span></b><div class="closer"></div></div>
             <div class="city-add-wrapper">
               <button class="city add">Добавить город вылета</button>
               <div class="filter-select-wrapper">
@@ -16,17 +16,17 @@
                       <div class="scrollable-lists scroll scroll1">
                         <div class="list-header">Популярные направления</div>
                         <ul>
-                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
-                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
-                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
-                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Афины <input checked="checked" value="1" name="cityadd" class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Дельфы <input value="2" name="cityadd" class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Афины 2 <input value="3" name="cityadd" class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Дельфы 3 <input value="4" name="cityadd" class="icheck-input" type="checkbox"></label></li>
                         </ul>
                         <div class="list-header">Все направления</div>
                         <ul>
-                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
-                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
-                          <li><label class="check-group">Афины <input name="cityadd" class="icheck-input" type="radio"></label></li>
-                          <li><label class="check-group">Дельфы <input name="cityadd" class="icheck-input" type="radio"></label></li>
+                          <li><label class="check-group">Афины 5 <input value="5" name="cityadd" class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Дельфы 6 <input value="6" name="cityadd" class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Афины 7 <input value="7" name="cityadd" class="icheck-input" type="checkbox"></label></li>
+                          <li><label class="check-group">Дельфы 8 <input value="8" name="cityadd" class="icheck-input" type="checkbox"></label></li>
                         </ul>
                       </div>
                     </div>
