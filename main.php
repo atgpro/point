@@ -188,7 +188,7 @@
               Отели (3322)
             </div>
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-3 otel2-fix">
                 <div class="slider-header">
                   <span>Класс отеля, от</span>
                   <i class="indicator" title="Подсказка для поля - Рейтинг отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
@@ -197,7 +197,7 @@
                   <input type="text" id="raitingSlider">
                 </div>
               </div>
-              <div class="col-sm-3 class-slider-wrapper">
+              <div class="col-sm-4 otel-fix">
                 <div class="slider-header">
                   <span>Рейтинг отеля, от</span>
                   <i class="indicator" title="Подсказка для поля - Касса отеля" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">?</i>
