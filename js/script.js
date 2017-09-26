@@ -809,7 +809,7 @@ $(function (e) {
 			$('.tours-table-overlay').fadeToggle();
 		}
 
-		if (window.innerWidth <= 1000) {
+		if (window.innerWidth <= 1000 || $($(this).data('t-box')).hasClass('for-cards-view') ) {
 			$('body').toggleClass('hide-overflow');
 			// $($(this).data('t-box')).css('height', window.innerHeight + 'px');
 		}

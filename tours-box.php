@@ -51,7 +51,7 @@
       </div>
     </div>
     
-    <div class="body"> 
+    <div class="body scroll1"> 
       <div class="tours-table">
         <div class="tr tr-ths">
           <div class="th"><div class="icon" style="background-image:url(img/date-white-icon.png)" alt=""></div><span>Дата</span></div>
@@ -827,7 +827,7 @@
   </div>
 
 
-    <div class="body grouped">
+    <div class="body grouped scroll1">
       <div class="operator">
         <img  class="op-logo" src="img/operator-logo.png" alt="" class="logo">
         <div class="name">Библиоглобус</div>
