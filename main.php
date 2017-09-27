@@ -27,7 +27,7 @@
               <div class="scrollable-lists-wrapper">
                 <div class="input-group input-group-fix">
                   <input type="text" class="fix-input" placeholder="Быстрый поиск по городам">
-                  <input value="" class="icheck-input hidden-icheck" checked="" name="destination-country" type="radio">
+                  <input value="" class="icheck-input hidden-icheck" checked="" name="destination-city" type="radio">
                 </div>
               
               <div class="scrollable-lists scroll scroll1">

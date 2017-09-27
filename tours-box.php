@@ -13,6 +13,10 @@
                 <div class="filter-select">
                   <div class="select-items-wrapper">
                     <div class="scrollable-lists-wrapper">
+                      <div class="input-group input-group-fix">
+                        <input type="text" class="fix-input" placeholder="Быстрый поиск по городам">
+                        <input value="" class="icheck-input hidden-icheck" checked="" name="cityadd" type="radio">
+                      </div>
                       <div class="scrollable-lists scroll scroll1">
                         <div class="list-header">Популярные направления</div>
                         <ul>
