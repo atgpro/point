@@ -6361,10 +6361,12 @@ input.fix-input {
     position: relative;
     margin-top: 9px;
     background: #fff;
-    width: 550px;
+    width: 837px;
+    box-sizing: border-box;
+    max-width: 100%;
     z-index: 2;
     border-radius: 5px;
-    padding: 5px;
+    padding: 0 10px;
     box-shadow: 0px 1px 5px rgba(78, 147, 213, 0.48);
 }
 
@@ -6409,7 +6411,7 @@ input.fix-input {
 .avia-placeholder .closer {
     position: absolute;
     top: -15px;
-    right: -15px;
+    left: 15px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -6592,9 +6594,10 @@ input.fix-input {
 	    position: fixed;
 	    top: 15px;
 	    right: 15px;
+	    left: auto;
 	}
 
-		.tours-box .avia-placeholder .title {
+	.tours-box .avia-placeholder .title {
 	    padding-left: 8px;
 	}
 }
