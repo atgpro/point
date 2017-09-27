@@ -1242,17 +1242,21 @@ $(function (e) {
 
 	$('a.flies').on('click', function(e){
 		e.preventDefault();
-		console.log(123);
-
-		var _container = $(this).closest('div').find('.avia-placeholder');
+		
+		var _container = $(this).closest('.tr').find('.avia-placeholder');
+		var _other_conts = $(".avia-placeholder.open");
 		if(_container.hasClass('open')){
 			_container.find('.avia-content').html('');
 			_container.removeClass('open');
-			_container.fadeOut();
+			_other_conts.removeClass('open');
+			_other_conts.slideUp();
+			_container.slideUp();
 		}else{
 			_container.find('.avia-content').html( _aviavariable );	
+			_other_conts.removeClass('open');
+			_other_conts.slideUp();
 			_container.addClass('open');
-			_container.fadeIn();
+			_container.slideDown();
 		}
 		
 		return false;
@@ -1260,7 +1264,7 @@ $(function (e) {
 
 	$('.avia-placeholder').on('click','.closer',function(e){
 		e.preventDefault();
-		$(this).closest('.td').find('.flies').trigger('click');
+		$(this).closest('.tr').find('.flies').eq(0).trigger('click');
 		console.log( $(this).closest('.td').find('.flies') );
 		return false;
 	})

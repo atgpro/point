@@ -143,7 +143,6 @@
                   <div class="mobile-th">Дата</div>
                   <div class="mobile-td">
                     <span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a>
-                    <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
                   </div>
                 </div>
                 <div class="td">
@@ -203,7 +202,7 @@
                 <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
-            
+            <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
           </div>
 
           <div class="tr">
@@ -303,7 +302,7 @@
                 <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
-            
+            <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
           </div>
 
           <div class="tr">
@@ -403,7 +402,7 @@
                 <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
-            
+            <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
           </div>
 
 
@@ -504,9 +503,9 @@
                 <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
-            
+            <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
           </div>
-
+          
         </div>
 
         <div class="showmore">
@@ -609,7 +608,7 @@
                     <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                   </div>
                 </div>
-                
+                <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
               </div>
 
               <div class="tr">
@@ -709,7 +708,7 @@
                     <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                   </div>
                 </div>
-                
+                <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
               </div>
 
 
@@ -751,6 +750,7 @@
                       <div class="mobile-th">Дата</div>
                       <div class="mobile-td">
                         <span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a>
+                        <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
                       </div>
                     </div>
                     <div class="td">
@@ -978,7 +978,7 @@
                 <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
-
+            <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
           </div>
 
           <div class="tr">
@@ -1069,7 +1069,7 @@
                 <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
               </div>
             </div>
-
+            <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
           </div>
         </div>
 
@@ -1114,6 +1114,7 @@
                       <div class="mobile-th">Дата</div>
                       <div class="mobile-td">
                         <span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a>
+                        <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
                       </div>
                     </div>
                     <div class="td">
@@ -1259,7 +1260,7 @@
                     <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                   </div>
                 </div>
-                
+                <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
               </div>
 
 
@@ -1355,6 +1356,7 @@
                 </div>
                 
               </div>
+              <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>                      
 
             </div>
           
@@ -1607,6 +1609,8 @@
             </div>
 
           </div>
+          <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
+                      
         </div>
 
         <div class="showmore">
@@ -1702,7 +1706,8 @@
                     <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                   </div>
                 </div>
-                
+                  <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
+                      
               </div>
 
               <div class="tr">
@@ -1795,7 +1800,8 @@
                     <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                   </div>
                 </div>
-                
+                <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
+                        
               </div>
 
 
@@ -1889,7 +1895,8 @@
                     <a href="#" class="add-to-basket"><span>Заказать тур</span><img src="img/basket-white-icon.png" alt=""></a>
                   </div>
                 </div>
-                
+                <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
+                        
               </div>
 
             </div>
