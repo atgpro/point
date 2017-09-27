@@ -6350,6 +6350,109 @@ input.fix-input {
 	color:#333;
 }
 
+
+/* AVIABLOCK*/
+
+.avia-placeholder {
+    display: none;
+    position: absolute;
+    left: 5px;
+    bottom: 24px;
+    background: #fff;
+    width: 550px;
+    z-index: 2;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 1px 5px rgba(78, 147, 213, 0.48);
+}
+
+.avia-placeholder .avia-content{
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.avia-placeholder.open {
+    display: block;
+}
+
+.avia-placeholder .text-block {
+    width: 100%;
+}
+
+.tours-box .avia-placeholder .title {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.tours-box .avia-placeholder .title .route-text {
+    font-weight: 400;
+    color: #438bd2;
+}
+
+.avia-placeholder table.table {
+    margin-bottom: 0px;
+}
+
+.tours-box .avia-placeholder .title.bordered {
+    border-top: 1px solid #ddd;
+}
+
+.flight-number .no-word-wrap {
+    display: block;
+}
+.avia-placeholder .closer {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #c0cbd2;
+    cursor: pointer;
+    transform: translateZ(0);
+    z-index: 20;
+}
+
+.avia-placeholder .closer:before,.avia-placeholder .closer:after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    background: #c0cbd2;
+    width: 16px;
+    height: 2px;
+    transform: rotate(45deg);
+    top: 50%;
+    right: calc(~"50% - 8px");
+    cursor: pointer;
+}
+
+.avia-placeholder .closer:after {
+    transform: rotate(-45deg);
+}
+
+.avia-content .text-block .hr span {
+    color: #F27C28;
+}
+
+.avia-content td .dashed-text {
+    border-bottom: 1px dashed #999;
+    display: inline;
+}
+
+.avia-content .glyphicon-time {
+    margin-right: 5px;
+}
+
+.avia-content td {
+    text-align: left;
+}
+
+/*AVIAENDS*/
+
 @media screen and (min-width: 1000px) {
 
 	.row-filters-panel .filter-additional-params .item:nth-last-child(1) .select-items-wrapper,
@@ -6377,6 +6480,7 @@ input.fix-input {
 	    padding-right: 0;
 	    margin-right: -15px; 
 	}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -6464,6 +6568,30 @@ input.fix-input {
 @media screen and (max-width: 759px) {
 	.city .closer {
 		transform: scale(1.35);
+	}
+
+	.avia-placeholder {
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    border-radius: 0;
+	    left: 0;
+	    height: 100%;
+	    z-index: 15;
+	}
+
+	.avia-placeholder .avia-content {
+	    max-height: 100%;
+	}
+
+	.avia-placeholder .closer {
+	    position: fixed;
+	    top: 15px;
+	    right: 15px;
+	}
+
+		.tours-box .avia-placeholder .title {
+	    padding-left: 8px;
 	}
 }
 

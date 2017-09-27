@@ -1238,6 +1238,33 @@ $(function (e) {
 		return false;
 	});
 
+	var _aviavariable = '<div class="text-block"><!--Forward--><div class="title"><span class="route-text font-weight-initial">ТУДА:</span> ASTRAKHAN AIRPORT,Россия — SOCHI AIRPORT , РОССИЯ</div><table class="table"><tbody><tr class="no-border-td"><td width="25%"><span class="dashed-text">ASTRAKHAN AIRPORT, РОССИЯ </span><br><b>11:45</b>, 28.09.2017 </td><td width="35%"><span class="dashed-text">SHEREMETYEVO MOSCOW AIRPORT </span><br>Прилет в <b>13:00</b>, 28.09.2017 </td><td width="15%" class="flight-number">Рейс: <b class="no-word-wrap">SU1643</b></td></tr><tr class="no-border-top-td"><td colspan="5"><div class="hr"><span><i class="glyphicon glyphicon-time"></i>Длительность пересадки: 4 ч. 45 мин.</span></div></td></tr><tr class="no-border-td"><td width="25%"><span class="dashed-text">SHEREMETYEVO MOSCOW AIRPORT, РОССИЯ </span><br><b>17:45</b>, 28.09.2017 </td><td width="35%"><span class="dashed-text">SOCHI AIRPORT </span><br>Прилет в <b>20:10</b>, 28.09.2017 </td><td width="15%" class="flight-number">Рейс: <b class="no-word-wrap">SU1130</b></td></tr></tbody></table><!--Backward--><div class="title bordered"><span class="route-text font-weight-initial">ОБРАТНО:</span> SOCHI AIRPORT , РОССИЯ — ASTRAKHAN AIRPORT, Россия</div><table class="table"><tbody><tr class="no-border-td"><td width="25%"><span class="dashed-text">SOCHI AIRPORT, РОССИЯ </span><br><b>16:15</b>, 05.10.2017 </td><td width="35%"><span class="dashed-text">SHEREMETYEVO MOSCOW AIRPORT </span><br>Прилет в <b>18:40</b>, 05.10.2017 </td><td width="15%" class="flight-number">Рейс: <b class="no-word-wrap">SU1123</b></td></tr><tr class="no-border-top-td"><td colspan="5"><div class="hr"><span><i class="glyphicon glyphicon-time"></i>Длительность пересадки: 2 ч. 55 мин.</span></div></td></tr><tr class="no-border-td"><td width="25%"><span class="dashed-text">SHEREMETYEVO MOSCOW AIRPORT, РОССИЯ </span><br><b>21:35</b>, 05.10.2017 </td><td width="35%"><span class="dashed-text">ASTRAKHAN AIRPORT </span><br>Прилет в <b>00:50</b>, 06.10.2017 </td><td width="15%" class="flight-number">Рейс: <b class="no-word-wrap">SU1172</b></td></tr></tbody></table></div>';
+
+	$('a.flies').on('click', function(e){
+		e.preventDefault();
+		console.log(123);
+
+		var _container = $(this).closest('div').find('.avia-placeholder');
+		if(_container.hasClass('open')){
+			_container.find('.avia-content').html('');
+			_container.removeClass('open');
+			_container.fadeOut();
+		}else{
+			_container.find('.avia-content').html( _aviavariable );	
+			_container.addClass('open');
+			_container.fadeIn();
+		}
+		
+		return false;
+	});
+
+	$('.avia-placeholder').on('click','.closer',function(e){
+		e.preventDefault();
+		$(this).closest('.td').find('.flies').trigger('click');
+		console.log( $(this).closest('.td').find('.flies') );
+		return false;
+	})
+
 	/* END Sergej works here*/
 
 });

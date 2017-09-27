@@ -143,6 +143,7 @@
                   <div class="mobile-th">Дата</div>
                   <div class="mobile-td">
                     <span class="important">12.08.17<br>-19.08.17</span><span class="muted">7 ночей</span> <a href="#" class="flies">Авиаперелеты</a>
+                    <div class="avia-placeholder"><div class="closer"></div><div class="avia-content scroll1"></div></div>
                   </div>
                 </div>
                 <div class="td">
