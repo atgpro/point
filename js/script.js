@@ -944,22 +944,25 @@ $(function (e) {
 	$('.filter-value').on('click', function(e) {
 		
 		//if( $(this).hasClass('open') ){
-			$(this).closest('.row-filters-panel').find('.filter-value.open').removeClass('open');
-			$(this).closest('.row-filters-panel').find('.open-additional-params.open').trigger('click');
-		//}
+		//console.log(e,$( e.target ), $( e.target ).hasClass('.filter-value'));
+		if( $( e.target ).hasClass('filter-value') ){
+				$(this).closest('.row-filters-panel').find('.filter-value.open').removeClass('open');
+				$(this).closest('.row-filters-panel').find('.open-additional-params.open').trigger('click');
+			//}
 
-		if ($(e.target).parents('.choice-block').length || 
-			$(e.target).hasClass('choice-block')) {
-			return;
+			if ($(e.target).parents('.choice-block').length || 
+				$(e.target).hasClass('choice-block')) {
+				return;
+			}
+
+			if ($(this).find('.date-block').length) {
+				return;
+			}
+
+			$(this).find('.hidden-change').fadeIn();
+
+			$(this).toggleClass('open');
 		}
-
-		if ($(this).find('.date-block').length) {
-			return;
-		}
-
-		$(this).find('.hidden-change').fadeIn();
-
-		$(this).toggleClass('open');
 	});/*
 	$(document).on("click", function(e) {
 		if (!$(e.target).closest(".filter-value").length) {

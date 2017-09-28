@@ -238,7 +238,7 @@
               </div>
             </div>
             
-            <div class="hotel-horisontal-table">
+            <!--<div class="hotel-horisontal-table">
 
             <div class="hotel-horisontal-table-content">
 
@@ -326,6 +326,106 @@
                   </tr>
                 </table>
               </div>
+              <button class="button-open-table">Развернуть таблицу</button>
+            </div>
+            
+            </div>
+            </div>-->
+
+
+            <div class="hotel-horisontal-table fix-2">
+
+            <div class="hotel-horisontal-table-content">
+            <div class="scrollable-table-box scroll1">
+
+            <table class="table-header scrollable-table">
+              <tr class="fixed-header">
+                <th>Название отеля</th>
+                <th>Класс</th>
+                <th>Курорт</th>
+                <th>Рейтинг</th>
+              </tr>
+              <tr class="fixed-header">
+                <td colspan="4">
+                  <div class="table-768-fix">
+                    <div class="row search-box-wrapper">
+                      <div class="col-sm-7">
+                        <div class="table-wrapper">
+                          <div class="search-box">
+                            <input type="text" placeholder="Быстрый поиск по отелям">
+                            <button><img src="img/search-icon.png" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-5">
+                       <a href="#" class="dashed-link show-choosen-vars"><span>Показать выбранные</span> <span class="indicator">0</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </td>
+            
+            
+            
+              
+                
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>ABSOLUTE BLISS IMEROVIGLI SUITES 4*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="check-group">
+                        <input class="icheck-input" type="checkbox" name="iCheck">
+                        <span>12 MONTHS LUXURY RESORT 5*</span>
+                      </label>
+                    </td>
+                    <td>5</td>
+                    <td>Афины</td>
+                    <td>4.3</td>
+                  </tr>
+                </table>
+              
               <button class="button-open-table">Развернуть таблицу</button>
             </div>
             

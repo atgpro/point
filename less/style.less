@@ -4781,7 +4781,7 @@ body.short-version {
 	    top: 100%;
 
         min-width: 175px;
-	    margin-top: -10px;
+	    //margin-top: -10px;
 	    display: none;
 
 	    &:before {
@@ -5546,6 +5546,7 @@ body.short-version {
 
 	.children-slider-wrapper .age-change-panel {
 		right: 0px !important;
+		left: auto !important;
 		width: 100% !important;
 		max-width: unset;
 		text-align: center;
@@ -6350,6 +6351,83 @@ input.fix-input {
 	color:#333;
 }
 
+/*TABLE*/
+
+tr.fixed-header > th {
+    background: #252f43;
+}
+
+tr.fixed-header > th:first-child{
+    border-radius:10px 0 0 10px;
+}
+tr.fixed-header > th:last-child{
+    border-radius:0 10px 10px 0;
+}
+
+tr.fixed-header:first-child {
+    box-shadow: 0px 1px 5px rgba(37, 47, 67, 0.55);
+    border-radius: 10px;
+    top: 0;
+    position: absolute;
+}
+
+tr.fixed-header:nth-child(2) .table-768-fix {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.scrollable-table-box.scroll1 {
+    height: 213px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.fix-2 .table-header.scrollable-table {
+    margin: 0;
+    position: static;
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+}
+
+.fix-2 .scrollable-table-box.scroll1 {
+    padding-top: 91px;
+    position: static;
+}
+
+tr.fixed-header:nth-child(2) {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+tr.fixed-header:nth-child(2) > td {
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    padding-bottom: 0;
+}
+
+.fix-2 .hotel-horisontal-table-content {
+    position: relative;
+}
+
+.fix-2 .scrollable-table-box.scroll1.open {
+    height: auto;
+}
+
+.fix-2 .hotel-horisontal-table-content:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 35px;
+    background: #fff;
+}
+
+/*TABLEENDS*/
+
 
 /* AVIABLOCK*/
 
@@ -6458,6 +6536,10 @@ input.fix-input {
     text-align: left;
 }
 
+.adult-childrens-sliders-wrapper .irs-with-grid {
+    height: 45px;
+}
+
 /*AVIAENDS*/
 
 @media screen and (min-width: 1000px) {
@@ -6537,7 +6619,8 @@ input.fix-input {
 	}
 
 	.children-slider-wrapper .slider-wrapper .irs-slider:before{
-		top: -3px;
+		top: -4px;
+		height: 3px;
 	}
 
 	body.daterange-visible {
