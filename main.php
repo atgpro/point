@@ -388,7 +388,7 @@
                       </label>
                     </td>
                     <td>5</td>
-                    <td>Афины</td>
+                    <td>Кипр</td>
                     <td>4.3</td>
                   </tr>
                   <tr>
@@ -399,7 +399,7 @@
                       </label>
                     </td>
                     <td>5</td>
-                    <td>Афины</td>
+                    <td>ОАЭ</td>
                     <td>4.3</td>
                   </tr>
                   <tr>
@@ -410,7 +410,7 @@
                       </label>
                     </td>
                     <td>5</td>
-                    <td>Афины</td>
+                    <td>Греция</td>
                     <td>4.3</td>
                   </tr>
                   <tr>
@@ -421,7 +421,7 @@
                       </label>
                     </td>
                     <td>5</td>
-                    <td>Афины</td>
+                    <td>Россия</td>
                     <td>4.3</td>
                   </tr>
                 </table>
