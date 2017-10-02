@@ -1893,8 +1893,8 @@ body.short-version {
 	}
 
 	.hotel-horisontal-table {
-		overflow-x: auto;
-	    overflow-y: hidden;
+		//overflow-x: auto;
+	    //overflow-y: hidden;
 		width: 100%;
 
 		.hotel-horisontal-table-content {
@@ -5417,6 +5417,31 @@ body.short-version {
 		}
 	}
 
+	.choice-block .check-group,
+	.select-items-wrapper .check-group, 
+	.slider-wrapper .irs-grid-text, 
+	.scrollable-table td, 
+	.dashed-link span:not(.indicator), 
+	.check-group span, 
+	.scrollable-table .check-group span{
+		color: #a1b1c1;
+	}
+
+	.from-city {
+	    text-align: center;
+	}
+
+	.from-city .pin span {
+	    margin-left: 0;
+	}
+
+	.from-city .filter-select-wrapper {margin-left: 0;}
+
+	.from-city .filter-select {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
 }
 
 @media screen and (max-width: 650px) {
@@ -6428,6 +6453,72 @@ tr.fixed-header:nth-child(2) > td {
 
 /*TABLEENDS*/
 
+/*AAAA*/
+
+.hotel-horisontal-table.fix-2:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    width: calc(~"100% + 30px");
+    left: -15px;
+    height: 2px;
+    background: #e8ecef;
+}
+
+.hotel-horisontal-table.fix-2 {
+    position: relative;
+}
+
+.col-sm-3.otel2-fix:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 2px;
+    right: 0;
+    height: calc(~"100% - 14px");
+    background: #e8ecef;
+}
+
+.col-sm-4.otel-fix:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    width: 2px;
+    right: 15px;
+    height: calc(~"100% - 14px");
+    background: #e8ecef;
+}
+
+@media screen and (max-width: 998px) {
+
+	.col-sm-4.otel-fix:before{
+	    height: calc(~"100% - 2px");
+	}
+
+	.col-sm-3.otel2-fix:before{
+	    height: calc(~"100% - 2px");
+	}
+
+}
+
+@media screen and (max-width: 770px) {
+
+	.col-sm-4.otel-fix:before{
+	    right: 7.5px;
+	    height: 100%;
+	    top: 5px;
+	}
+
+	.col-sm-3.otel2-fix:before{
+	    right: -7.5px;
+	    height: 100%;
+	    top: 5px;
+	}
+
+}
+
+
+
 
 /* AVIABLOCK*/
 
@@ -6557,17 +6648,86 @@ tr.fixed-header:nth-child(2) > td {
 	    top: auto;
 	}
 
+
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 1000px){
+
+	tr.fixed-header:nth-child(2) > td,
+	tr.fixed-header:nth-child(2),
+	tr.fixed-header:first-child{
+		position:relative;
+	}
+
+	.fix-2 .scrollable-table-box.scroll1{
+		height:auto;
+		padding-top:0;
+		overflow: hidden;
+	}
+
+	.fix-2 .table-header.scrollable-table{
+		position: relative;
+	}
+
+	.table-header th:nth-child(2) {
+	    width: 100px;
+	    text-align: center;
+	    padding-right: 0;
+	}
+
+	.table-header th:nth-child(3) {
+	    width: 100px;
+	    text-align: center;
+	}
+
+	.table-header th:nth-child(4) {
+	    width: 80px;
+	    padding-right: 0;
+	    text-align: center;
+	}
+
+	.table-header th:nth-child(1) {
+	    width: 315px;
+	}
+
+	.fix-2 .scrollable-table-box.scroll1{
+		overflow: initial;
+	}
+
+	tr.fixed-header:first-child{
+		box-shadow:none;
+	}
+}
+
+@media screen and (min-width: 768px) {
 	.col-sm-3.otel2-fix {
 	    padding-right: 0;
 	    width: calc(~"25% + 15px");
 	}
 
 	.col-sm-4.otel-fix {
-	    padding-right: 0;
+	    //padding-right: 0;
 	    margin-right: -15px; 
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.col-sm-3.otel2-fix:before {
+	    left: 0;
+	    bottom: 7.5px;
+	    top: auto;
+	    width: 100%;
+	    height: 2px;
+	}
+
+	.col-sm-4.otel-fix:before {
+	    left: 0;
+	    bottom: 7.5px;
+	    top: auto;
+	    width: 100%;
+	    height: 2px;
 	}
 
 }
@@ -6640,6 +6800,15 @@ tr.fixed-header:nth-child(2) > td {
 	    overflow-y: scroll;
 	}
 
+	.table-header th:nth-child(1) {
+	    padding-left: 25px;
+	    padding-right: 5px;
+	}
+
+	.table-header th:nth-child(4) {
+	    padding-right: 5px;
+	}
+
 }
 
 /*Hotfixes ENDS*/
@@ -6684,6 +6853,20 @@ tr.fixed-header:nth-child(2) > td {
 
 	.tours-box .avia-placeholder .title {
 	    padding-left: 8px;
+	}
+
+		.fix-2 .scrollable-table-box {
+	    width: 100%;
+	}
+
+	.hotel-horisontal-table.fix-2 {
+	    width: 100%;
+	    max-width: initial;
+	}
+
+	.fix-2 .table-header.scrollable-table {
+	    width: 100%;
+	    max-width: initial;
 	}
 }
 
